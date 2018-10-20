@@ -6,7 +6,7 @@
         $usuario = 'root';
         $contrasena = '';
         $host = 'localhost';
-        $db = 'pagina_web_sc';
+        $db = 'pagina_web_bell';
 
         try {
           $conexion = new PDO("mysql:host=$host;dbname=$db;", $usuario, $contrasena);

@@ -20,7 +20,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-md-12">
-          <a class="hero-brand" href="index.php" title="Home"><img alt="Bell Logo" src="img/logo.png"></a>
+          <a class="hero-brand" href="index.php" title="Home"><img alt="Bell Logo" src="img/images/logos.jpg"></a>
         </div>
       </div>
 
@@ -45,14 +45,14 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.php"><img src="img/logo-nav.png" alt="" title="" /></img></a>
+        <a href="index.php"><img src="img/images/logos.jpg" alt="" title="" /></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Bell</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Acerca de Nosotros</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
@@ -73,7 +73,8 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -128,7 +129,7 @@
     </div>
   </section>
   <!-- /About -->
-  
+
 
 
   <!-- Parallax -->
@@ -589,8 +590,26 @@
     </div>
   </section>
   <!-- /Team -->
-  <!-- @component: footer -->
 
+
+  <!-- @component: footer -->
+  <section id="ubicacion">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title">Ubicación</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+          <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540069897819" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </center>
+      </div>
+    </div>
+  </section>
+
+  <!-- @component: footer -->
   <section id="contact">
     <div class="container">
       <div class="row">
@@ -657,7 +676,7 @@
 
           <div class="col-lg-6 col-xs-12 text-lg-left text-center">
             <p class="copyright-text">
-              © BELL Theme
+              © MaschinenWerk 2000,C.A | All Rights Reserved
             </p>
             <div class="credits">
               <!--
@@ -666,18 +685,18 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
               -->
-             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+             Designed by <a href="">Technology LR Inc Dev</a>
             </div>
           </div>
 
           <div class="col-lg-6 col-xs-12 text-lg-right text-center">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="index.html">Home</a>
+                <a href="index.html">Inicio</a>
               </li>
 
               <li class="list-inline-item">
-                <a href="#about">About Us</a>
+                <a href="#about">Nosotros</a>
               </li>
 
               <li class="list-inline-item">
@@ -689,11 +708,11 @@
               </li>
 
               <li class="list-inline-item">
-                <a href="#team">Team</a>
+                <a href="#ubicacion">Ubicación</a>
               </li>
 
               <li class="list-inline-item">
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contáctanos</a>
               </li>
             </ul>
           </div>
