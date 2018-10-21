@@ -9,7 +9,7 @@
         $db = 'pagina_web_bell';
 
         try {
-          $conexion = new PDO("mysql:host=$host;dbname=$db;", $usuario, $contrasena);
+          $conexion = new PDO("mysql:host = $host; dbname = $db;", $usuario, $contrasena);
         } catch (PDOException $e) {
             echo "Error: " .$e->getMessage();
         }

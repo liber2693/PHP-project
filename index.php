@@ -45,7 +45,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.php"><img src="img/images/logos.jpg" alt="" title="" /></img></a>
+        <a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="150" height="80"></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Bell</a></h1>-->
       </div>
@@ -88,49 +88,79 @@
 
 
   <!-- About -->
-  <section class="about" id="about">
-    <div class="container text-center">
-      <h2>
-          About Bell Theme
-        </h2>
+  <section class="features" id="about">
+    <div class="container">
+      <h2 class="text-center">
+          Acerca de Nosotros
+      </h2>
+
 
       <p>
-        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum
-         id. Ut cum nisl moderatius, per nihil dicant commodo an. Eum tacimates erroribus ad. Atqui feugiat euripidis
-         ea pri, sed veniam tacimates ex. Menandri
-        temporibus an duo.
+        ¿Qué es MaschinenWerk 2000,C.A?
+      </p>
+      <p>
+        Desde nuestros inicios nos hemos dedicado a brindar apoyo integral a nuestros clientes en todas sus necesidades de
+        sistemas de inspección y verificación de peso, tecnología de códigos de barras, marcaje de productos y sus suministros
+        asociados y sistemas de automatización para las industrias de alimentos, farmacéuticas y textiles, así como
+        desempolvadores, blísteadoras, tableteadoras para el sector farmacéutico.
+      </p>
+      <p>
+        Para el sistemas de inspección y control de calidad en línea contamos con nuestra representada exclusiva inglesa
+        Loma Systems, con aplicaciones para detección de metales y demás partículas contaminantes, de igual manera verificación
+        de peso en línea con sus respectivos sistemas de rechazos.
+      </p>
+      <p>
+        Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies
+        ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o
+        consumibles garantizados.
+      </p>
+      <p>
+        Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place
+        sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases,
+        envolturas o máquinas HFFS.
+      </p>
+      <p>
+        · Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los
+        productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
+      </p>
+      <p>
+        · Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el
+        control de su línea de envasado desde el final del procesamiento a través de paletizado.
+      </p>
+      <p>
+        Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de
+        Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de
+        nuestros clientes.
       </p>
 
       <div class="row stats-row">
         <div class="stats-col text-center col-md-3 col-sm-6">
           <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
+            <span class="stats-no" data-toggle="counter-up">1000</span><b> Clientes Satisfechos</b>
           </div>
         </div>
 
         <div class="stats-col text-center col-md-3 col-sm-6">
           <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">79</span> Released Projects
+            <span class="stats-no" data-toggle="counter-up">200</span><b> Maquinaria</b>
           </div>
         </div>
 
         <div class="stats-col text-center col-md-3 col-sm-6">
           <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
+            <span class="stats-no" data-toggle="counter-up">1,500</span><b> Horas de Soporte</b>
           </div>
         </div>
 
         <div class="stats-col text-center col-md-3 col-sm-6">
           <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
+            <span class="stats-no" data-toggle="counter-up">20</span><b> Trabajadores</b>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- /About -->
-
-
 
   <!-- Parallax -->
   <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
@@ -593,7 +623,7 @@
 
 
   <!-- @component: footer -->
-  <section id="ubicacion">
+  <section class="features" id="ubicacion">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -614,7 +644,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="section-title">Contact Us</h2>
+          <h2 class="section-title">Contáctanos</h2>
         </div>
       </div>
 
@@ -623,17 +653,21 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Av Veracruz Edificio Keope<br>
+                    Piso 1 Oficina 15B Baruta<br>
+                    Las Mercedes Caracas<br>
+                    Venezuela
+                </p>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+                <p>Ventas@maschinen-werk.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+                <p>Tel: +58  212 9911957</p>
             </div>
 
           </div>
@@ -645,19 +679,19 @@
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por Favor introduzca al menos 4 caractéres" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor introduzca un Email válido" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor introduzca al menos 8 caractéres" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
@@ -679,13 +713,7 @@
               © MaschinenWerk 2000,C.A | All Rights Reserved
             </p>
             <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
-              -->
-             Designed by <a href="">Technology LR Inc Dev</a>
+              Desarrollado por: <a href="">Technology LR Inc Dev</a>
             </div>
           </div>
 
