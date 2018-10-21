@@ -45,7 +45,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="150" height="80"></img></a>
+        <a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="130" height="80"></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Bell</a></h1>-->
       </div>
@@ -132,6 +132,29 @@
         Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de
         nuestros clientes.
       </p>
+
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <a href="https://blueprintautomation.com/en/" target="_blank"><img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+      <div class="item">
+        <a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+      <div class="item">
+        <a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+      <div class="item">
+        <a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+      <div class="item">
+        <a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+      <div class="item">
+        <a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
+      </div>
+    </div>
+
 
       <div class="row stats-row">
         <div class="stats-col text-center col-md-3 col-sm-6">
