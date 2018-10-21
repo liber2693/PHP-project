@@ -25,7 +25,7 @@
 <script>
 $('.owl-carousel').owlCarousel({
   loop:true,
-  margin:50,
+  margin:40,
   responsiveClass:true,
   responsive:{
       0:{
@@ -37,7 +37,7 @@ $('.owl-carousel').owlCarousel({
           nav:true
       },
       1000:{
-          items:4,
+          items:6,
           nav:true,
           loop:true
       }

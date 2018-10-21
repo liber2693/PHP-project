@@ -24,15 +24,15 @@
         </div>
       </div>
 
-      <div class="col-md-12">
-        <h1>
+      <!--<div class="col-md-12">
+          <h1>
             A theme with personality
-          </h1>
+          </h1> -->
 
-        <p class="tagline">
+        <!--<p class="tagline">
           This is a powerful theme with some great features that you can use in your future projects.
-        </p>
-        <a class="btn btn-full" href="#about">Get Started Now</a>
+        </p> -->
+        <a class="btn btn-full" href="#nosotros">Empezar</a>
       </div>
     </div>
 
@@ -52,11 +52,12 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="#about">Acerca de Nosotros</a></li>
-          <li><a href="#features">Features</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#features">Productos</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <!-- Menu Despegable-->
+        <!--  <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -72,7 +73,7 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#contact">Contáctanos</a></li>
         </ul>
@@ -87,11 +88,11 @@
   <!-- #header -->
 
 
-  <!-- About -->
-  <section class="features" id="about">
+  <!-- nosotros -->
+  <section class="features" id="nosotros">
     <div class="container">
       <h2 class="text-center">
-          Acerca de Nosotros
+          Nosotros
       </h2>
 
 
@@ -99,14 +100,14 @@
         ¿Qué es MaschinenWerk 2000,C.A?
       </p>
       <p>
-        Desde nuestros inicios nos hemos dedicado a brindar apoyo integral a nuestros clientes en todas sus necesidades de
-        sistemas de inspección y verificación de peso, tecnología de códigos de barras, marcaje de productos y sus suministros
-        asociados y sistemas de automatización para las industrias de alimentos, farmacéuticas y textiles, así como
-        desempolvadores, blísteadoras, tableteadoras para el sector farmacéutico.
+        Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de
+        Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros
+        Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como
+        Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
       </p>
       <p>
-        Para el sistemas de inspección y control de calidad en línea contamos con nuestra representada exclusiva inglesa
-        Loma Systems, con aplicaciones para detección de metales y demás partículas contaminantes, de igual manera verificación
+        Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa
+        Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación
         de peso en línea con sus respectivos sistemas de rechazos.
       </p>
       <p>
@@ -132,8 +133,11 @@
         Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de
         nuestros clientes.
       </p>
+      <br><br>
 
-
+<div class="features">
+  <center><h2>Empresas Representadas</h2></center>
+  <div class="container">
     <div class="owl-carousel owl-theme">
       <div class="item">
         <a href="https://blueprintautomation.com/en/" target="_blank"><img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42"></a>
@@ -154,6 +158,8 @@
         <a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
       </div>
     </div>
+  </div>
+</div>
 
 
       <div class="row stats-row">
@@ -183,7 +189,7 @@
       </div>
     </div>
   </section>
-  <!-- /About -->
+  <!-- /nosotros -->
 
   <!-- Parallax -->
   <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
@@ -338,19 +344,18 @@
   <section class="cta">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-          <h2>
-              Call to Action Section
-            </h2>
-
-          <p>
+        <div class="col-lg-9 col-sm-12 text-lg-center text-center">
+            <img src="img/images/logo1.png" alt="" title="" width="180" height="60"></img> &nbsp;&nbsp;
+            <img src="img/images/logo2.png" alt="" title="" width="180" height="60"></img>
+          <!--<p>
             Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-          </p>
+          </p>-->
         </div>
-
+        <!--
         <div class="col-lg-3 col-sm-12 text-lg-right text-center">
           <a class="btn btn-ghost" href="#">Buy This Theme</a>
         </div>
+      -->
       </div>
     </div>
   </section>
@@ -747,11 +752,11 @@
               </li>
 
               <li class="list-inline-item">
-                <a href="#about">Nosotros</a>
+                <a href="#nosotros">Nosotros</a>
               </li>
 
               <li class="list-inline-item">
-                <a href="#features">Features</a>
+                <a href="#features">Productos</a>
               </li>
 
               <li class="list-inline-item">

@@ -301,6 +301,7 @@ a:hover {
   font-weight: 300;
   font-size: 15px;
   outline: none;
+  font-weight: bold;
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
