@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,8 +30,14 @@
     ================================================== -->
   <!-- Hero -->
   <!--<section class="hero">-->
+<<<<<<< HEAD
 
     <!--<div class="container text-center">
+=======
+  
+
+    <!-- <div class="container text-center">
+>>>>>>> fe4c9f71cea611d6a5bfd2aa1b415511302a3536
       <div class="row">
         <div class="col-md-12">
           <a class="hero-brand" href="index.php" title="Home"><img alt="Bell Logo" src="img/images/logos.jpg"></a>
@@ -53,7 +59,7 @@
     <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="img/slider/cover.jpg" alt="" title="#slider-direction-1" />
         <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
         <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
       </div>
@@ -134,7 +140,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- /Hero -->
 
@@ -296,11 +301,9 @@
         Welcome to a perfect theme
       </h2>
 
-    <p>
-      This is the most powerful theme with thousands of options that you have never seen before.
-    </p>
-    <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
-  </div>
+     <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png"> -->
+     <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">  
+</div>
   <!-- /Parallax -->
 
 
