@@ -8,6 +8,7 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <?php include('views/cabecera.php');?>
+  
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png">
 
