@@ -586,6 +586,7 @@
                     The Dude Rockin'
                   </h3>
 
+
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
                   </p>
