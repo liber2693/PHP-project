@@ -30,14 +30,9 @@
     ================================================== -->
   <!-- Hero -->
   <!--<section class="hero">-->
-<<<<<<< HEAD
-
-    <!--<div class="container text-center">
-=======
   
 
     <!-- <div class="container text-center">
->>>>>>> fe4c9f71cea611d6a5bfd2aa1b415511302a3536
       <div class="row">
         <div class="col-md-12">
           <a class="hero-brand" href="index.php" title="Home"><img alt="Bell Logo" src="img/images/logos.jpg"></a>
@@ -59,9 +54,9 @@
     <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="img/slider/cover.jpg" alt="" title="#slider-direction-1" />
-        <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-        <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+        <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-2" />
+        <img src="img/slider/slider4.jpg" alt="" title="#slider-direction-3" />
       </div>
 
       <!-- direction 1 -->
@@ -69,25 +64,30 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
+              <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
+                    <a class="hero-brand" href="index.php" title="Home">
+                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
+
+                  <!--<h2 class="title1">The Best Business Information </h2> -->
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
+                  <!--<h1 class="title2">We're In The Business Of Helping You Start Your Business</h1> -->
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                  <br><br><br><br>
+                  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
+                  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <!-- direction 2 -->
       <div id="slider-direction-2" class="slider-direction slider-two">
@@ -97,41 +97,53 @@
               <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
+                    <a class="hero-brand" href="index.php" title="Home">
+                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
+
+                <!-- <h2 class="title1">The Best business Information </h2> -->
                 </div>
                 <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
+                <div class="layer-1-2 wow slideInUp " data-wow-duration="2s" data-wow-delay=".1s">
+               <!--<h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1> -->
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                  <br><br><br><br>
+                  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
+                  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+      
 
       <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
+      <div id="slider-direction-3" class="slider-direction slider-three">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
+              <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best business Information </h2>
+                    <a class="hero-brand" href="index.php" title="Home">
+                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
+
+                <!-- <h2 class="title1">The Best business Information </h2> -->
                 </div>
                 <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
+                <div class="layer-1-2 wow slideInUp " data-wow-duration="2s" data-wow-delay=".1s">
+               <!--<h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1> -->
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                  <br><br><br><br>
+                  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
+                  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
                 </div>
               </div>
             </div>
@@ -157,9 +169,9 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#features">Productos</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#features">Noticias</a></li>
+          <li><a href="#portfolio">Productos</a></li>
+          <!--<li><a href="#team">Team</a></li>-->
           <!-- Menu Despegable-->
         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -185,7 +197,9 @@
       <!-- #nav-menu-container -->
 
       <nav class="nav social-nav pull-right d-none d-lg-inline">
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#">
+        <i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#">
+        <i class="fa fa-envelope"></i></a>
       </nav>
     </div>
   </header>
@@ -195,44 +209,42 @@
   <!-- nosotros -->
   <section class="features" id="nosotros">
     <div class="container">
-      <h2 class="text-center">
-          Nosotros
-      </h2>
+      <h2 class="text-center">Nosotros</h2>
 
 
       <p>
         ¿Qué es MaschinenWerk 2000,C.A?
       </p>
-      <p>
+      <p align="justify">
         Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de
         Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros
         Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como
         Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
       </p>
-      <p>
+      <p align="justify">
         Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa
         Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación
         de peso en línea con sus respectivos sistemas de rechazos.
       </p>
-      <p>
+      <p align="justify">
         Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies
         ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o
         consumibles garantizados.
       </p>
-      <p>
+      <p align="justify">
         Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place
         sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases,
         envolturas o máquinas HFFS.
       </p>
-      <p>
+      <p align="justify">
         · Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los
         productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
       </p>
-      <p>
+      <p align="justify">
         · Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el
         control de su línea de envasado desde el final del procesamiento a través de paletizado.
       </p>
-      <p>
+      <p align="justify">
         Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de
         Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de
         nuestros clientes.
@@ -297,9 +309,7 @@
 
   <!-- Parallax -->
   <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-    <h2>
-        Welcome to a perfect theme
-      </h2>
+    <!-- <h2>Welcome to a perfect theme</h2> -->
 
      <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png"> -->
      <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">  
@@ -310,9 +320,7 @@
   <!-- Features -->
   <section class="features" id="features">
     <div class="container">
-      <h2 class="text-center">
-          Features
-        </h2>
+      <h2 class="text-center">Noticias</h2>
 
       <div class="row">
         <div class="feature-col col-lg-4 col-xs-12">
@@ -324,13 +332,8 @@
             </div>
 
             <div>
-              <h3>
-                  Custom Design
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <h3>Custom Design</h3>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -344,13 +347,8 @@
             </div>
 
             <div>
-              <h3>
-                  Responsive Layout
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <h3>Responsive Layout</h3>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -364,13 +362,8 @@
             </div>
 
             <div>
-              <h3>
-                  Innovative Ideas
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <h3>Innovative Ideas</h3>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -386,13 +379,8 @@
             </div>
 
             <div>
-              <h3>
-                  Good Documentation
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <h3>Good Documentation</h3>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -407,12 +395,9 @@
 
             <div>
               <h3>
-                  Excellent Features
-                </h3>
+                  Excellent Features</h3>
 
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -426,13 +411,8 @@
             </div>
 
             <div>
-              <h3>
-                  Retina Ready
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
+              <h3>Retina Ready</h3>
+              <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
             </div>
           </div>
         </div>
@@ -467,13 +447,8 @@
   <!-- Portfolio -->
   <section class="portfolio" id="portfolio">
     <div class="container text-center">
-      <h2>
-          Portfolio
-        </h2>
-
-      <p>
-        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, Per nihil dicant commodo an.
-      </p>
+      <h2>Productos</h2>
+      <p align="center">Algunos de Nuestros Productos</p>
     </div>
 
     <div class="portfolio-grid">
@@ -483,15 +458,11 @@
             <a href="#"><img alt="" src="img/porf-1.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -500,15 +471,11 @@
             <a href="#"><img alt="" src="img/porf-2.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -517,15 +484,11 @@
             <a href="#"><img alt="" src="img/porf-3.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -534,15 +497,11 @@
             <a href="#"><img alt="" src="img/porf-4.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -553,15 +512,11 @@
             <a href="#"><img alt="" src="img/porf-5.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -570,13 +525,8 @@
             <a href="#"><img alt="" src="img/porf-6.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
               </div></a>
           </div>
@@ -587,10 +537,7 @@
             <a href="#"><img alt="" src="img/porf-7.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
+                  <h3 class="card-title">The Dude Rockin'</h3>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
                   </p>
@@ -604,15 +551,11 @@
             <a href="#"><img alt="" src="img/porf-8.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
+                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
                 </div>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -624,133 +567,63 @@
   <!-- Team -->
   <section class="team" id="team">
     <div class="container">
-      <h2 class="text-center">
-          Meet our team
-        </h2>
+      <h2 class="text-center">Conoce Nuestros Productos</h2><br>
 
       <div class="row">
         <div class="col-sm-3 col-xs-6">
           <div class="card card-block">
-            <a href="#"><img alt="" class="team-img" src="img/team-1.jpg">
+            <a href="#"><img alt="" class="team-img" src="img/images/loma/1.png" width="70%" height="70%">
               <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+                <span class="card-title"><center>Test 1</center></span> <!--<span class="card-text">1</span> -->
               </div>
-
               <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-            </nav>
-
-            <p>
-              Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-            </p>
+                <h4 class="hidden-md-down">Imagen 1</h4>
+              </div>
+            </a>
           </div>
-          </a>
         </div>
-      </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/images/loma/2.png" width="70%" height="70%">
+                <div class="card-title-wrap">
+                  <span class="card-title"><center>Test 2</center></span> <!--<span class="card-text">1</span> -->
+                </div>
+                <div class="team-over">
+                  <h4 class="hidden-md-down">Imagen 2</h4>
+                </div>
+              </a>
+            </div>
+          </div>
 
       <div class="col-sm-3 col-xs-6">
-        <div class="card card-block">
-          <a href="#"><img alt="" class="team-img" src="img/team-2.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/images/loma/3.png" width="70%" height="70%">
+                <div class="card-title-wrap">
+                  <span class="card-title"><center>Test 3</center></span> <!--<span class="card-text">1</span> -->
+                </div>
+                <div class="team-over">
+                  <h4 class="hidden-md-down">Imagen 3</h4>
+                </div>
+              </a>
+            </div>
+          </div>
 
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </nav>
-
-          <p>
-            Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-          </p>
-        </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#"><img alt="" class="team-img" src="img/team-3.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </nav>
-
-        <p>
-          Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-        </p>
-      </div>
-      </a>
-    </div>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#"><img alt="" class="team-img" src="img/team-4.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-        </nav>
-
-        <p>
-          Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-        </p>
-              </div>
-      </a>
-    </div>
-    </div>
-    </div>
+      <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/images/loma/4.png" width="70%" height="70%">
+                <div class="card-title-wrap">
+                  <span class="card-title"><center>Test 4</center></span> <!--<span class="card-text">1</span> -->
+                </div>
+                <div class="team-over">
+                  <h4 class="hidden-md-down">Imagen 4</h4>
+                </div>
+              </a>
+            </div>
+          </div>
     </div>
   </section>
   <!-- /Team -->
-
 
   <!-- @component: footer -->
   <section class="features" id="ubicacion">
@@ -759,15 +632,13 @@
         <div class="col-md-12 text-center">
           <h2 class="section-title">Ubicación</h2>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="row justify-content-center">
-          <center>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540069897819" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-            </iframe>
-          </center>
       </div>
     </div>
   </section>
+
 
   <!-- @component: footer -->
   <section id="contact">
@@ -824,7 +695,7 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Envíar</button></div>
             </form>
           </div>
         </div>
@@ -844,25 +715,26 @@
             </p>
             <div class="credits">
               Desarrollado por: <a href="">Technology LR Inc Dev</a>
+              <a href="">&nbsp;&nbsp;<img src="img/images/ig.jpg" width="5%" height="5%"></a>
+              <a href=""><img src="img/images/facebook.jpg" width="5%" height="5%"></a>
+              <a href=""><img src="img/images/twitter.jpg" width="5%" height="5%"></a>
+              
             </div>
           </div>
 
           <div class="col-lg-6 col-xs-12 text-lg-right text-center">
             <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="index.html">Inicio</a>
-              </li>
 
               <li class="list-inline-item">
                 <a href="#nosotros">Nosotros</a>
               </li>
 
               <li class="list-inline-item">
-                <a href="#features">Productos</a>
+                <a href="#features">Noticias</a>
               </li>
 
               <li class="list-inline-item">
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio">Productos</a>
               </li>
 
               <li class="list-inline-item">
