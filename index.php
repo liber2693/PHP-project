@@ -623,6 +623,7 @@
           </div>
     </div>
   </section>
+  
   <!-- /Team -->
 
   <!-- @component: footer -->
