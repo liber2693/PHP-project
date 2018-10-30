@@ -9,6 +9,7 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <?php include('views/cabecera.php');?>
+  
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png">
 
@@ -538,7 +539,8 @@
             <a href="#"><img alt="" src="img/porf-7.jpg">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
+                  <h3 class="card-title">The Dude Rockin</h3>
+
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
                   </p>
