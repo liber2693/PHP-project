@@ -9,11 +9,11 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <?php include('views/cabecera.php');?>
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <!-- JOSE 25-10-2018 11:13 pm -->  
+  <!-- JOSE 25-10-2018 11:13 pm -->
   <!-- Bootstrap CSS File -->
   <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Libraries CSS Files -->
@@ -23,7 +23,7 @@
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
-  <!-- JOSE 25-10-2018 11:13 pm -->  
+  <!-- JOSE 25-10-2018 11:13 pm -->
 
 </head>
 
@@ -32,7 +32,7 @@
     ================================================== -->
   <!-- Hero -->
   <!--<section class="hero">-->
-  
+
 
     <!-- <div class="container text-center">
       <div class="row">
@@ -59,6 +59,7 @@
         <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
         <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-2" />
         <img src="img/slider/slider4.jpg" alt="" title="#slider-direction-3" />
+        <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-4" />
       </div>
 
       <!-- direction 1 -->
@@ -70,7 +71,7 @@
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
                     <a class="hero-brand" href="index.php" title="Home">
-                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
+                    <img src="img/images/logos.jpg" width="25%" height="15%" style="margin-top: 15%; margin-left: 36%;"></a>
 
                   <!--<h2 class="title1">The Best Business Information </h2> -->
                 </div>
@@ -100,7 +101,7 @@
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                     <a class="hero-brand" href="index.php" title="Home">
-                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
+                    <img src="img/images/logos.jpg" width="25%" height="15%" style="margin-top: 15%; margin-left: 36%;"></a>
 
                 <!-- <h2 class="title1">The Best business Information </h2> -->
                 </div>
@@ -119,42 +120,9 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
-
-      
-
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-three">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                    <a class="hero-brand" href="index.php" title="Home">
-                    <img src="img/images/logos.jpg" width="20%" height="12%" style="margin-top: 20%; margin-left: 40%;"></a>
-
-                <!-- <h2 class="title1">The Best business Information </h2> -->
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp " data-wow-duration="2s" data-wow-delay=".1s">
-               <!--<h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1> -->
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <br><br><br><br>
-                  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
-                  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- /Hero -->
 
 
@@ -173,6 +141,7 @@
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#features">Noticias</a></li>
           <li><a href="#portfolio">Productos</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
           <!--<li><a href="#team">Team</a></li>-->
           <!-- Menu Despegable-->
         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
@@ -314,7 +283,7 @@
     <!-- <h2>Welcome to a perfect theme</h2> -->
 
      <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png"> -->
-     <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">  
+     <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
 </div>
   <!-- /Parallax -->
 
@@ -450,18 +419,27 @@
   <section class="portfolio" id="portfolio">
     <div class="container text-center">
       <h2>Productos</h2>
-      <p align="center">Algunos de Nuestros Productos</p>
+      <p align="center">SECCIÓN EN CONSTRUCCIÓN</p>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="catalogo">
+    <div class="container text-center">
+      <h2>Catálogo</h2>
+      <p align="center">Haga Click en el Archivo que desee Visualizar.</p>
     </div>
 
     <div class="portfolio-grid">
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-1.jpg">
+            <a href="img/catalogos/cw3_400ul_automatic_checkweigher.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">CW3 400UL Automatic Checkweigher</h3>
                 </div>
               </div>
             </a>
@@ -470,11 +448,11 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-2.jpg">
+            <a href="img/catalogos/cw3_automatic_checkweigher_heavyweight.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">CW3 Checkweigher Heavyweight</h3>
                 </div>
               </div>
             </a>
@@ -483,11 +461,11 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-3.jpg">
+            <a href="img/catalogos/cw3_checkweigher.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">CW3 Checkweigher</h3>
                 </div>
               </div>
             </a>
@@ -496,11 +474,11 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-4.jpg">
+            <a href="img/catalogos/iq3_metal_detector_conveyors.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">IQ3+ Metal Detector Convveyor</h3>
                 </div>
               </div>
             </a>
@@ -511,11 +489,11 @@
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-5.jpg">
+            <a href="img/catalogos/linx_5900.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">Linx 5900</h3>
                 </div>
               </div>
             </a>
@@ -524,43 +502,97 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-6.jpg">
+            <a href="img/catalogos/linx_8900.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
               <div class="portfolio-over">
                 <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-7.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">The Dude Rockin</h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="img/porf-8.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">The Dude Rockin'</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.</p>
+                  <h3 class="card-title">Linx 8900</h3>
                 </div>
               </div>
             </a>
           </div>
         </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/linx_sl302.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">Linx SL302</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/loma.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">Loma Systems</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/loma_iq3_metal_detector.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">Loma IQ3 Metal Detector</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/x_ray_inspection_system.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">X RAY Inspection System</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/x5_space_saver.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">X5 Space Saver</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <a href="img/catalogos/x5_xray_inspection_system.pdf" target="_blank">
+              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">X5 XRAY Inspection System</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -627,7 +659,7 @@
     </div>
   </section>
 
-  
+
   <!-- /Team -->
 
   <!-- @component: footer -->
@@ -637,7 +669,9 @@
         <div class="col-md-12 text-center">
           <h2 class="section-title">Ubicación</h2>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <center>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </center>
       </div>
       <div class="row justify-content-center">
       </div>
@@ -720,10 +754,15 @@
             </p>
             <div class="credits">
               Desarrollado por: <a href="">Technology LR Inc Dev</a>
-              <a href="">&nbsp;&nbsp;<img src="img/images/ig.jpg" width="5%" height="5%"></a>
-              <a href=""><img src="img/images/facebook.jpg" width="5%" height="5%"></a>
-              <a href=""><img src="img/images/twitter.jpg" width="5%" height="5%"></a>
-              
+              <a href="https://www.instagram.com/liber.26/" target="_blank">&nbsp;&nbsp;
+                <img src="img/images/ig.jpg" width="5%" height="5%"></a>
+              <a href="https://www.instagram.com/liber.26/" target="_blank">
+                <img src="img/images/facebook.jpg" width="5%" height="5%"></a>
+              <a href="https://www.instagram.com/liber.26/" target="_blank">
+                <img src="img/images/linkedin.png" width="5%" height="5%"></a>
+
+              <!--<a href=""><img src="img/images/twitter.jpg" width="5%" height="5%"></a>-->
+
             </div>
           </div>
 
@@ -757,7 +796,7 @@
     </div>
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
-  
+
  <!-- JOSE 25-10-2018 11:13 pm -->
   <!-- JavaScript Libraries -->
   <script src="js/jquery/jquery.min.js"></script>
