@@ -617,7 +617,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio-grid .row > div .card img {
-  width: 100%;
+  width: 25%;
 }
 
 .portfolio-grid .row > div .card .portfolio-over {
@@ -648,7 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .portfolio-grid .row > div .card .portfolio-over .card-title {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .portfolio-grid .row > div .card .portfolio-over .card-text {
