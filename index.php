@@ -523,17 +523,6 @@
             </a>
           </div>
         </div>
-<<<<<<< HEAD
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="img/catalogos/loma.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">Loma Systems</h3>
-=======
-
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
             <a href="img/catalogos/loma.pdf" target="_blank">
@@ -582,7 +571,7 @@
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">X5 Space Saver</h3>
->>>>>>> cbe638074088bc1c584f352938db01889549c154
+
                 </div>
               </div>
             </a>
@@ -590,71 +579,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-<<<<<<< HEAD
-            <a href="img/catalogos/loma_iq3_metal_detector.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">Loma IQ3 Metal Detector</h3>
-=======
-            <a href="img/catalogos/x5_xray_inspection_system.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">X5 XRAY Inspection System</h3>
->>>>>>> cbe638074088bc1c584f352938db01889549c154
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-<<<<<<< HEAD
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="img/catalogos/x_ray_inspection_system.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">X RAY Inspection System</h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="img/catalogos/x5_space_saver.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">X5 Space Saver</h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="img/catalogos/x5_xray_inspection_system.pdf" target="_blank">
-              <img src="img/pdf_image.webp" width="20%" height="20%" style="margin-left: 32%;">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">X5 XRAY Inspection System</h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-=======
->>>>>>> cbe638074088bc1c584f352938db01889549c154
-      </div>
     </div>
   </section>
   <!-- /Portfolio -->
