@@ -23,7 +23,17 @@
 <!--<script src="../js/jquery.min.js"></script>-->
 <script src=" js/owl.carousel.js" type="text/javascript"></script>
 
+<script src="css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
 <script>
+  /*$(function(){
+    $('#myModal').modal(options);
+  })*/
+  /*$("#login").on("click",function(){
+    console.log("aqui");
+    $('#exampleModal').modal('show');
+  })*/
+
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:40,

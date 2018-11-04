@@ -161,18 +161,24 @@
           </li> -->
           <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#contact">Contáctanos</a></li>
+          <!-- Button to Open the Modal -->
+          <li><a data-toggle="modal" data-target="#myModal">Login</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
 
       <nav class="nav social-nav pull-right d-none d-lg-inline">
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#">
-        <i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#">
-        <i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-envelope"></i></a>
       </nav>
     </div>
   </header>
   <!-- #header -->
+
+
+
 
 
   <!-- nosotros -->
@@ -719,7 +725,9 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Envíar</button></div>
+              <div class="text-center">
+                <button type="submit">Envíar</button>
+              </div>
             </form>
           </div>
         </div>
@@ -728,6 +736,7 @@
     </div>
   </section>
 
+ 
   <footer class="site-footer">
     <div class="bottom">
       <div class="container">
@@ -782,6 +791,33 @@
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sistema Administrativo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row text-center">
+              Usuario
+              <div class="col-md-12"><input type="text" class="form-control" id="recipient-name"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
  <!-- JOSE 25-10-2018 11:13 pm -->
   <!-- JavaScript Libraries -->
   <script src="js/jquery/jquery.min.js"></script>
@@ -791,6 +827,8 @@
   <!-- archivo de las funciones principales del stylo -->
   <script src="js/main.js"></script>
   <!-- JOSE 25-10-2018 11:13 pm -->
+
+
 
   <!-- javascripts -->
   <?php include('views/pie.php');?>
