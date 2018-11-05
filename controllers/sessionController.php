@@ -2,7 +2,7 @@
 //fecha creacion:  04-11-2018
 require_once '../models/usuarioController.php';
 $db = new User();
-/*require_once '../models/conexion.php';
+session_start();
 //include '../funciones/funciones.php';
 
 /*date_default_timezone_set('America/Caracas');
@@ -31,7 +31,6 @@ if(!empty($_POST['usuario']) && !empty($_POST['password']))
             //paso 3 usuario existoso llenar variables de seccion
             if($usuario == $resulPaso2['usuario'] && $password == $resulPaso2['password'])
             {
-                session_start();
                 $id_usuario = $resulPaso2['id_usuario'];
                 $nombre_usuario = $resulPaso2['usuario'];
                 $contrasena = $resulPaso2['password'];
@@ -63,11 +62,23 @@ if(!empty($_POST['usuario']) && !empty($_POST['password']))
         echo json_encode(1); //Usuario no existe
     }
 }
-else
+
+if(isset($_GET['acceso']) && isset($_GET['id']) && $_GET['acceso'] == 'LiberWEB')
 {
-    echo "pa donde vas tu menor";
-}
+    $id = $_GET['id'];
+    /*$clase_usuario = new Usuarios();
+    $actualiza_actividad = $clase_usuario->cerrarSesion($id_usuario);*/
+
+    unset($_SESSION['id']);
+    unset($_SESSION['nombre_usuario']);
+    unset($_SESSION['contrasena']);
+    unset($_SESSION['actividad']);
+    unset($_SESSION['acceso']);
+    unset($_SESSION['estatus_logico']);
     
+    session_destroy();
+    echo json_encode(4); //Sesion cerrada
+}  
 
 
     /*$clase_usuario = new Usuarios();

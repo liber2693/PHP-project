@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$id = $_SESSION['id'];
+$nombre_user = $_SESSION['nombre_usuario'];
+$acceso = $_SESSION['acceso'];
+
+if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
+{
+?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -16,13 +25,20 @@
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<?php
-		session_start();
-	?>
-	<div>Bienvenido: <?php echo $_SESSION['nombre_usuario'];?> Acceso: <?php echo $_SESSION['acceso'];?></div>
+	
+<div>Bienvenido: <?php echo $nombre_user;?> Acceso: <?php echo $acceso;?></div>
+<div><i id="login_out" onclick="<?php echo "cerrar_seccion(".$id.",'".$acceso."')";?>" class="fa fa-user"></i></div>
 </body>
 	<!-- JavaScript Libraries -->
 	<script src="../../js/jquery/jquery.min.js"></script>
 	<script src="../../css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="loginOut.js" type="text/javascript"></script>
 
 </html>
+<?php
+}
+else
+{
+	header('Location: ../../');
+}
+?>
