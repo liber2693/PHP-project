@@ -1,19 +1,78 @@
 <?php
-require_once '../models/usuarios.php';
-require_once '../models/conexion.php';
+//fecha creacion:  04-11-2018
+require_once '../models/usuarioController.php';
+$db = new User();
+/*require_once '../models/conexion.php';
 //include '../funciones/funciones.php';
-date_default_timezone_set('America/Caracas');
-  $fecha=date("Y-m-d");
-  $hora=date("H:m:s");
 
-  if(!empty($_POST['usuario']) && !empty($_POST['password']))
-  {
+/*date_default_timezone_set('America/Caracas');
+$fecha=date("Y-m-d");
+$hora=date("H:m:s");*/
+
+if(!empty($_POST['usuario']) && !empty($_POST['password']))
+{
     $usuario=$_POST['usuario'];
-    $password=md5(base64_encode($_POST['password']));
-    $i = 0;
+    $password=$_POST['password'];
+    //print_r($_POST);
+    //$password=md5(base64_encode($_POST['password']));
+    
+    //Paso 1 verificar que existe el usuario
+    $resulPaso1 = $db->selectUserOne($usuario);
+     
+    if($resulPaso1 != 0)
+    {
+        $id_User = $resulPaso1['id_usuario'];
+        
+        //Paso 2 verificar contraseña de ese usuario para logear
+        $resulPaso2 = $db->selectUserPassword($id_User,$usuario,$password);
+        
+        if ($resulPaso2 != 0)
+        {
+            //paso 3 usuario existoso llenar variables de seccion
+            if($usuario == $resulPaso2['usuario'] && $password == $resulPaso2['password'])
+            {
+                session_start();
+                $id_usuario = $resulPaso2['id_usuario'];
+                $nombre_usuario = $resulPaso2['usuario'];
+                $contrasena = $resulPaso2['password'];
+                $nombre = $resulPaso2['nombre'];
+                $apellido = $resulPaso2['apellido'];
+                $rol = $resulPaso2['rol'];
+                $actividad = $resulPaso2['actividad'];
+                $estatus_logico = $resulPaso2['estatus_logico'];
 
-    $clase_usuario = new Usuarios();
-    $retorno = $clase_usuario->buscarUsuariosOne($usuario);
+                #Varibles de session_start
+                $_SESSION['id'] = $id_usuario;
+                $_SESSION['nombre_usuario'] = $nombre_usuario;
+                $_SESSION['contrasena'] = $contrasena;
+                $_SESSION['actividad'] = $actividad;
+                $_SESSION['estatus_logico'] = $estatus_logico;
+                $_SESSION['acceso'] = 'LiberWEB';
+
+                echo json_encode(3); //LOGEADO con exito
+
+            }
+        }
+        else
+        {
+            echo json_encode(2); //Contraseña Invalida
+        }
+    }
+    else
+    {
+        echo json_encode(1); //Usuario no existe
+    }
+}
+else
+{
+    echo "pa donde vas tu menor";
+}
+    
+
+
+    /*$clase_usuario = new Usuarios();
+    echo $retorno = $clase_usuario->buscarUsuariosOne($usuario);*/
+    /*
 
     if (count($retorno) != 0) {
       if ($usuario == $retorno['username'] && $password == $retorno['password']) {
@@ -52,7 +111,7 @@ date_default_timezone_set('America/Caracas');
     echo json_encode(4) ."tas vacio menor";
   }*/
 
-  if(isset($_GET['close'])){
+  /*if(isset($_GET['close'])){
   	session_start();
   	$id_usuario = $_SESSION['id_usuario'];
     $clase_usuario = new Usuarios();
@@ -67,7 +126,7 @@ date_default_timezone_set('America/Caracas');
       unset($_SESSION['estatus_logico']);
 
   		session_destroy();
-  		echo "<meta http-equiv='refresh' content='0;URL=../index.php'>";
-  }
+  		echo "<meta http-equiv='refresh' content='0;URL=../index.php'>";*/
+
 
 ?>

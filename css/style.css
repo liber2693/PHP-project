@@ -979,3 +979,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 30px;
   }
 }
+/** jose 04-11-2018 **/
+.oculto{
+  display: none;
+}

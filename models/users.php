@@ -1,7 +1,7 @@
 <?php
-//include 'conexion.php';
+include 'conexion.php';
 //error_reporting(0);
-    class Usuarios {
+class Usuarios {
 
       //Metodo para insertar un usuario en la BD
       public function insertarUsuario($username, $password, $nombre, $apellido, $status){
@@ -62,29 +62,42 @@
       }
 
 
-      //Metodo para buscar un unico usuario en la base de datos
-      public function buscarUsuariosOne($username){
+    //Metodo para buscar un unico usuario en la base de datos
+    public function buscarUsuariosOne($usuario){
 
-        $rows = null;
-        $modelo = new Conexion();
-        $conexion = $modelo->conectar();
-        $sql = "select * from usuarios where username=:username";
+       //$rows = null;
+        $conexion = new Conexion();
+        $bd = $conexion->conectar();
+        /*$sql = "SELECT * FROM usuarios WHERE usuario=:usuario";
 
-          $statement = $conexion->prepare($sql);
-          $consultar = array(
-                            ':username'=>$username
-                          );
+        $statement = $conexion->prepare($sql);
+        $consultar = array(':usuario'=>$usuario);
 
-          $statement->execute($consultar);
-          $rows = $statement->fetch(PDO::FETCH_ASSOC);
-          if ($rows){
+        $statement->execute($consultar);
+        $arr = $statement->fetchAll(PDO::FETCH_ASSOC);
+        print_r($arr);die();
+        if ($rows)
+        {
             $statement = null;
             return $rows;
-            }
-          else{
-            return null; //No existe el usuario
-          }
-      }
+        }
+        else
+        {
+            return 0; //No existe el usuario
+        }*/
+        $nombre = 1;
+
+        $sql = $bd->prepare('SELECT * FROM usuarios WHERE id_usuario = :Nombre');
+        $sql->execute(array('Nombre' => $nombre));
+        $resultado = $sql->fetchAll();
+
+        /*$sth = $bd->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+        $sth->execute(array(':usuario' => $usuario));
+        $red = $sth->fetchAll();*/
+        print_r($resultado);die();
+        //$sth->execute(array(':calories' => 175, ':colour' => 'yellow'));
+        //$yellow = $sth->fetchAll();
+    }
 
       /*Metodo para  editar la informacion de algun usuario en particular*/
       public function editarUsuario($id, $username){
@@ -123,7 +136,7 @@
           }
 
 
-      public function usuarioLogeado($id){
+    public function usuarioLogeado($id){
 
         $rows = null;
         $modelo = new Conexion();
@@ -137,7 +150,7 @@
 
           $statement->execute($consultar);
             return 'Sesion iniciada';
-        }
+    }
 
 
       public function cerrarSesion($id){

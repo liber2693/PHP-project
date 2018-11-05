@@ -1,5 +1,5 @@
 <!-- Required JavaScript Libraries -->
-<script src="js/jquery/jquery.min.js"></script>
+<!--<script src="js/jquery/jquery.min.js"></script>-->
 <!--<script src="js/jquery/jquery-migrate.min.js"></script>-->
 <script src="js/superfish/hoverIntent.js"></script>
 <script src="js/superfish/superfish.min.js"></script>
@@ -25,14 +25,11 @@
 
 <script src="css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
+<script src="js/usuario.js" type="text/javascript"></script>
+<script src="js/funciones.js" type="text/javascript"></script>
+
 <script>
-  /*$(function(){
-    $('#myModal').modal(options);
-  })*/
-  /*$("#login").on("click",function(){
-    console.log("aqui");
-    $('#exampleModal').modal('show');
-  })*/
+ 
 
 $('.owl-carousel').owlCarousel({
   loop:true,
