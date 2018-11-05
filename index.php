@@ -172,7 +172,6 @@
 		<a href="#"><i class="fa fa-facebook"></i></a> 
 		<a href="#"><i class="fa fa-linkedin"></i></a> 
 		<a href="#"><i class="fa fa-envelope"></i></a>
-		<a data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i></a>
 	  </nav>
 	</div>
   </header>
@@ -783,6 +782,9 @@
 			  <li class="list-inline-item">
 				<a href="#contact">Contáctanos</a>
 			  </li>
+				<li class="list-inline-item">
+			  		<a data-toggle="modal" data-target="#myModal" id="modal_user"><i class="fa fa-user"></i></a>
+			  	</li>
 			</ul>
 		  </div>
 

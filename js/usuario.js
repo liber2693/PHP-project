@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	$("#modal_user").click(function(e){
+		e.preventDefault();
+		$('#user').val("");
+		$('#password').val("");
+		$('#enviar').html('Login IN');
+	})
 
 	$('#enviar').click(function(e){
 		e.preventDefault();
@@ -8,38 +14,36 @@ $(document).ready(function() {
 		var password = $('#password').val();
 
 		//console.log(usuario+' '+password);
-		
-
 		if (usuario.length <= 0) 
 		{
     		$('#error').fadeIn();
 				setTimeout(function() {
-						$('#error').fadeOut(4000);
+					$('#error').fadeOut(4000);
 				},4000);
-    		event.preventDefault();
+    		e.preventDefault();
     		return false;
 
     	}
     	else
     	{
 			setTimeout(function() {
-					$('#error').fadeOut(4000);
+				$('#error').fadeOut(4000);
 			},4000);
     	}
     	if (password.length <= 0) 
     	{
     		$('#error1').fadeIn();
 				setTimeout(function() {
-						$('#error1').fadeOut(4000);
+					$('#error1').fadeOut(4000);
 				},4000);
-    		event.preventDefault();
+    		e.preventDefault();
     		return false;
     		
     	}
     	else
     	{
 			setTimeout(function() {
-					$('#error1').fadeOut(4000);
+				$('#error1').fadeOut(4000);
 			},4000);
     	}
 		//alert(password);
@@ -61,19 +65,19 @@ $(document).ready(function() {
 						setTimeout(function() {
 								$('#error2').fadeOut(4000);
 						},4000);
-	    			event.preventDefault();
+	    			e.preventDefault();
 	    			$('#enviar').html('Login IN');
 	    		}
 	           	if (data == 2) {
 	           		$("#error3").fadeIn();setTimeout(function() {
 										$('#error3').fadeOut(4000);
 								},4000);
-	    			event.preventDefault();
+	    			e.preventDefault();
 	    			$('#enviar').html('Login IN');
 	           	}
 	           	if (data == 3) {
-	           		//var url = "../index.php";
-					//$(location).attr('href',url);
+	           		var url = "views/admin/inicAmin.php";
+					$(location).attr('href',url);
 					console.log('login con EXITO');
 	           	}
 	    	}

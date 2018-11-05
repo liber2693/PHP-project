@@ -6,7 +6,7 @@ class Database{
 	public function connect(){
 		
 		$usuario = 'root';
-        $contrasena = '123456';
+        $contrasena = '';
         $host = 'localhost';
         $db = 'pagina_web_bell';
 		
