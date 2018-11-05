@@ -58,6 +58,26 @@ class User
 
 		return $result;
 	}
+
+	public function updateactivity($id_User,$usuario,$password){
+
+		$conexion = new Database();
+
+		$c = $conexion->connect();
+
+		$sth = $c->prepare('SELECT * FROM usuarios WHERE id_usuario = :id  AND usuario = :usuario 
+						    AND password = :password');
+		
+		$sth->execute(array('id' => $id_User,
+							'usuario' => $usuario,
+							'password' => $password));
+		
+		$result = $sth->fetch(PDO::FETCH_ASSOC);
+		
+		$conexion->disconnec();
+
+		return $result;
+	}
 	
 	/*public function execute($sql){
 		
