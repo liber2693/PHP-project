@@ -5,9 +5,9 @@ $db = new User();
 session_start();
 //include '../funciones/funciones.php';
 
-/*date_default_timezone_set('America/Caracas');
+date_default_timezone_set('America/Caracas');
 $fecha=date("Y-m-d");
-$hora=date("H:m:s");*/
+$hora=date("H:m:s");
 
 if(!empty($_POST['usuario']) && !empty($_POST['password']))
 {
@@ -40,6 +40,9 @@ if(!empty($_POST['usuario']) && !empty($_POST['password']))
                 $actividad = $resulPaso2['actividad'];
                 $estatus_logico = $resulPaso2['estatus_logico'];
 
+                //actualizar conexion
+                $actividad = $db->updateactivity($id_usuario,$fecha,$hora,1);
+
                 #Varibles de session_start
                 $_SESSION['id'] = $id_usuario;
                 $_SESSION['nombre_usuario'] = $nombre_usuario;
@@ -66,8 +69,8 @@ if(!empty($_POST['usuario']) && !empty($_POST['password']))
 if(isset($_GET['acceso']) && isset($_GET['id']) && $_GET['acceso'] == 'LiberWEB')
 {
     $id = $_GET['id'];
-    /*$clase_usuario = new Usuarios();
-    $actualiza_actividad = $clase_usuario->cerrarSesion($id_usuario);*/
+    //actualizar conexion
+    //$actividad = $db->updateactivity($id_usuario,'','',1);
 
     unset($_SESSION['id']);
     unset($_SESSION['nombre_usuario']);

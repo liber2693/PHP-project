@@ -59,37 +59,34 @@ class User
 		return $result;
 	}
 
-	public function updateactivity($id_User,$fecha,$hora,$estatus){
+	public function updateactivity($id_User,$fecha,$hora,$activida){
 
 		$conexion = new Database();
 
 		$c = $conexion->connect();
 
-		if($estatus == 1)
+		if($activida == 1)
 		{
-			$sth = $c->prepare('UPDATE usuarios SET 
-									actividad = :actividad,
-									fecha_ultima_conexion = :fecha,
-									hora_ultima_conexion = :hora
-								WHERE  id_usuario = :id');
+			$sth = $c->prepare("UPDATE usuarios SET 
+									actividad = '1',
+									hora_ultima_conexion = '12:22:00',
+									fecha_ultima_conexion = '2018-11-11'
+								WHERE  id_usuario = :id_User");
+			
+			$sth->execute(array('id_User' => $id_User));	
 		}
-		
 		else
 		{
 			$sth = $c->prepare('UPDATE usuarios SET 
-									actividad = :actividad,
-									fecha_ultima_conexion = :fecha,
-									hora_ultima_conexion = :hora
-								WHERE  id_usuario = :id');	
+									actividad = :actividad
+								WHERE  id_usuario = :id_User');	
+
+			$sth->execute(array('id_User' => $id_User,
+							'activida' => $activida));
 		}
+
 		
-		
-		$sth->execute(array('id' => $id_User,
-							'activida' => $fecha,
-							'fecha' => $password,
-							'hora' => $hora));
-		
-		$result = $sth->fetch(PDO::FETCH_ASSOC);
+		print_r($sth);die();
 		
 		$conexion->disconnec();
 
