@@ -65,19 +65,19 @@ class User
 
 		$c = $conexion->connect();
 
-		/*if($activida == 1)
-		{*/
-			/*$sth = $c->prepare("UPDATE usuarios SET 
-									actividad = $activida,
+		if($actividad == 1)
+		{
+			$sth = $c->prepare("UPDATE usuarios SET 
+									actividad = $actividad,
 									hora_ultima_conexion = '$hora',
 									fecha_ultima_conexion = '$fecha'
-								WHERE  id_usuario = :id_User");
-			$update = array(':id_User' => $id_User,':activida' => $activida);
-			$sth->execute();	*/
+								WHERE  id_usuario = $id_User");
+			//$update = array(':id_User' => $id_User,':activida' => $activida);
+			$sth->execute();
 
 			//prepare connection
 			
-			$sql = "UPDATE usuarios SET actividad = :actividad, 
+			/*$sql = "UPDATE usuarios SET actividad = :actividad, 
 										hora_ultima_conexion = :hora,
 										fecha_ultima_conexion = :fecha
 			 						WHERE id = :id_usuario";
@@ -91,15 +91,15 @@ class User
 			$stmt->bindParam(':id_usuario', $id_User,  PDO::PARAM_INT);
 			
 			//execute it
-			$stmt->execute();
-		/*}
+			$stmt->execute();*/
+		}
 		else
-		{*/
-			/*$sql = "UPDATE usuarios SET actividad = $actividad WHERE  id_usuario = $id_User";
+		{
+			$sql = "UPDATE usuarios SET actividad = $actividad WHERE  id_usuario = $id_User";
 			$sth = $c->prepare($sql);	
 			//$update = array(':id_User' => $id_User,':activida' => $activida);
-			$sth->execute($update);*/
-		///}
+			$sth->execute();
+		}
 
 		$conexion->disconnec();
 

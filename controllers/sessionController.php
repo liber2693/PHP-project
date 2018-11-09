@@ -70,7 +70,7 @@ if(isset($_GET['acceso']) && isset($_GET['id']) && $_GET['acceso'] == 'LiberWEB'
 {
     $id = $_GET['id'];
     //actualizar conexion
-    //$actividad = $db->updateactivity($id,'','',0);
+    $db->updateactivity($id,'','',0);
 
     unset($_SESSION['id']);
     unset($_SESSION['nombre_usuario']);

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#modal_user").click(function(e){
 		e.preventDefault();
-		$('#user').val("");
+		$('#user').focus(e).val("");
 		$('#password').val("");
 		$('#enviar').html('Login IN');
 	})
