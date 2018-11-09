@@ -59,38 +59,51 @@ class User
 		return $result;
 	}
 
-	public function updateactivity($id_User,$fecha,$hora,$activida){
+	public function updateactivity($id_User,$fecha,$hora,$actividad){
 
 		$conexion = new Database();
 
 		$c = $conexion->connect();
 
-		if($activida == 1)
-		{
-			$sth = $c->prepare("UPDATE usuarios SET 
-									actividad = '1',
-									hora_ultima_conexion = '12:22:00',
-									fecha_ultima_conexion = '2018-11-11'
+		/*if($activida == 1)
+		{*/
+			/*$sth = $c->prepare("UPDATE usuarios SET 
+									actividad = $activida,
+									hora_ultima_conexion = '$hora',
+									fecha_ultima_conexion = '$fecha'
 								WHERE  id_usuario = :id_User");
+			$update = array(':id_User' => $id_User,':activida' => $activida);
+			$sth->execute();	*/
+
+			//prepare connection
 			
-			$sth->execute(array('id_User' => $id_User));	
-		}
+			$sql = "UPDATE usuarios SET actividad = :actividad, 
+										hora_ultima_conexion = :hora,
+										fecha_ultima_conexion = :fecha
+			 						WHERE id = :id_usuario";
+
+			$stmt = $c->prepare($sql);
+
+			//bind parameters
+			$stmt->bindParam(':actividad', $actividad, PDO::PARAM_INT);
+			$stmt->bindParam(':hora', $hora,  PDO::PARAM_STR);
+			$stmt->bindParam(':fecha', $fecha,  PDO::PARAM_STR);
+			$stmt->bindParam(':id_usuario', $id_User,  PDO::PARAM_INT);
+			
+			//execute it
+			$stmt->execute();
+		/*}
 		else
-		{
-			$sth = $c->prepare('UPDATE usuarios SET 
-									actividad = :actividad
-								WHERE  id_usuario = :id_User');	
+		{*/
+			/*$sql = "UPDATE usuarios SET actividad = $actividad WHERE  id_usuario = $id_User";
+			$sth = $c->prepare($sql);	
+			//$update = array(':id_User' => $id_User,':activida' => $activida);
+			$sth->execute($update);*/
+		///}
 
-			$sth->execute(array('id_User' => $id_User,
-							'activida' => $activida));
-		}
-
-		
-		print_r($sth);die();
-		
 		$conexion->disconnec();
 
-		return $result;
+		
 	}
 	
 	/*public function execute($sql){

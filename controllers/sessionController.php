@@ -41,7 +41,7 @@ if(!empty($_POST['usuario']) && !empty($_POST['password']))
                 $estatus_logico = $resulPaso2['estatus_logico'];
 
                 //actualizar conexion
-                $actividad = $db->updateactivity($id_usuario,$fecha,$hora,1);
+                $db->updateactivity($id_usuario,$fecha,$hora,1);
 
                 #Varibles de session_start
                 $_SESSION['id'] = $id_usuario;
@@ -70,7 +70,7 @@ if(isset($_GET['acceso']) && isset($_GET['id']) && $_GET['acceso'] == 'LiberWEB'
 {
     $id = $_GET['id'];
     //actualizar conexion
-    //$actividad = $db->updateactivity($id_usuario,'','',1);
+    //$actividad = $db->updateactivity($id,'','',0);
 
     unset($_SESSION['id']);
     unset($_SESSION['nombre_usuario']);
