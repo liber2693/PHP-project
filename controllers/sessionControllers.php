@@ -1,6 +1,6 @@
 <?php
 //fecha creacion:  04-11-2018
-require_once '../models/usuarioController.php';
+require_once '../models/userModels.php';
 $db = new User();
 session_start();
 //include '../funciones/funciones.php';

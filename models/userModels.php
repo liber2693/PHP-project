@@ -1,27 +1,10 @@
 <?php
 require_once 'config.php';
 
-/**
- * 
- */
+/** clase de los usuarios  */
 class User 
 {
 
-	/*public function selectOne($sql){
-		
-		$this->connect();
-		
-		$sth = $this->pdo->prepare($sql);
-		
-		$sth->execute();
-		
-		$res = $sth->fetch();
-		
-		$this->disconnec();
-		
-		return $res;
-	}*/
-	
 	public function selectUserOne($usuario){
 		
 		$conexion = new Database();
@@ -101,23 +84,9 @@ class User
 			$sth->execute();
 		}
 
-		$conexion->disconnec();
-
-		
+		$conexion->disconnec();	
 	}
-	
-	/*public function execute($sql){
-		
-		$this->connect();
-		
-		$sth = $this->pdo->prepare($sql);
-		
-		$res = $sth->execute();
-		
-		$this->disconnec();
-		
-		return $res;
-	}*/
+
 }
 
 ?>

@@ -25,13 +25,16 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
 	<!--de la hoja -->
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<!-- fas fa -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+	
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 			<a class="navbar-brand" href="#"><img src="../../img/favicon.png"></a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
+		    	<span class=""><i class="fas fa-align-justify" style="color: #fff;"></i></span>
 		 	</button>
 			
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,7 +43,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 			        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 			      	</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="createAdmin.php">Crear</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,7 +68,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	<main role="main" class="container">
       	<h1 class="mt-5">Bienvenido:</h1>
       	<p class="lead">Nombre del usuario: <?php echo $nombre_user;?></p>
-      	<p>Acceso: <?php echo $acceso;?></p>
+      	<p>Acceso: <?php echo $acceso;?> <i class="fab fa-500px"></i></p>
     </main>
     <!-- Cuerpo -->
 	

@@ -4,7 +4,7 @@
 //funcion para cerrar seccion
 function cerrar_seccion(id_user,acceso){
 	console.log(id_user+' '+acceso);
-	var url = "../../controllers/sessionController.php";
+	var url = "../../controllers/sessionControllers.php";
 
 	$.ajax({
     	type: 'GET',

@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$('#enviar').click(function(e){
 		e.preventDefault();
-		var url = "controllers/sessionController.php";
+		var url = "controllers/sessionControllers.php";
 		var usuario = $('#user').val();
 		//var password = btoa($('#password').val());
 		var password = $('#password').val();
