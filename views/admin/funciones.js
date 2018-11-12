@@ -24,12 +24,6 @@ function alerta_mensaje(tipo, texto, target){
         $temp.fadeOut(4000);
     },4000);
 
-    /*$temp.on("show",function(){
-        $(this).fadeIn().delay(3000).fadeOut("slow", function(){
-            this.remove();
-        }).delay(3000);
-    });*/
-
     target.html($temp);
 
     return $temp;

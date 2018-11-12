@@ -91,15 +91,17 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                     		error en el div has-error 
                                     		al lebel control-label
                                     	-->
-                                        <div class="form-group has-error">
-                                            <label class="control-label">
+                                        <div class="form-group" id="error_div_titulo">
+                                            <label id="error_label_titulo_1">
                                             	Titulo
                                             </label>
                                             <input class="form-control" type="text" id="titulo" name="titulo">
                                             <p class="help-block">Titulo del Evento</p>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Contenido del evento</label>
+                                        <div class="form-group" id="error_div_contenido">
+                                            <label id="error_label_contenido">
+                                            	Contenido del evento
+                                            </label>
                                             <textarea id="contenido" name="contenido" class="form-control" rows="10"></textarea>
                                         </div>
                                         <div class="form-group">
