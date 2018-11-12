@@ -77,7 +77,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                 
             </div>
 			<div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                            Completas los campos para crear un evento
@@ -104,12 +104,23 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                             </label>
                                             <textarea id="contenido" name="contenido" class="form-control" rows="10"></textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Imagen del evento</label>
-                                            <input type="file" name="imagen" id="imagen"  accept=".jpg, .jpeg, .png, .pdf">
+                                        <div class="form-group" id="error_div_imagen">
+                                            <label id="error_label_imagen">
+                                            	Imagen del evento
+                                            </label>
+                                            <br>
+                                            <input type="file" name="imagen" id="imagen"  accept="image/png, image/jpeg, image/jpg">
+
+											<img src="" alt="Weppage_bell" id="imagen_previa" style="width:50%;margin:auto;">
+					                        <br>
+					                        <input type="file" class="seccion_producto" name="picture_pr" id="picture_pr" />
+					                        <label  for="picture_pr" class="btn btn-info" id="estilo">
+					                            Cargar Imagen <span id="filename" class="seccion_producto"></span>
+					                        </label>
+
                                         </div>
                                         <div class="text-right">
-                                        	<button type="button" title="Guardar Evento" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-check 2x"></i>
+                                        	<button type="button" title="Guardar Evento" id="registrar" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-check 2x"></i>
                            					 </button>
 										</div>
                                     </form>

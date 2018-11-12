@@ -35,19 +35,16 @@ function crear_evento(){
     	alerta_mensaje("danger", "Ingresar contenido", $("#crear_error_alert")).show();
     	return false;
     }
+    
+    var vali_imagen = $("#imagen").val();
 
-    
-
- 
- 
-    
-    
-    /*if (imagen == "")
+    if (vali_imagen == "")
     {
-        //$("#estilo").addClass("incorrecto");
-        alerta_mensaje("danger", "¡Por Favor! Debe elegir una imagen", $("#crear_error_alert")).show();
+        $("#error_div_imagen").addClass("has-error");
+        $("#error_label_imagen").addClass("control-label");
+        alerta_mensaje("danger", "Seleccionar una imagen", $("#crear_error_alert")).show();
         return false;
-    }*/
+    }
 
     
     var settings = {
@@ -61,21 +58,48 @@ function crear_evento(){
         "cache": false,
         "contentType": false,
         "processData": false,
-
     };
-    console.log(settings);
+    
+    //console.log(settings);
 
     $.ajax(settings)
-    .done(function() {
-    	console.log("success");
+    .done(function(data, textStatus, jqXHR) {
+    	console.log(data);
+        
     })
-    .fail(function() {
-    	console.log("error");
-    })
-    .always(function() {
-    	console.log("complete");
+    .fail(function(jqXHR, textStatus, errorThrown) {
+    	alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
     });
     hideLoader();
-    
-
 }
+
+//validar imagen
+/** vista previa, mostar la imagen antes de subir al servidor **/
+function imagen_previa(){
+
+    var file = document.getElementById('imagen').imagen.files[0];
+    var preview = Inventario.Producto.product_image_preview;
+
+    //console.log(file);
+
+    var reader = new FileReader();
+
+    reader.onloadend = function (){
+
+        if(!Validator.imageType.test(file.type) )
+        {
+            showAlert("danger", "¡Por Favor! la imagen debe ser de tipo .jpg / .png / .jpeg", Inventario.Producto.mensaje_producto_imagen).show();
+            preview.attr("src",product_image_folder +'no_image.jpg');
+        }else{
+            preview.attr("src",reader.result);
+            
+        }
+    }
+
+    if(file){
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = "";
+    }
+
+}*/
