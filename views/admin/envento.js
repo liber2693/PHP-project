@@ -2,6 +2,11 @@ $(function(){
 
 	console.log("cargando javascritp con exito");
 
+    $("#imagen").on('change', function(){ 
+        //cargar_imagen_producto();
+        imagen_previa();
+    });
+
 });
 
 function crear_evento(){
@@ -78,9 +83,10 @@ function crear_evento(){
 function imagen_previa(){
 
     var file = document.getElementById('imagen').imagen.files[0];
-    var preview = Inventario.Producto.product_image_preview;
+    var preview = $("#imagen_previa");
 
-    //console.log(file);
+    console.log(file);
+    return false;
 
     var reader = new FileReader();
 
