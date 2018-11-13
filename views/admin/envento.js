@@ -102,4 +102,4 @@ function imagen_previa(){
         preview.src = "";
     }
 
-}*/
+}
