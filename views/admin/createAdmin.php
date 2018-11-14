@@ -109,14 +109,14 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                             	Imagen del evento
                                             </label>
                                             <br>
-                                            <!--<input type="file" name="imagen" id="imagen"  accept="image/png, image/jpeg, image/jpg">-->
+                                            <input type="file" class="oculto" name="imagen" id="imagen"  accept="image/png, image/jpeg, image/jpg">
 
-											<img src="" alt="Weppage_bell" id="imagen_previa" style="width:50%;margin:auto;display: none">
+											<img src="../../img/team-1.jpg" alt="Weppage_bell" id="imagen_previa" style="width:50%;margin:auto;">
 					                        <br>
-					                        <input type="file" class="seccion_producto" name="imagen" id="imagen" />
-					                        <label  for="imagen" class="btn btn-info" id="estilo">
+					                        <label  for="imagen" class="btn btn-primary btn-lg btn-block" id="estilo">
 					                            Cargar Imagen <span id="filename" class="seccion_producto"></span>
 					                        </label>
+
 
                                         </div>
                                         <div class="text-right">
