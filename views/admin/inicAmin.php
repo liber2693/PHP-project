@@ -11,58 +11,12 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Admin_MaschinenWerk 2000</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-  	<meta content="" name="keywords">
-  	<meta content="" name="description">
-	<!-- Favicon -->
-  	<link rel="shortcut icon" href="../../img/favicon.png">
-	<!-- Bootstrap CSS File -->
-	<link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<!-- Libraries CSS Files -->
-	<link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<!-- Main Stylesheet File -->
-	<link href="../../css/style.css" rel="stylesheet" type="text/css">
-	<!--de la hoja -->
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<!-- fas fa -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<?php include 'encabezado.php'; ?>
 </head>
 <body>
 	
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-			<a class="navbar-brand" href="#"><img src="../../img/favicon.png"></a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class=""><i class="fas fa-align-justify" style="color: #fff;"></i></span>
-		 	</button>
-			
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			    	<li class="nav-item active">
-			        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			      	</li>
-					<li class="nav-item">
-						<a class="nav-link" href="createAdmin.php">Crear</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-			    </ul>
-				<i id="login_out" onclick="<?php echo "cerrar_seccion(".$id.",'".$acceso."')";?>" class="fa fa-user"></i>
-		  	</div>
-		</nav>
+		<?php include 'menu.php';?>
 	</header>
 	<!-- Cuerpo -->
 	<main role="main" class="container">
@@ -70,6 +24,67 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
       	<p class="lead">Nombre del usuario: <?php echo $nombre_user;?></p>
       	<p>Acceso: <?php echo $acceso;?> <i class="fab fa-500px"></i></p>
     </main>
+
+    <div id="page-wrapper"> 
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Eventos</h2>
+            </div>
+            
+        </div>
+		<div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                       Lista de eventos registrados
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                            	<div id="lista_error_alert"></div>
+                                <!-- lista -->
+			                    <section class="panel">
+                      <div class="table-responsive">
+                        <table class="table display" id="table_id1">
+                          <thead>
+                            <tr>
+                              <th><i class="fa fa-archive"></i> Type</th>
+                              <th><i class="fa fa-list"></i> Docket #</th>
+                              <th><i class="icon_profile"></i> Shipper</th>
+                              <th><i class="icon_calendar"></i> Date</th>
+                              <th><i class="fa fa-location-arrow"></i> Origin</th>
+                              <th><i class="fa fa-location-arrow"></i> Destination</th>
+                              <th width="4%"><i class="fa fa-check"></i>Ready Invoices</th>
+                              <th><i class="icon_cogs"></i> Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                               	pro
+                              </td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>
+                                4
+                              </td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
     <!-- Cuerpo -->
 	
 	<footer class="footer bg-dark">
@@ -83,6 +98,15 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	<script src="../../js/jquery/jquery.min.js"></script>
 	<script src="../../css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="loginOut.js" type="text/javascript"></script>
+	<!-- tabla -->
+	<script src="jquery.dataTables.min.js" type="text/javascript" charset="utf8"></script>
+	<script src="js/parametros.js" type="text/javascript" charset="utf8"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function () {
+	      	$('#table_id1').DataTable();
+	    });
+	</script>
 
 </html>
 <?php

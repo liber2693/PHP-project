@@ -25,7 +25,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	<!-- Main Stylesheet File -->
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
 	<!--de la hoja -->
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" style.css" rel="stylesheet" type="text/css">
 	<!-- fas fa -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
