@@ -14,6 +14,8 @@ $(function(){
         crear_evento();
     });
 
+    
+
 
 });
 var url = '../../controllers/eventoControllers.php';
@@ -53,6 +55,8 @@ function crear_evento(){
         return false;
     }
     var settings = {
+        "async": true,
+        "crossDomain": true,
     	"type": "POST",
         "dataType": "json",
         "url": url,
@@ -135,4 +139,40 @@ function limpiar(){
     $("#imagen_previa").attr("src","../../img/team-1.jpg");
     $("#imagen").val("");
     $("#filename").empty();
+}
+
+/** Listar los eventos **/
+function listar_evento(){
+    console.log("lista");
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "GET",
+        "dataType": "json",
+        "url": url,
+        "cache": false,
+    }
+
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
+        
+        data.forEach( function(data, indice, array){
+            console.log(data);
+            var tabla = '';
+            tabla += '<tr>';
+            tabla += '<td>'+data.titulo+'</td>';
+            tabla += '<td>'+data.titulo+'</td>';
+            tabla += '<td>'+data.titulo+'</td>';
+            tabla += '<td>'+data.titulo+'</td>';
+            tabla += '<td></td>';
+            tabla += '</tr>';
+            $("#registros").append(tabla);
+            
+        })
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("ERROR");
+    });
 }

@@ -43,7 +43,8 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                     <!-- lista -->
     			                    <section class="panel">
                                         <div class="table-responsive">
-                                            <table class="table display" id="table_id1">
+                                            <table id="example" class="display" width="100%"></table>
+                                            <!--<table class="table display" id="table_id1">
                                                 <thead>
                                                     <tr>
                                                         <th><i class="fa fa-archive"></i> #</th>
@@ -53,10 +54,11 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                                         <th><i class="fa fa-location-arrow"></i> Accion</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody id="registros">-->
                                                 <!-- Registros -->
-                                                </tbody>
-                                            </table>
+
+                                                <!--</tbody>
+                                            </table>-->
                                         </div>
                                     </section>
                     			</div>

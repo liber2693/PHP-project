@@ -81,4 +81,22 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
  		}
 	}
 }
+/* lista de eventos */
+$lista = array(
+		["id" => 1, "titulo" => "titulo 1", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 2, "titulo" => "titulo 2", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 3, "titulo" => "titulo 3", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 4, "titulo" => "titulo 4", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 5, "titulo" => "titulo 5", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 6, "titulo" => "titulo 6", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 7, "titulo" => "titulo 7", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 8, "titulo" => "titulo 8", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 9, "titulo" => "titulo 9", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 10, "titulo" => "titulo 10", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
+		["id" => 11, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1]
+	);
+
+header('Content-type: application/json; charset=utf-8');
+echo json_encode($lista);
+exit();
 ?>

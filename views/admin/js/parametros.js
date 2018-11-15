@@ -32,7 +32,7 @@ $.fn.dataTable.defaults.oLanguage = {
 	"sSearch":"Buscar:",
 	"sSearchPlaceholder":"",
 	"sUrl":"",
-	"sZeroRecords":"No hay eventos que coincidad",
+	"sZeroRecords":"No hay eventos que coincida",
 	"_hungarianMap":{
 		"aria":"oAria",
 		"paginate":"oPaginate",
