@@ -14,7 +14,7 @@ $(function(){
         crear_evento();
     });
 
-    
+    listar_evento();
 
 
 });
@@ -156,16 +156,23 @@ function listar_evento(){
 
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
+        console.log(data);
+        return false;
+        paginator = new Paginator();
+        //console.log(paginator)
+        
         
         data.forEach( function(data, indice, array){
-            console.log(data);
             var tabla = '';
             tabla += '<tr>';
+            tabla += '<td>'+data.id+'</td>';
             tabla += '<td>'+data.titulo+'</td>';
             tabla += '<td>'+data.titulo+'</td>';
-            tabla += '<td>'+data.titulo+'</td>';
-            tabla += '<td>'+data.titulo+'</td>';
-            tabla += '<td></td>';
+            tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+'></td>';
+            tabla += '<td>';
+            tabla += '<button type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+            tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
+            tabla += '</td>';
             tabla += '</tr>';
             $("#registros").append(tabla);
             

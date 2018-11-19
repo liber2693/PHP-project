@@ -41,24 +41,43 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                 <div class="col-lg-12">
                                 	<div id="lista_error_alert"></div>
                                     <!-- lista -->
-    			                    <section class="panel">
+                                    <section class="panel">
+                                        <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="buscar evento">
+                                            <button class=""><i class="fas fa-search"></i></button>
+                                        </div>
                                         <div class="table-responsive">
-                                            <table id="example" class="display" width="100%"></table>
-                                            <!--<table class="table display" id="table_id1">
+                                            <!--<table id="example" class="display" width="100%"></table>-->
+                                            <table class="table display">
                                                 <thead>
                                                     <tr>
                                                         <th><i class="fa fa-archive"></i> #</th>
-                                                        <th><i class="fa fa-list"></i> TíTulo</th>
+                                                        <th><i class="fa fa-list"></i> Título</th>
                                                         <th><i class="icon_profile"></i> Fecha Creación</th>
                                                         <th><i class="icon_calendar"></i> Estatus</th>
                                                         <th><i class="fa fa-location-arrow"></i> Accion</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody id="registros">-->
+                                                <tbody id="registros">
                                                 <!-- Registros -->
 
-                                                <!--</tbody>
-                                            </table>-->
+                                                </tbody>
+                                            </table>
+                                            <div class="text-center">
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination justify-content-center">
+                                                        <li class="page-item disabled">
+                                                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                          <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
                                         </div>
                                     </section>
                     			</div>
