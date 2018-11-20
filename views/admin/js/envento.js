@@ -142,8 +142,9 @@ function limpiar(){
 }
 
 /** Listar los eventos **/
-function listar_evento(){
-    console.log("lista");
+function listar_evento(page){
+
+    page = page || 1;
 
     var settings = {
         "async": true,
@@ -152,19 +153,24 @@ function listar_evento(){
         "dataType": "json",
         "url": url,
         "cache": false,
+        "data": {
+            "page": page
+        }
     }
+
+    $("#registros").find("tr").remove();
+    $("#paginado_lista").find("button").remove();
 
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
+       
         console.log(data);
-        return false;
-        paginator = new Paginator();
-        //console.log(paginator)
+
+        paginator = new Paginator(data.total, page);
         
-        
-        data.forEach( function(data, indice, array){
+        data.lista.forEach( function(data, indice, array){
             var tabla = '';
-            tabla += '<tr>';
+            tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
             tabla += '<td>'+data.id+'</td>';
             tabla += '<td>'+data.titulo+'</td>';
             tabla += '<td>'+data.titulo+'</td>';
@@ -176,10 +182,45 @@ function listar_evento(){
             tabla += '</tr>';
             $("#registros").append(tabla);
             
-        })
+        });
 
+        if(paginator.getPages() > 1)
+        {
+            var pag = '';
+
+        
+
+            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento(1);"><i class="fas fa-angle-double-left "></i></button>&nbsp;';
+                    
+            if(paginator.hasPrev())
+            {
+                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');"><i class="fas fa-angle-left "></i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
+            }
+            
+            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
+        
+            if(paginator.hasNext())
+            {
+                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');">'+ paginator.getNext() +'</button>&nbsp;';
+                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');"><i class="fas fa-angle-right "></i></button>&nbsp;';
+            }
+            
+            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPages() +');"><i class="fas fa-angle-double-right "></i></button>&nbsp;';
+
+            $("#paginado_lista").append(pag);   
+        }
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
         console.log("ERROR");
     });
+}
+
+function cambia_fondo(fila,status){
+    if(status == 1){
+        fila.style.backgroundColor = "#5f5f5f29";
+    }
+    else{
+        fila.style.backgroundColor = "#ffffff";   
+    }
 }

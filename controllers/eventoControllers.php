@@ -81,8 +81,11 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
  		}
 	}
 }
-/* lista de eventos */
-$lista = array(
+
+if(isset($_GET['page']))
+{
+	$currentPage = $_GET['page'] - 1;
+	$lista = array(
 		["id" => 1, "titulo" => "titulo 1", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
 		["id" => 2, "titulo" => "titulo 2", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
 		["id" => 3, "titulo" => "titulo 3", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
@@ -111,14 +114,17 @@ $lista = array(
 		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1]
 	);
 	
-$total = count($lista);
+	$total = count($lista);
 
-		$data = [ 
-			"lista" => $lista,
-		 	"total" => $total 
-		];
+	$data = array_slice($lista, $currentPage * 10, 10);
 
-header('Content-type: application/json; charset=utf-8');
-echo json_encode($data);
-exit();
+	$data = [ 
+		"lista" => $data,
+	 	"total" => $total 
+	];
+
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	exit();
+}	
 ?>

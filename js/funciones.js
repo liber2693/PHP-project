@@ -41,8 +41,7 @@ function Paginator(total, page, limit){
     limit = limit || 10;
 
     var pages = Math.ceil(total / limit);
-    console.log(pages);
-
+    
     /**total de paginas */
     this.getPages = function(){
         return pages;
