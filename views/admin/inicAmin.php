@@ -41,34 +41,32 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                 <div class="col-lg-12">
                                 	<div id="lista_error_alert"></div>
                                     <!-- lista -->
-    			                    <section class="panel">
+                                    <section class="panel">
+                                        <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="buscar evento">
+                                            <button class=""><i class="fas fa-search"></i></button>
+                                        </div>
                                         <div class="table-responsive">
-                                            <table id="example" class="display" width="100%">
+
+                                            <table class="table display">
+
                                                 <thead>
                                                     <tr>
                                                         <th><i class="fa fa-archive"></i> #</th>
-                                                        <th><i class="fa fa-list"></i> TíTulo</th>
+                                                        <th><i class="fa fa-list"></i> Título</th>
                                                         <th><i class="icon_profile"></i> Fecha Creación</th>
                                                         <th><i class="icon_calendar"></i> Estatus</th>
                                                         <th><i class="fa fa-location-arrow"></i> Accion</th>
                                                     </tr>
                                                 </thead>
-                                            </table>
-                                            <!--<table class="table display" id="table_id1">
-                                                <thead>
-                                                    <tr>
-                                                        <th><i class="fa fa-archive"></i> #</th>
-                                                        <th><i class="fa fa-list"></i> TíTulo</th>
-                                                        <th><i class="icon_profile"></i> Fecha Creación</th>
-                                                        <th><i class="icon_calendar"></i> Estatus</th>
-                                                        <th><i class="fa fa-location-arrow"></i> Accion</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="registros">-->
+                                                <tbody id="registros">
                                                 <!-- Registros -->
 
-                                                <!--</tbody>
-                                            </table>-->
+                                                </tbody>
+                                            </table>
+                                            <div class="text-center" id="paginado_lista">
+                                                <!-- paginado -->
+                                            </div>
                                         </div>
                                     </section>
                     			</div>
