@@ -43,7 +43,17 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                     <!-- lista -->
     			                    <section class="panel">
                                         <div class="table-responsive">
-                                            <table id="example" class="display" width="100%"></table>
+                                            <table id="example" class="display" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th><i class="fa fa-archive"></i> #</th>
+                                                        <th><i class="fa fa-list"></i> TíTulo</th>
+                                                        <th><i class="icon_profile"></i> Fecha Creación</th>
+                                                        <th><i class="icon_calendar"></i> Estatus</th>
+                                                        <th><i class="fa fa-location-arrow"></i> Accion</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                             <!--<table class="table display" id="table_id1">
                                                 <thead>
                                                     <tr>

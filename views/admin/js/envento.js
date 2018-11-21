@@ -15,7 +15,7 @@ $(function(){
     });
 
     
-
+    listar_evento();
 
 });
 var url = '../../controllers/eventoControllers.php';
@@ -144,6 +144,9 @@ function limpiar(){
 /** Listar los eventos **/
 function listar_evento(){
     console.log("lista");
+   
+
+
 
     var settings = {
         "async": true,
@@ -157,7 +160,25 @@ function listar_evento(){
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
         
-        data.forEach( function(data, indice, array){
+        var dataSet = data;
+        console.log(data);
+
+        $('#example').DataTable({
+            data: dataSet,
+            columns: [
+                { dataSet: "id" },
+                { dataSet: "titulo" },
+                { dataSet: "fecha_cracion" },
+                { dataSet: "estatus" }
+                
+            ]
+        });
+
+
+
+
+
+        /*data.forEach( function(data, indice, array){
             console.log(data);
             var tabla = '';
             tabla += '<tr>';
@@ -169,7 +190,7 @@ function listar_evento(){
             tabla += '</tr>';
             $("#registros").append(tabla);
             
-        })
+        })*/
 
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
