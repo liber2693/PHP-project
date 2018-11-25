@@ -303,8 +303,8 @@
 				</div>
 			</div>
 		    <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
-		    	<input type="text" class="form-control" placeholder="buscar evento">
-                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+		    	<input type="text" id="text_evento" class="form-control" placeholder="buscar evento">
+                <button type="button" id="buscar_evento" class="btn btn-boton"><i class="fa fa-search"></i></button>
 		    </div>
 		</div>
 		<div class="row" id="eventos_lista">

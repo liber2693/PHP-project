@@ -1,5 +1,6 @@
 
-var url = 'controllers/';
+var url_pagina = 'controllers/';
+var url_admin = '../../controllers/eventoAdminControllers.php';
 
 function getAbsolutePath() {
     var loc = window.location;
@@ -103,3 +104,13 @@ function Paginator(total, page, limit){
         return !this.isLast();
     };
 }
+
+function cambia_fondo(fila,status){
+    if(status == 1){
+        fila.style.backgroundColor = "#5f5f5f29";
+    }
+    else{
+        fila.style.backgroundColor = "#ffffff";   
+    }
+}
+

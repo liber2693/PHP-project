@@ -1041,3 +1041,15 @@ img {
 .oculto{
   display: none;
 }
+
+.btn-boton {
+    color: #fff;
+    background-color: #199EB8;
+    border-color: #199EB8;
+}
+
+.btn-boton:hover {
+    color: #fff;
+    background-color: #07ccf3;
+    border-color: #07ccf3;
+}

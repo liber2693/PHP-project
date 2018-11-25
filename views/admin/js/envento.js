@@ -19,7 +19,7 @@ $(function(){
 
 
 });
-var url = '../../controllers/eventoControllers.php';
+
 function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
@@ -60,7 +60,7 @@ function crear_evento(){
         "crossDomain": true,
     	"type": "POST",
         "dataType": "json",
-        "url": url,
+        "url": url_admin,
         "data": data,
         "beforeSend" : function() {
         	showLoader();        
@@ -154,7 +154,7 @@ function listar_evento(page){
         "crossDomain": true,
         "type": "GET",
         "dataType": "json",
-        "url": url,
+        "url": url_admin,
         "cache": false,
         "data": {
             "page": page
@@ -206,25 +206,23 @@ function listar_evento(page){
         {
             var pag = '';
 
-        
-
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento(1);"><i class="fas fa-angle-double-left "></i></button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento(1);"><i class="fas fa-angle-double-left "></i></button>&nbsp;';
                     
             if(paginator.hasPrev())
             {
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');"><i class="fas fa-angle-left "></i></button>&nbsp;';
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+paginator.getPrevious()+');"><i class="fas fa-angle-left "></i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
             }
             
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
         
             if(paginator.hasNext())
             {
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');">'+ paginator.getNext() +'</button>&nbsp;';
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');"><i class="fas fa-angle-right "></i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getNext() +');">'+ paginator.getNext() +'</button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getNext() +');"><i class="fas fa-angle-right "></i></button>&nbsp;';
             }
             
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPages() +');"><i class="fas fa-angle-double-right "></i></button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getPages() +');"><i class="fas fa-angle-double-right "></i></button>&nbsp;';
 
 
             $("#paginado_lista").append(pag);   
@@ -235,11 +233,3 @@ function listar_evento(page){
     });
 }
 
-function cambia_fondo(fila,status){
-    if(status == 1){
-        fila.style.backgroundColor = "#5f5f5f29";
-    }
-    else{
-        fila.style.backgroundColor = "#ffffff";   
-    }
-}

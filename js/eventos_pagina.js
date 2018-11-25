@@ -1,25 +1,43 @@
 $(function(){
-	console.log(url);
+	console.log(url_pagina);
 
 	listar_eventos();
+
+	$("#text_evento").on("keypress", function(e) {
+
+		tecla = (document.all) ? e.keyCode : e.which;
+
+		if(tecla == 13)
+		{
+			listar_eventos();
+		}
+	});
+
+	$("#buscar_evento").on("click", function(e) {
+		listar_eventos();
+	});
+
 });
 
 function listar_eventos(page){
 
 	page = page || 1;
+
+	var text = $("#text_evento").val().trim();
 	console.log(page);
 
-	
+		
 
 	var settings = {
         "async": true,
         "crossDomain": true,
         "type": "GET",
         "dataType": "json",
-        "url": url+'eventoControllers.php',
+        "url": url_pagina+'eventoControllers.php',
         "cache": false,
         "data": {
-            "page": page
+            "page": page,
+            "text": "'"+text+"'",
         }
     }
 
@@ -61,16 +79,16 @@ function listar_eventos(page){
          
             if(paginator.hasPrev())
             {
-                pag += '<i class="fa fa-chevron-left" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i>';
-                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i>';
+                pag += '<i class="fa fa-chevron-left" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">&nbsp;</i>';
+                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">&nbsp;</i>';
             }
            
-            pag += ' <i class="fa fa-circle" aria-hidden="true" onclick="listar_eventos('+ paginator.getPage() +');">'+ paginator.getPage() +'</i>';
+            pag += ' <i class="fa fa-circle" aria-hidden="true" onclick="listar_eventos('+ paginator.getPage() +');">&nbsp;</i>';
         
             if(paginator.hasNext())
             {
-                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getNext()+');">'+paginator.getNext()+'</i>';
-                pag += '<i class="fa fa-chevron-right" aria-hidden="true" onclick="listar_eventos('+ paginator.getNext() +');">'+ paginator.getNext() +'</i>';
+                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getNext()+');">&nbsp;</i>';
+                pag += '<i class="fa fa-chevron-right" aria-hidden="true" onclick="listar_eventos('+ paginator.getNext() +');"></i>';
             }
             
 
@@ -88,9 +106,9 @@ function noti_evento(){
 
 	console.log("evento completo");
 
-	 $("#eventos_lista").find("div").remove();
+	$("#eventos_lista").find("div").remove();
     $("#paginador_event").find("i").remove();
-
+	$("#noticia").find("div").remove();
 
 	var noti = "";
 
@@ -112,17 +130,29 @@ function noti_evento(){
 				noti += '<div class="well-middle">';
 	            	noti += '<div class="single-well">';
 						noti += '<a>';
-	                		noti += '<h4 class="sec-head">project Maintenance</h4>';
+	                		noti += '<h4 class="sec-head">¿Qué es MaschinenWerk 2000,C.A?</h4>';
 	              		noti += '</a>';
-	              		noti += '<p class="text-justify">Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure. achel Chu, de Nueva York, viaja a la ciudad natal de su novio Nick en Singapur para la boda de su mejor amigo en donde pronto descubre su secreto: Nick es de una familia increíblemente adinerada y posiblemente sea el soltero más codiciado de Asia.</p>';
+	              		noti += '<p>25-Nov-2018</p>';
+	              		noti += '<p class="text-justify">Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico. Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos. Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.</p>';
 	              	noti += '</div>';
 	          	noti += '</div>';
 	        noti += '</div>';
 	        /*<!-- End col-->*/
   		noti += '</div>';
+  		noti += '<button type="button" id="volver" onclick="volver()" class="btn btn-boton"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button>';
 	noti += '</div>';
 	noti += '</div>';
 
 	$("#noticia").append(noti);
+
+}
+
+/** volver a la lista de eventos **/
+function volver(){
+	console.log("volver");
+
+	$("#noticia").find("div").remove();
+	listar_eventos();
+
 
 }
