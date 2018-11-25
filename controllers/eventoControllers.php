@@ -2,7 +2,7 @@
 include "../views/admin/funciones.php";
 date_default_timezone_set("America/Caracas");
 session_start();
-$id = $_SESSION['id'];
+$id = (isset($_SESSION['id'])) ? $_SESSION['id'] : null ;
 if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['imagen']))
 {
 	//comprobamos si ha ocurrido un error.
@@ -85,34 +85,50 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 if(isset($_GET['page']))
 {
 	$currentPage = $_GET['page'] - 1;
+	//$lista = array();
 	$lista = array(
-		["id" => 1, "titulo" => "titulo 1", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 2, "titulo" => "titulo 2", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 3, "titulo" => "titulo 3", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 4, "titulo" => "titulo 4", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 5, "titulo" => "titulo 5", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 6, "titulo" => "titulo 6", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 7, "titulo" => "titulo 7", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 8, "titulo" => "titulo 8", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 9, "titulo" => "titulo 9", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 10, "titulo" => "titulo 10", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 11, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 12, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 13, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 14, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 15, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 16, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 17, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 18, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 19, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 20, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 21, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 22, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 23, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 24, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 25, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1]
+		["id" => 1, "titulo" => "titulo 1", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 2, "titulo" => "titulo 2", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 3, "titulo" => "titulo 3", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 4, "titulo" => "titulo 4", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 5, "titulo" => "titulo 5", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 6, "titulo" => "titulo 6", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 7, "titulo" => "titulo 7", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 8, "titulo" => "titulo 8", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 9, "titulo" => "titulo 9", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 10, "titulo" => "titulo 10", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 11, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 12, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 13, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 14, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 15, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 16, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 17, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 18, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 19, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 20, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 21, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 22, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 23, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 24, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 25, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
+		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"]
 	);
+
 	
 	$total = count($lista);
 
@@ -122,6 +138,7 @@ if(isset($_GET['page']))
 		"lista" => $data,
 	 	"total" => $total 
 	];
+
 
 	header('Content-type: application/json; charset=utf-8');
 	echo json_encode($data);

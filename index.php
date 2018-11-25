@@ -22,6 +22,8 @@
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
   <!-- JOSE 25-10-2018 11:13 pm -->
+  <!-- archivo de otro template -->
+  <link  href="css/animate.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -292,90 +294,35 @@
   <!-- /Parallax -->
 
 
-<section id="menu" class="parallax-section" style="background-position: 50% 63px;">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-         <div class="wow fadeInUp section-title animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <h2>Food Menu</h2>
-            <h4>we have special menus</h4>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="media wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img1.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$24</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Breakfast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img2.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$36</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">New Pizza</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img3.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$24</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Mushroom</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="media wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img4.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$32</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Seafood</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp animated" data-wow-delay="1.3s" style="visibility: visible; animation-delay: 1.3s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img5.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$64</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Spicy Beef</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp animated" data-wow-delay="1.6s" style="visibility: visible; animation-delay: 1.6s; animation-name: fadeInUp;">
-          <div class="media-object pull-left">
-            <img src="images/gallery-img6.jpg" class="img-responsive" alt="Food Menu">
-            <span class="menu-price">$45</span>
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Dinner</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<section id="menu" class="parallax-section">
+  	<div class="container">
+    	<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+				    <h2>Noticias o Eventos</h2>
+				</div>
+			</div>
+		    <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
+		    	<input type="text" class="form-control" placeholder="buscar evento">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+		    </div>
+		</div>
+		<div class="row" id="eventos_lista">
+			<!-- lista de eventos -->
+		</div>
+		<div class="container">
+	  		<div class="text-center" id="paginador_event">
+	  			<!-- paginado de la lista -->
+	  		</div>
+	  	</div>
+		
+		<div id="noticia">
+		  	<!-- evento detalle -->
+		</div>
+	</div>
 </section>
+
+
 
 
   <!-- Features -->

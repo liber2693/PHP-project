@@ -14,13 +14,9 @@ $(function(){
         crear_evento();
     });
 
-<<<<<<< HEAD
-    
-    listar_evento();
-=======
+
     listar_evento();
 
->>>>>>> e08c4e9d72b5d7a7c01023abf46984d2c7647a84
 
 });
 var url = '../../controllers/eventoControllers.php';
@@ -174,6 +170,36 @@ function listar_evento(page){
         console.log(data);
 
         paginator = new Paginator(data.total, page);
+
+        if(data.lista == 0)
+        {
+            var fila = '';
+            fila += '<tr>';
+            fila += '<td colspan="5" class="text-center">No existen eventos o noticias</td>';
+            fila += '</tr>';
+            $("#registros").append(fila);
+
+        }
+        else
+        {
+            data.lista.forEach(function(data, indice, array) {
+                console.log(data)
+
+                var tabla = '';
+                tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
+                tabla += '<td>'+data.id+'</td>';
+                tabla += '<td>'+data.titulo+'</td>';
+                tabla += '<td>'+data.fecha_cracion+'</td>';
+                tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+'></td>';
+                tabla += '<td>';
+                tabla += '<button type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+                tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
+                tabla += '</td>';
+                tabla += '</tr>';
+                $("#registros").append(tabla);
+            });
+
+        }
         
 
         if(paginator.getPages() > 1)
