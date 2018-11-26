@@ -14,11 +14,12 @@ $(function(){
         crear_evento();
     });
 
+
     listar_evento();
 
 
 });
-var url = '../../controllers/eventoControllers.php';
+
 function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
@@ -59,7 +60,7 @@ function crear_evento(){
         "crossDomain": true,
     	"type": "POST",
         "dataType": "json",
-        "url": url,
+        "url": url_admin,
         "data": data,
         "beforeSend" : function() {
         	showLoader();        
@@ -142,16 +143,18 @@ function limpiar(){
 }
 
 /** Listar los eventos **/
+
 function listar_evento(page){
 
     page = page || 1;
+
 
     var settings = {
         "async": true,
         "crossDomain": true,
         "type": "GET",
         "dataType": "json",
-        "url": url,
+        "url": url_admin,
         "cache": false,
         "data": {
             "page": page
@@ -167,46 +170,60 @@ function listar_evento(page){
         console.log(data);
 
         paginator = new Paginator(data.total, page);
+
+        if(data.lista == 0)
+        {
+            var fila = '';
+            fila += '<tr>';
+            fila += '<td colspan="5" class="text-center">No existen eventos o noticias</td>';
+            fila += '</tr>';
+            $("#registros").append(fila);
+
+        }
+        else
+        {
+            data.lista.forEach(function(data, indice, array) {
+                console.log(data)
+
+                var tabla = '';
+                tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
+                tabla += '<td>'+data.id+'</td>';
+                tabla += '<td>'+data.titulo+'</td>';
+                tabla += '<td>'+data.fecha_cracion+'</td>';
+                tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+'></td>';
+                tabla += '<td>';
+                tabla += '<button type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+                tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
+                tabla += '</td>';
+                tabla += '</tr>';
+                $("#registros").append(tabla);
+            });
+
+        }
         
-        data.lista.forEach( function(data, indice, array){
-            var tabla = '';
-            tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
-            tabla += '<td>'+data.id+'</td>';
-            tabla += '<td>'+data.titulo+'</td>';
-            tabla += '<td>'+data.titulo+'</td>';
-            tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+'></td>';
-            tabla += '<td>';
-            tabla += '<button type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
-            tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
-            tabla += '</td>';
-            tabla += '</tr>';
-            $("#registros").append(tabla);
-            
-        });
 
         if(paginator.getPages() > 1)
         {
             var pag = '';
 
-        
-
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento(1);"><i class="fas fa-angle-double-left "></i></button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento(1);"><i class="fas fa-angle-double-left "></i></button>&nbsp;';
                     
             if(paginator.hasPrev())
             {
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');"><i class="fas fa-angle-left "></i></button>&nbsp;';
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+paginator.getPrevious()+');"><i class="fas fa-angle-left "></i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
             }
             
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
         
             if(paginator.hasNext())
             {
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');">'+ paginator.getNext() +'</button>&nbsp;';
-                pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getNext() +');"><i class="fas fa-angle-right "></i></button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getNext() +');">'+ paginator.getNext() +'</button>&nbsp;';
+                pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getNext() +');"><i class="fas fa-angle-right "></i></button>&nbsp;';
             }
             
-            pag += '<button type="button" class="btn btn-primary" onclick="listar_evento('+ paginator.getPages() +');"><i class="fas fa-angle-double-right "></i></button>&nbsp;';
+            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getPages() +');"><i class="fas fa-angle-double-right "></i></button>&nbsp;';
+
 
             $("#paginado_lista").append(pag);   
         }
@@ -216,11 +233,3 @@ function listar_evento(page){
     });
 }
 
-function cambia_fondo(fila,status){
-    if(status == 1){
-        fila.style.backgroundColor = "#5f5f5f29";
-    }
-    else{
-        fila.style.backgroundColor = "#ffffff";   
-    }
-}

@@ -1,3 +1,7 @@
+
+var url_pagina = 'controllers/';
+var url_admin = '../../controllers/eventoAdminControllers.php';
+
 function getAbsolutePath() {
     var loc = window.location;
     var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
@@ -70,6 +74,16 @@ function Paginator(total, page, limit){
         return page + 1;
     };
 
+    /** jose **/
+    /** pagina 2 siguente */
+    this.getproxima2 = function(){
+        if(page == pages){
+            return page;
+        }
+
+        return page + 2;
+    };
+
     /** indica si la pagina actual es la primera */
     this.isFirst = function(){
         return page == 1;
@@ -90,3 +104,13 @@ function Paginator(total, page, limit){
         return !this.isLast();
     };
 }
+
+function cambia_fondo(fila,status){
+    if(status == 1){
+        fila.style.backgroundColor = "#5f5f5f29";
+    }
+    else{
+        fila.style.backgroundColor = "#ffffff";   
+    }
+}
+

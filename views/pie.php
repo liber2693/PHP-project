@@ -14,7 +14,8 @@
 <script src="js/lockfixed/lockfixed.min.js"></script>
 
 <!-- Template Specisifc Custom Javascript File -->
-<!--<script src="js/custom.js" type="text/javascript"></script>-->
+<script src="js/custom.js" type="text/javascript"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
 
 <script src="js/contactform/contactform.js" type="text/javascript"></script>
 
@@ -26,6 +27,7 @@
 <script src="css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
 <script src="js/usuario.js" type="text/javascript"></script>
+<script src="js/eventos_pagina.js" type="text/javascript"></script>
 <script src="js/funciones.js" type="text/javascript"></script>
 
 <script>

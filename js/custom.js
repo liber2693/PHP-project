@@ -1,5 +1,15 @@
-
+/** pertenece a la de los eventos */
 $(document).ready(function() {
+  /* wow
+  -------------------------------*/
+  new WOW({ mobile: false }).init();
+
+  });
+
+
+
+/** pertenece a template original */
+/*$(document).ready(function() {
 
   // Smooth scrolling
   $(function() {
@@ -116,4 +126,4 @@ $(document).ready(function() {
     return false;
   });
 
-});
+});*/

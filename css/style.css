@@ -979,7 +979,77 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 30px;
   }
 }
+/** otro template 23-11-2018 **/
+/* Menu section */
+#menu .media {
+  padding-bottom: 20px;
+}
+
+#menu .media-object img {
+  width: 220px;
+  padding-right: 12px;
+  position: relative;
+}
+
+#menu .media-object span.menu-price {
+  position: absolute;
+  background-color: #ffffff;
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 20px;
+  top: 50%;
+  left: 3%;
+}
+
+/** template ebussine  25-11-2018 **/
+.about-area {
+  background-color: #f9f9f9;
+}
+.area-padding {
+  padding: 70px 0px 80px;
+}
+.area-padding-2 {
+  padding: 70px 0px 50px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.single-well>a {
+  display: block;
+}
+
+.single-well ul li {
+  color: #444;
+  display: block;
+  padding: 5px 0;
+}
+
+.single-well ul li i {
+  color: #3EC1D5;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.single-well p {
+  color: #444;
+}
+
 /** jose 04-11-2018 **/
 .oculto{
   display: none;
+}
+
+.btn-boton {
+    color: #fff;
+    background-color: #199EB8;
+    border-color: #199EB8;
+}
+
+.btn-boton:hover {
+    color: #fff;
+    background-color: #07ccf3;
+    border-color: #07ccf3;
 }

@@ -22,6 +22,8 @@
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
   <!-- JOSE 25-10-2018 11:13 pm -->
+  <!-- archivo de otro template -->
+  <link  href="css/animate.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -292,6 +294,40 @@
   <!-- /Parallax -->
 
 
+<<<<<<< HEAD
+=======
+<section id="menu" class="parallax-section">
+  	<div class="container">
+    	<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+				    <h2>Noticias o Eventos</h2>
+				</div>
+			</div>
+		    <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
+		    	<input type="text" id="text_evento" class="form-control" placeholder="buscar evento">
+                <button type="button" id="buscar_evento" class="btn btn-boton"><i class="fa fa-search"></i></button>
+		    </div>
+		</div>
+		<div class="row" id="eventos_lista">
+			<!-- lista de eventos -->
+		</div>
+		<div class="container">
+	  		<div class="text-center" id="paginador_event">
+	  			<!-- paginado de la lista -->
+	  		</div>
+	  	</div>
+		
+		<div id="noticia">
+		  	<!-- evento detalle -->
+		</div>
+	</div>
+</section>
+
+
+
+
+>>>>>>> 9a1ed4b23bb2e96db3a8e48a75fdfa753c6e5f40
   <!-- Features -->
   <section class="features" id="features">
 	<div class="container">

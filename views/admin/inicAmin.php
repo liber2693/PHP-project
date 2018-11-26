@@ -44,11 +44,12 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                     <section class="panel">
                                         <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
                                             <input type="text" class="form-control" placeholder="buscar evento">
-                                            <button class=""><i class="fas fa-search"></i></button>
+                                            <button class="btn btn-boton"><i class="fas fa-search"></i></button>
                                         </div>
                                         <div class="table-responsive">
-                                            <!--<table id="example" class="display" width="100%"></table>-->
+
                                             <table class="table display">
+
                                                 <thead>
                                                     <tr>
                                                         <th><i class="fa fa-archive"></i> #</th>
