@@ -2,7 +2,7 @@
 include "../views/admin/funciones.php";
 date_default_timezone_set("America/Caracas");
 session_start();
-$id = (isset($_SESSION['id'])) ? $_SESSION['id'] : null ;
+$id = $_SESSION['id'];
 if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['imagen']))
 {
 	//comprobamos si ha ocurrido un error.

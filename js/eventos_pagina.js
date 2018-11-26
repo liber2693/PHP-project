@@ -120,7 +120,7 @@ function noti_evento(){
 	          	noti += '<div class="well-left">';
 					noti += '<div class="single-well">';
 	              		noti += '<a href="#">';
-							noti += '<img src="gallery-img1.jpg" alt="">';
+							noti += '<img src="img/eventos/1aca95a1d88c1d7c6e80db4bba904710.jpg" alt="">';
 						noti += '</a>';
 	            	noti += '</div>';
 	          	noti += '</div>';
