@@ -293,9 +293,6 @@
 </div>
   <!-- /Parallax -->
 
-
-<<<<<<< HEAD
-=======
 <section id="menu" class="parallax-section">
   	<div class="container">
     	<div class="row">
@@ -327,7 +324,6 @@
 
 
 
->>>>>>> 9a1ed4b23bb2e96db3a8e48a75fdfa753c6e5f40
   <!-- Features -->
   <section class="features" id="features">
 	<div class="container">
