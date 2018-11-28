@@ -39,16 +39,16 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	                                <form role="form">
                                     	<div class="form-group" id="error_div_titulo">
                                             <label id="error_label_titulo_1">
-                                            	Titulo
+                                            	Titulo del Evento
                                             </label>
-                                            <input class="form-control crear_evento" type="text" id="titulo" name="titulo">
-                                            <p class="help-block">Titulo del Evento</p>
+                                            <input class="form-control crear_evento" type="text" id="titulo" name="titulo" placeholder="Título">
+                                            <!-- <p class="help-block">Titulo del Evento</p> -->
                                         </div>
                                         <div class="form-group" id="error_div_contenido">
                                             <label id="error_label_contenido">
-                                            	Contenido del evento
+                                            	Cuerpo del Evento
                                             </label>
-                                            <textarea id="contenido" name="contenido" class="form-control crear_evento" rows="10"></textarea>
+                                            <textarea id="contenido" name="contenido" class="form-control crear_evento" rows="7" placeholder="Redacte aquí su evento..."></textarea>
                                         </div>
                                         <div class="form-group text-center" id="error_div_imagen">
                                             <label id="error_label_imagen">
@@ -57,8 +57,8 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                             <br>
                                             <input type="file" class="oculto" name="imagen" id="imagen"  accept="image/png, image/jpeg, image/jpg">
 
-											<img src="../../img/team-1.jpg" alt="Weppage_bell" id="imagen_previa" style="width:50%;margin:auto;">
-					                        <br>
+											<img src="../../img/team-1.jpg" alt="Weppage_bell" id="imagen_previa" style="width:auto;margin:auto;">
+					                        <br><br>
 					                        <label  for="imagen" class="btn btn-primary btn-lg btn-block" id="estilo">
 					                            Cargar Imagen <span id="filename"></span>
 					                        </label>
