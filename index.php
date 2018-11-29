@@ -172,6 +172,7 @@
 		<a href="#"><i class="fa fa-facebook"></i></a> 
 		<a href="#"><i class="fa fa-linkedin"></i></a> 
 		<a href="#"><i class="fa fa-envelope"></i></a>
+		<a href="#"><img src="img/images/ig.jpg" width="13%" height="13%"></a>
 	  </nav>
 	</div>
   </header>
@@ -705,7 +706,9 @@
 	<div class="container">
 	  <div class="row">
 		<div class="col-md-12 text-center">
-		  <h2 class="section-title">Contáctanos</h2>
+			<h2 class="section-title">Contáctanos, haz tu pedido ya</h2>
+			<p align="center">Envíanos un correo electrónico desde acá, con Marca, Modelo y Serial del producto de tu preferencia</p><br>
+
 		</div>
 	  </div>
 
@@ -714,10 +717,22 @@
 		  <div class="info">
 			<div>
 			  <i class="fa fa-map-marker"></i>
-				<p>Av Veracruz Edificio Keope<br>
-					Piso 1 Oficina 15B Baruta<br>
-					Las Mercedes Caracas<br>
-					Venezuela
+				<p>Sede Venezuela: 
+					<br>Av Veracruz, Edificio Keope<br>
+					Piso 1 Oficina 15B, 
+					Municipio Baruta,<br>
+					Las Mercedes, Caracas<br>
+					Venezuela.
+				</p>
+			</div>
+			<div>
+			  <i class="fa fa-map-marker"></i>
+				<p>Sede Trinidad: 
+					<br>Av Veracruz, Edificio Keope<br>
+					Piso 1 Oficina 15B, 
+					Municipio Baruta,<br>
+					Las Mercedes, Caracas<br>
+					Venezuela.
 				</p>
 			</div>
 
@@ -740,7 +755,7 @@
 			<div id="errormessage"></div>
 			<form action="" method="post" role="form" class="contactForm">
 			  <div class="form-group">
-				<input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por Favor introduzca al menos 4 caractéres" />
+				<textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
 				<div class="validation"></div>
 			  </div>
 			  <div class="form-group">
@@ -750,9 +765,21 @@
 			  <div class="form-group">
 				<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor introduzca al menos 8 caractéres" />
 				<div class="validation"></div>
+				</div>
+				<div class="form-group">
+				<input type="text" class="form-control" name="marca" id="marca" placeholder="Marca" data-rule="minlen:4" data-msg="Por favor introduzca la marca del producto" />
+				<div class="validation"></div>
+				</div>
+				<div class="form-group">
+				<input type="text" class="form-control" name="modelo" id="modelo" placeholder="Modelo" data-rule="minlen:4" data-msg="Por favor introduzca el modelo del producto" />
+				<div class="validation"></div>
+				</div>
+				<div class="form-group">
+				<input type="text" class="form-control" name="serial" id="serial" placeholder="Serial (Opcional)" data-rule="minlen:4" />
+				<div class="validation"></div>
 			  </div>
 			  <div class="form-group">
-				<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
+				<textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
 				<div class="validation"></div>
 			  </div>
 			  <div class="text-center">
