@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Funciones
 --
-CREATE DEFINER=`root`@`localhost` FUNCTION `cambiar_status` (`id_noticia` INT) RETURNS INT(2) BEGIN
+CREATE FUNCTION `cambiar_status` (`id_noticia` INT) RETURNS INT(2) BEGIN
 
 	set @status = (SELECT status FROM noticias WHERE id = id_noticia);
     
@@ -39,7 +39,7 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `cambiar_status` (`id_noticia` INT) R
     RETURN 1;
 end$$
 
-CREATE DEFINER=`root`@`localhost` FUNCTION `crear_noticia` (`titulo_noticia` TEXT, `descripcion_noticia` TEXT, `nombre_imagen` TEXT, `usuario_creador` INT) RETURNS INT(2) BEGIN
+CREATE FUNCTION `crear_noticia` (`titulo_noticia` TEXT, `descripcion_noticia` TEXT, `nombre_imagen` TEXT, `usuario_creador` INT) RETURNS INT(2) BEGIN
 	
 	INSERT INTO noticias(titulo, descripcion, imagen, fecha_creacion, status, usuario_creador)
     VALUES (titulo_noticia, descripcion_noticia, nombre_imagen, CURRENT_TIMESTAMP, 1, usuario_creador);
@@ -47,7 +47,7 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `crear_noticia` (`titulo_noticia` TEX
     RETURN 1;
 end$$
 
-CREATE DEFINER=`root`@`localhost` FUNCTION `eliminar_noticia` (`id_noticia` INT) RETURNS INT(2) BEGIN
+CREATE FUNCTION `eliminar_noticia` (`id_noticia` INT) RETURNS INT(2) BEGIN
 	
 	DELETE from noticias WHERE id = id_noticia;
     

@@ -172,7 +172,7 @@
 		<a href="#"><i class="fa fa-facebook"></i></a> 
 		<a href="#"><i class="fa fa-linkedin"></i></a> 
 		<a href="#"><i class="fa fa-envelope"></i></a>
-		<a href="#"><img src="img/images/ig.jpg" width="13%" height="13%"></a>	
+		<a href="#"><img src="img/images/ig.jpg" width="13%" height="13%"></a>
 	  </nav>
 	</div>
   </header>
