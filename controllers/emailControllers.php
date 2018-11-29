@@ -8,8 +8,6 @@ require '../libreria/PHPMailer/src/SMTP.php';
 
 
 	$mail = new PHPMailer(true);                              // Pasar `true` habilita excepciones
-
-
 	try {
 	    //Configuración del servidor
 	    $mail->SMTPDebug = 2;                                 // Habilitar salida de depuración detallada
