@@ -43,8 +43,8 @@ require '../libreria/PHPMailer/src/SMTP.php';
 	    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	    $mail->send();
-	    //echo 'el mensaje ha sido enviado';
-	    header('Location: ../index.php');
+	    echo 'el mensaje ha sido enviado';
+	    //header('Location: ../index.php');
 	} catch (Exception $e) {
 	    echo 'No se pudo enviar el mensaje. Error de correo: ', $mail->ErrorInfo;
 	}
