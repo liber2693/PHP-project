@@ -776,10 +776,10 @@
 
 		  <div class="col-lg-6 col-xs-12 text-lg-left text-center">
 			<p class="copyright-text">
-			  © MaschinenWerk 2000,C.A | All Rights Reserved
+			  &copy; MaschinenWerk 2000,C.A | Todos los derechos reservados
 			</p>
 			<div class="credits">
-			  Desarrollado por: <a href="">Technology LR Inc Dev</a>
+			  Desarrollado por: <a href="">liberWEB</a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">&nbsp;&nbsp;
 				<img src="img/images/ig.jpg" width="5%" height="5%"></a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">
