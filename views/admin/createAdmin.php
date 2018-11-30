@@ -39,7 +39,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	                                <form role="form">
                                     	<div class="form-group" id="error_div_titulo">
                                             <label id="error_label_titulo_1">
-                                            	Titulo del Evento
+                                            	Título del Evento
                                             </label>
                                             <input class="form-control crear_evento" type="text" id="titulo" name="titulo" placeholder="Título">
                                             <!-- <p class="help-block">Titulo del Evento</p> -->
