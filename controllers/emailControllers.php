@@ -8,8 +8,6 @@ require '../libreria/PHPMailer/src/SMTP.php';
 
 
 	$mail = new PHPMailer(true);                              // Pasar `true` habilita excepciones
-
-
 	try {
 	    //Configuración del servidor
 	    $mail->SMTPDebug = 2;                                 // Habilitar salida de depuración detallada
@@ -43,8 +41,8 @@ require '../libreria/PHPMailer/src/SMTP.php';
 	    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	    $mail->send();
-	    //echo 'el mensaje ha sido enviado';
-	    header('Location: ../index.php');
+	    echo 'el mensaje ha sido enviado';
+	    //header('Location: ../index.php');
 	} catch (Exception $e) {
 	    echo 'No se pudo enviar el mensaje. Error de correo: ', $mail->ErrorInfo;
 	}
