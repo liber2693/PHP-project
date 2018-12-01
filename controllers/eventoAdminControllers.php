@@ -1,8 +1,13 @@
 <?php
+include "../models/eventoAdminModels.php";
 include "../views/admin/funciones.php";
 date_default_timezone_set("America/Caracas");
 session_start();
+$db = new EventAdmin();
 $id = $_SESSION['id'];
+$fecha = date("Y-m-d H:m:s");
+//ruta a donde va
+$ruta = "../img/eventos/";
 if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['imagen']))
 {
 	//comprobamos si ha ocurrido un error.
@@ -13,9 +18,6 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 	}
 	else
 	{
-		//ruta a donde va
-		$ruta = "../img/eventos/";;
-
 		$nombreImagen = str_replace(" ","_",$_FILES['imagen']['name']);
 		$tipoImagen = $_FILES['imagen']['type'];
 		//tipo permitido
@@ -44,16 +46,16 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 				{
 					
 					//parte del codigo donde se va a poner la funcion para hacer el registro del evento
-					//titulo $titulo = $_POST['titulo'];
-					//contenido $contenido = $_POST['contenido'];
-					//fecha hora $fecha_creacion = date("Y-m-d H:m:s");
-					//nombre de la imagen $nombre_definido;
-					//estatus 0
-					//usuario creador: $id
-
+					$titulo = $_POST['titulo'];
+					$contenido = $_POST['contenido'];
+					$fecha_creacion = $fecha;
+					$estatus = 0;
+					
+					$result = $db->createEvent($titulo,$contenido,$nombre_definido,$fecha_creacion,$estatus,$id);
+					
 					//Registro completado
 		        	header('Content-type: application/json; charset=utf-8');
-					echo json_encode(4);
+					echo json_encode($result);
 					exit();
 				}
 				else
@@ -85,49 +87,12 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 if(isset($_GET['page']))
 {
 	$currentPage = $_GET['page'] - 1;
+	$text = $_GET['text'];
+	
+	//print_r($text);die();
 	//$lista = array();
-	$lista = array(
-		["id" => 1, "titulo" => "titulo 1", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 2, "titulo" => "titulo 2", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 3, "titulo" => "titulo 3", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 4, "titulo" => "titulo 4", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 5, "titulo" => "titulo 5", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 6, "titulo" => "titulo 6", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 7, "titulo" => "titulo 7", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 8, "titulo" => "titulo 8", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 9, "titulo" => "titulo 9", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 10, "titulo" => "titulo 10", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 11, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 12, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 13, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 14, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 15, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 16, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 17, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 18, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 19, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 20, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 21, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 22, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 23, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 24, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 25, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"],
-		["id" => 26, "titulo" => "titulo 11", "fecha_cracion" => "2018-11-15 20:00:00", "estatus" => 1, "imagen" => "gallery-img1.jpg"]
-	);
+	
+	$lista = $db->listEvent($text);
 
 	
 	$total = count($lista);
@@ -144,4 +109,115 @@ if(isset($_GET['page']))
 	echo json_encode($data);
 	exit();
 }	
+
+//cambiar estatus
+if(isset($_POST['id']) && isset($_POST['estatus'])){
+
+	$id_registro = $_POST['id'];
+	$estatus = $_POST['estatus'];
+	$fecha_modificacion = $fecha;
+
+	$result = $db->changeStatusEvent($id_registro,$fecha_modificacion,$estatus);
+	
+	$data = [ 
+		"result" => $result
+	];
+
+	
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	exit();
+
+}
+// actualziar evento
+if(isset($_POST['id_registro']) && isset($_POST['titulo_Actualizar']) && isset($_POST['contenido_Actualizar']))
+{	
+	$id_registro = $_POST['id_registro'];
+	$titulo = $_POST['titulo_Actualizar'];
+	$contenido = $_POST['contenido_Actualizar'];
+	$fecha_modificacion = $fecha;
+
+	//si llega una nueva imagen
+	if(isset($_FILES['imagen']))
+	{
+		if ($_FILES["imagen"]["error"] > 0){
+	 		header('Content-type: application/json; charset=utf-8');
+			echo json_encode(0);
+			exit();
+		}
+		else
+		{
+			$nombreImagen = str_replace(" ","_",$_FILES['imagen']['name']);
+			$tipoImagen = $_FILES['imagen']['type'];
+			//tipo permitido
+			$permitidos = array("image/jpg", "image/jpeg", "image/png");
+	 		$limite_kb = 16384;
+	 		//&& $_FILES['imagen']['size'] <= $limite_kb * 1024
+
+	 		if (in_array($_FILES['imagen']['type'], $permitidos))
+	 		{
+	 			//nombre definifo
+				$nombre_definido = md5(rand() * time()).tipo_archivo($tipoImagen);
+				$temporalImagen = $_FILES['imagen']['tmp_name'];
+				//si no existe la carpeta eventos se crea
+				if(!file_exists($ruta))
+		        {
+		            mkdir($ruta, 0777, true);
+		        }
+
+		        $completo = $ruta.$nombre_definido;
+
+		        if (!file_exists($completo)){
+
+		        	//mover la imagen a la carpeta
+					$resultado = move_uploaded_file($temporalImagen, $completo);
+					if ($resultado)
+					{
+						//buscar imagen vieja para modificarla
+						$imagen_vieja = $db->selectPhoteEvent($id_registro);						
+						
+						//actualizar registro con la imagen			
+						
+						$result = $db->createEvent($titulo,$contenido,$nombre_definido,$fecha_creacion,$estatus,$id);
+						
+						//Registro completado
+			        	header('Content-type: application/json; charset=utf-8');
+						echo json_encode($result);
+						exit();
+					}
+					else
+					{
+						//la imagen no la movio
+			        	header('Content-type: application/json; charset=utf-8');
+						echo json_encode(3);
+						exit();
+					}
+
+		        }
+		        else
+		        {	
+		        	//ya existe la imagen
+		        	header('Content-type: application/json; charset=utf-8');
+					echo json_encode(2);
+					exit();
+		        }
+		    }
+		    else
+	 		{
+	 			//no es el tipo de imagen
+	 			header('Content-type: application/json; charset=utf-8');
+				echo json_encode(1);
+				exit();
+	 		}
+		}
+	}
+	//actualiza puro registro
+	else
+	{
+		//parte del codigo para actualizar solo texto del evento
+		$result = $db->updateEvent($id_registro,$titulo,$contenido,null,$fecha_modificacion,$id,2);
+
+	}
+	print_r($result);die();
+}
 ?>

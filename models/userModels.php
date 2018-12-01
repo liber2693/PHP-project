@@ -55,32 +55,13 @@ class User
 									hora_ultima_conexion = '$hora',
 									fecha_ultima_conexion = '$fecha'
 								WHERE  id_usuario = $id_User");
-			//$update = array(':id_User' => $id_User,':activida' => $activida);
 			$sth->execute();
 
-			//prepare connection
-			
-			/*$sql = "UPDATE usuarios SET actividad = :actividad, 
-										hora_ultima_conexion = :hora,
-										fecha_ultima_conexion = :fecha
-			 						WHERE id = :id_usuario";
-
-			$stmt = $c->prepare($sql);
-
-			//bind parameters
-			$stmt->bindParam(':actividad', $actividad, PDO::PARAM_INT);
-			$stmt->bindParam(':hora', $hora,  PDO::PARAM_STR);
-			$stmt->bindParam(':fecha', $fecha,  PDO::PARAM_STR);
-			$stmt->bindParam(':id_usuario', $id_User,  PDO::PARAM_INT);
-			
-			//execute it
-			$stmt->execute();*/
 		}
 		else
 		{
 			$sql = "UPDATE usuarios SET actividad = $actividad WHERE  id_usuario = $id_User";
 			$sth = $c->prepare($sql);	
-			//$update = array(':id_User' => $id_User,':activida' => $activida);
 			$sth->execute();
 		}
 

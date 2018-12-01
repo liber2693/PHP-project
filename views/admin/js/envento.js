@@ -1,5 +1,8 @@
 $(function(){
-	//console.log("cargando javascritp con exito");
+	console.log("cargando javascritp con exito");
+    var URLactual = window.location.pathname;
+    console.log(URLactual);
+
     $("#imagen").on('change', function(){ 
         //cargar_imagen_producto();
         imagen_previa();
@@ -14,8 +17,36 @@ $(function(){
         crear_evento();
     });
 
+   
+    //bloque para la pantalla de lista    
+    if(URLactual === '/webpage_bell/views/admin/inicAmin.php')
+    {
+        listar_evento();
 
-    listar_evento();
+        $("#text_evento").on("keypress", function(e) {
+
+            tecla = (document.all) ? e.keyCode : e.which;
+
+            if(tecla == 13)
+            {
+                listar_evento();
+            }
+        });
+
+        $("#buscar_evento").on("click", function(e) {
+            listar_evento();
+        });
+
+        //volver a la lista
+        $("#volver_lista").on("click",function(){
+            $("#lista_eventos").removeClass("oculto");
+            $("#actualizar_evento").addClass("oculto");
+        });
+
+    }
+    $("#enviar_actualizar_evento").on("click",function(){
+        actualizar_evento(id_registro);
+    })
 
 
 });
@@ -95,6 +126,10 @@ function crear_evento(){
                 limpiar();
             break;
 
+            case 5:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
+            break;
+
             default:
                 alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
             break;
@@ -148,6 +183,8 @@ function listar_evento(page){
 
     page = page || 1;
 
+    var text = $("#text_evento").val().trim();
+
 
     var settings = {
         "async": true,
@@ -157,7 +194,8 @@ function listar_evento(page){
         "url": url_admin,
         "cache": false,
         "data": {
-            "page": page
+            "page": page,
+            "text": text,
         }
     }
 
@@ -167,7 +205,7 @@ function listar_evento(page){
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
        
-        console.log(data);
+        //console.log(data);
 
         paginator = new Paginator(data.total, page);
 
@@ -183,16 +221,16 @@ function listar_evento(page){
         else
         {
             data.lista.forEach(function(data, indice, array) {
-                console.log(data)
+                //console.log(data)
 
                 var tabla = '';
                 tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
                 tabla += '<td>'+data.id+'</td>';
                 tabla += '<td>'+data.titulo+'</td>';
-                tabla += '<td>'+data.fecha_cracion+'</td>';
-                tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+'></td>';
+                tabla += '<td>'+data.fecha_creacion+'</td>';
+                tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')"></td>';
                 tabla += '<td>';
-                tabla += '<button type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+                tabla += '<button type="button" onclick="pre_actualizar('+data.id+',\''+data.titulo+'\',\''+data.contenido+'\',\''+data.nombre_imagen+'\')" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
                 tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
                 tabla += '</td>';
                 tabla += '</tr>';
@@ -233,3 +271,129 @@ function listar_evento(page){
     });
 }
 
+/** cambiar el estatus de una noticia **/
+function cambiar_estatus(id,status){
+
+    //estatus = status ? 1 : 0;
+    //console.log(id+' '+status);
+
+     var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "POST",
+        "dataType": "json",
+        "url": url_admin,
+        "data": {
+            "id" : id,
+            "estatus" : status
+        },
+        "beforeSend" : function() {
+            showLoader();        
+        },
+        "cache": false,
+    };
+
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
+        
+        var result = data.result;
+
+        switch (result) {
+            case 1:
+                if (status == 0) 
+                {
+                    alerta_mensaje("success", "Evento ACTIVADO", $("#lista_error_alert")).show();
+                }
+                else if(status == 1)
+                {
+                    alerta_mensaje("success", "Evento DESACTIVADO", $("#lista_error_alert")).show();
+                }
+                listar_evento();
+            break;
+
+            case 3:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+            break;
+
+            default:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+            break;
+        }
+        hideLoader();
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+    });
+    
+}
+
+/** preparar un evento para actualizar **/
+function pre_actualizar(id,titulo,contenido,imagen){
+
+    $("#lista_eventos").addClass("oculto");
+    $("#actualizar_evento").removeClass("oculto");
+
+    $("#titulo_Actualizar").val(titulo);
+    $("#contenido_Actualizar").val(contenido);
+    $("#imagen_previa").attr('src', '../../img/eventos/'+imagen);
+
+    id_registro = id;
+
+}
+
+/** actualizar el registro de un evento **/
+function actualizar_evento(id){
+
+    var titulo_Actualizar = $("#titulo_Actualizar").val().trim();
+    var contenido_Actualizar = $("#contenido_Actualizar").val().trim();
+
+    var imagen = document.getElementById('imagen');
+    var file = imagen.files[0];
+    
+    var data = new FormData();
+    data.append('id_registro',id);
+    data.append('imagen',file);
+    data.append('titulo_Actualizar',titulo_Actualizar);
+    data.append('contenido_Actualizar',contenido_Actualizar);
+
+    $(".has-error").removeClass("has-error");
+    $(".control-label").removeClass("control-label");
+
+    if (titulo_Actualizar.length <= 0){
+        $("#error_div_titulo").addClass("has-error");
+        $("#error_label_titulo_1").addClass("control-label");
+        alerta_mensaje("danger", "Ingresar titulo", $("#crear_error_alert")).show();
+        return false;
+    }
+    if (contenido_Actualizar.length <= 0){
+        $("#error_div_contenido").addClass("has-error");
+        $("#error_label_contenido").addClass("control-label");
+        alerta_mensaje("danger", "Ingresar contenido", $("#crear_error_alert")).show();
+        return false;
+    }
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "POST",
+        "dataType": "json",
+        "url": url_admin,
+        "data": data,
+        "beforeSend" : function() {
+            showLoader();        
+        },
+        "cache": false,
+        "contentType": false,
+        "processData": false,
+    };
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
+    });
+    hideLoader();
+
+}

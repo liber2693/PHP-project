@@ -45,7 +45,7 @@ a {
   Elements
   ================================================== */
 .btn {
-  background-color: #199EB8;
+  background-color: #F44336;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #fff;
@@ -73,7 +73,7 @@ a {
 }
 
 section {
-  padding: 85px 0;
+  padding: 20px 0;
 }
 
 .card {
