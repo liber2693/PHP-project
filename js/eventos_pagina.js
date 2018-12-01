@@ -47,7 +47,7 @@ function listar_eventos(page){
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
 
-    	paginator = new Paginator(data.total, page);
+    	paginator = new Paginator(data.total, page, 6);
 
     	data.lista.forEach(function(data, indice, array) {
 

@@ -52,7 +52,7 @@ if(isset($_GET['page']))
 	
 	$total = count($lista);
 
-	$data = array_slice($lista, $currentPage * 10, 10);
+	$data = array_slice($lista, $currentPage * 6, 6);
 
 	$data = [ 
 		"lista" => $data,
