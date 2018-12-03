@@ -17,7 +17,8 @@
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/wow.min.js" type="text/javascript"></script>
 
-<script src="js/contactform/contactform.js" type="text/javascript"></script>
+<!--<script src="js/contactform/contactform.js" type="text/javascript"></script>-->
+<script src="js/email.js" type="text/javascript"></script>
 
 <!-- javascript -->
 

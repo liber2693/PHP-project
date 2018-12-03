@@ -1,6 +1,8 @@
 
 var url_pagina = 'controllers/';
 var url_admin = '../../controllers/eventoAdminControllers.php';
+var url_imagen = 'img/eventos/';
+
 
 function getAbsolutePath() {
     var loc = window.location;

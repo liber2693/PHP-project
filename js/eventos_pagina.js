@@ -37,7 +37,7 @@ function listar_eventos(page){
         "cache": false,
         "data": {
             "page": page,
-            "text": "'"+text+"'",
+            "text": text,
         }
     }
 
@@ -46,22 +46,21 @@ function listar_eventos(page){
 
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
-
     	paginator = new Paginator(data.total, page, 6);
 
     	data.lista.forEach(function(data, indice, array) {
-
+	
     		var div_lista = '';
 		    
 				div_lista += '<div class="col-md-6 col-sm-12">';
 			        div_lista += '<div class="media wow fadeInUp" data-wow-delay="0.6s">';
 			          	div_lista += '<div class="media-object pull-left">';
-				            div_lista += '<img src="'+data.imagen+'" class="img-responsive" alt="Food Menu">';
-				            div_lista += '<span class="menu-price" onclick="noti_evento()">Ver mas +</span>';
+				            div_lista += '<img src="'+url_imagen+data.nombre_imagen+'" class="img-responsive" alt="Food Menu">';
+				            div_lista += '<span class="menu-price" onclick="noti_evento(\''+url_imagen+data.nombre_imagen+'\',\''+data.titulo+'\',\''+data.fecha_creacion+'\',\''+data.contenido+'\')">Ver mas +</span>';
 			          	div_lista += '</div>';
 			          	div_lista += '<div class="media-body">';
 				            div_lista += '<h3 class="media-heading">'+data.titulo+'</h3>';
-				            div_lista += '<p>'+data.fecha_cracion+'</p>';
+				            div_lista += '<p>'+data.fecha_creacion+'</p>';
 				        div_lista += '</div>';
 			        div_lista += '</div>';
 				div_lista += '</div>';
@@ -102,7 +101,7 @@ function listar_eventos(page){
 
 }
 /** funcion para ver el detalle del evento**/
-function noti_evento(){
+function noti_evento(imagen,titulo,fecha,contenido){
 
 	console.log("evento completo");
 
@@ -119,8 +118,8 @@ function noti_evento(){
 			noti += '<div class="col-md-6 col-sm-6 col-xs-12">';
 	          	noti += '<div class="well-left">';
 					noti += '<div class="single-well">';
-	              		noti += '<a href="#">';
-							noti += '<img src="img/eventos/1aca95a1d88c1d7c6e80db4bba904710.jpg" alt="">';
+	              		noti += '<a>';
+							noti += '<img src="'+imagen+'" alt="webpage_bell">';
 						noti += '</a>';
 	            	noti += '</div>';
 	          	noti += '</div>';
@@ -130,10 +129,10 @@ function noti_evento(){
 				noti += '<div class="well-middle">';
 	            	noti += '<div class="single-well">';
 						noti += '<a>';
-	                		noti += '<h4 class="sec-head">¿Qué es MaschinenWerk 2000,C.A?</h4>';
+	                		noti += '<h4 class="sec-head">'+titulo+'</h4>';
 	              		noti += '</a>';
-	              		noti += '<p>25-Nov-2018</p>';
-	              		noti += '<p class="text-justify">Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico. Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos. Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.</p>';
+	              		noti += '<p>'+fecha+'</p>';
+	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+contenido+'</p>';
 	              	noti += '</div>';
 	          	noti += '</div>';
 	        noti += '</div>';

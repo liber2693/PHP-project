@@ -51,7 +51,7 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 					$fecha_creacion = $fecha;
 					$estatus = 0;
 					
-					$result = $db->createEvent($titulo,$contenido,$nombre_definido,$fecha_creacion,$estatus,$id);
+					$result = $db->createEventAdmin($titulo,$contenido,$nombre_definido,$fecha_creacion,$estatus,$id);
 					
 					//Registro completado
 		        	header('Content-type: application/json; charset=utf-8');
@@ -92,7 +92,7 @@ if(isset($_GET['page']))
 	//print_r($text);die();
 	//$lista = array();
 	
-	$lista = $db->listEvent($text);
+	$lista = $db->listEventAdmin($text);
 
 	
 	$total = count($lista);
@@ -117,7 +117,7 @@ if(isset($_POST['id']) && isset($_POST['estatus'])){
 	$estatus = $_POST['estatus'];
 	$fecha_modificacion = $fecha;
 
-	$result = $db->changeStatusEvent($id_registro,$fecha_modificacion,$estatus);
+	$result = $db->changeStatusEventAdmin($id_registro,$fecha_modificacion,$estatus);
 	
 	$data = [ 
 		"result" => $result
@@ -174,11 +174,14 @@ if(isset($_POST['id_registro']) && isset($_POST['titulo_Actualizar']) && isset($
 					if ($resultado)
 					{
 						//buscar imagen vieja para modificarla
-						$imagen_vieja = $db->selectPhoteEvent($id_registro);						
-						
+						$imagen_vieja = $db->selectPhoteEventAdmin($id_registro);	
+						$archivo_viejo = $ruta.$imagen_vieja['nombre_imagen'];
+						//eliminar registro
+						if(file_exists($archivo_viejo)){
+							unlink($archivo_viejo);
+						}
 						//actualizar registro con la imagen			
-						
-						$result = $db->createEvent($titulo,$contenido,$nombre_definido,$fecha_creacion,$estatus,$id);
+						$result = $db->updateEventAdmin($id_registro,$titulo,$contenido,$nombre_definido,$fecha_modificacion,$id,1);
 						
 						//Registro completado
 			        	header('Content-type: application/json; charset=utf-8');
@@ -215,9 +218,29 @@ if(isset($_POST['id_registro']) && isset($_POST['titulo_Actualizar']) && isset($
 	else
 	{
 		//parte del codigo para actualizar solo texto del evento
-		$result = $db->updateEvent($id_registro,$titulo,$contenido,null,$fecha_modificacion,$id,2);
+		$result = $db->updateEventAdmin($id_registro,$titulo,$contenido,null,$fecha_modificacion,$id,2);
 
 	}
 	print_r($result);die();
+}
+
+//eliminar registro evento
+if(isset($_POST['id_registro_eliminar'])){
+	
+	$id = $_POST['id_registro_eliminar'];
+
+	//buscar imagen vieja para modificarla
+	$imagen_evento = $db->selectPhoteEventAdmin($id);	
+	$archivo_evento = $ruta.$imagen_evento['nombre_imagen'];
+	//eliminar registro
+	if(file_exists($archivo_evento)){
+		unlink($archivo_evento);
+	}
+
+	$result = $db->deleteEventAdmin($id);
+
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($result);
+	exit();
 }
 ?>

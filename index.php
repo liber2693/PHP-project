@@ -701,97 +701,85 @@
   </section>
 
 
-  <!-- @component: footer -->
-  <section id="contact">
-	<div class="container">
-	  <div class="row">
-		<div class="col-md-12 text-center">
-			<h2 class="section-title">Contáctanos, haz tu pedido ya</h2>
-			<p align="center">Envíanos un correo electrónico desde acá, con Marca, Modelo y Serial del producto de tu preferencia</p><br>
-
-		</div>
-	  </div>
-
-	  <div class="row justify-content-center">
-		<div class="col-lg-3 col-md-4">
-		  <div class="info">
-			<div>
-			  <i class="fa fa-map-marker"></i>
-				<p>Sede Venezuela: 
-					<br>Av Veracruz, Edificio Keope<br>
-					Piso 1 Oficina 15B, 
-					Municipio Baruta,<br>
-					Las Mercedes, Caracas<br>
-					Venezuela.
-				</p>
-			</div>
-			<div>
-			  <i class="fa fa-map-marker"></i>
-				<p>Sede Trinidad: 
-					<br>Av Veracruz, Edificio Keope<br>
-					Piso 1 Oficina 15B, 
-					Municipio Baruta,<br>
-					Las Mercedes, Caracas<br>
-					Venezuela.
-				</p>
-			</div>
-
-			<div>
-			  <i class="fa fa-envelope"></i>
-				<p>Ventas@maschinen-werk.com</p>
-			</div>
-
-			<div>
-			  <i class="fa fa-phone"></i>
-				<p>Tel: +58  212 9911957</p>
-			</div>
-
-		  </div>
-		</div>
-
-		<div class="col-lg-5 col-md-8">
-		  <div class="form">
-			<div id="sendmessage">Your message has been sent. Thank you!</div>
-			<div id="errormessage"></div>
-			<form action="" method="post" role="form" class="contactForm">
-			  <div class="form-group">
-				<textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
-				<div class="validation"></div>
-			  </div>
-			  <div class="form-group">
-				<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor introduzca un Email válido" />
-				<div class="validation"></div>
-			  </div>
-			  <div class="form-group">
-				<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor introduzca al menos 8 caractéres" />
-				<div class="validation"></div>
+<!-- @component: footer -->
+  	<section id="contact">
+		<div class="container">
+		  	<div class="row">
+				<div class="col-md-12 text-center">
+					<h2 class="section-title">Contáctanos, haz tu pedido ya</h2>
+					<p align="center">Envíanos un correo electrónico desde acá, con Marca, Modelo y Serial del producto de tu preferencia</p><br>
 				</div>
-				<div class="form-group">
-				<input type="text" class="form-control" name="marca" id="marca" placeholder="Marca" data-rule="minlen:4" data-msg="Por favor introduzca la marca del producto" />
-				<div class="validation"></div>
-				</div>
-				<div class="form-group">
-				<input type="text" class="form-control" name="modelo" id="modelo" placeholder="Modelo" data-rule="minlen:4" data-msg="Por favor introduzca el modelo del producto" />
-				<div class="validation"></div>
-				</div>
-				<div class="form-group">
-				<input type="text" class="form-control" name="serial" id="serial" placeholder="Serial (Opcional)" data-rule="minlen:4" />
-				<div class="validation"></div>
-			  </div>
-			  <div class="form-group">
-				<textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Por favor escriba algo para nosotros" placeholder="Mensaje"></textarea>
-				<div class="validation"></div>
-			  </div>
-			  <div class="text-center">
-				<button type="submit">Envíar</button>
-			  </div>
-			</form>
-		  </div>
-		</div>
+		 	</div>
 
-	  </div>
-	</div>
-  </section>
+	  		<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-4">
+		  			<div class="info">
+						<div>
+							<i class="fa fa-map-marker"></i>
+							<p>Sede Venezuela: 
+								<br>Av Veracruz, Edificio Keope<br>
+								Piso 1 Oficina 15B, 
+								Municipio Baruta,<br>
+								Las Mercedes, Caracas<br>
+								Venezuela.
+							</p>
+						</div>
+						<div>
+							<i class="fa fa-map-marker"></i>
+							<p>Sede Trinidad: 
+								<br>Av Veracruz, Edificio Keope<br>
+								Piso 1 Oficina 15B, 
+								Municipio Baruta,<br>
+								Las Mercedes, Caracas<br>
+								Venezuela.
+							</p>
+						</div>
+						<div>
+							<i class="fa fa-envelope"></i>
+							<p>Ventas@maschinen-werk.com</p>
+						</div>
+						<div>
+							<i class="fa fa-phone"></i>
+							<p>Tel: +58  212 9911957</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-8">
+			  		<div class="form">
+						<div id="respuesta"></div>
+						<!--<form action="" method="post" role="form" class="contactForm">-->
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email"/>
+							<div class="validation" id="validation1"></div>
+					  	</div>
+					  	<div class="form-group">
+							<input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto"/>
+							<div class="validation" id="validation2"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="marca" id="marca" placeholder="Marca"/>
+							<div class="validation" id="validation3"></div>	
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="modelo" id="modelo" placeholder="Modelo"/>
+							<div class="validation" id="validation4"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="serial" id="serial" placeholder="Serial (Opcional)" />
+						</div>
+				  		<div class="form-group">
+							<textarea class="form-control" name="contenido" id="contenido" rows="3" placeholder="Mensaje"></textarea>
+							<div class="validation" id="validation5"></div>
+				  		</div>
+				  		<div class="text-center">
+							<button type="submit" id="enviar">Envíar</button>
+				  		</div>
+					<!--</form>-->
+			 		</div>
+				</div>
+			</div>
+		</div>
+ 	</section>
 
  
   <footer class="site-footer">

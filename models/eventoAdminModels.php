@@ -9,7 +9,7 @@ class EventAdmin
 
 
 	//crear evento
-	public function createEvent($titulo,$descripcion,$imagen,$fecha_creacion,$status,$usuario_creador)
+	public function createEventAdmin($titulo,$descripcion,$imagen,$fecha_creacion,$status,$usuario_creador)
 	{
 		try {
 
@@ -34,7 +34,7 @@ class EventAdmin
 	}
 
 	//listar eventos en el admin
-	public function listEvent($text){
+	public function listEventAdmin($text){
 
 		$conexion = new Database();
 
@@ -62,7 +62,7 @@ class EventAdmin
 	}
 
 	//cambiar estatus
-	public function changeStatusEvent($id,$fecha_modificacion,$estatus)
+	public function changeStatusEventAdmin($id,$fecha_modificacion,$estatus)
 	{
 
 		try {
@@ -93,7 +93,7 @@ class EventAdmin
 	}
 
 	//actualizar evento
-	public function updateEvent($id,$titulo,$contenido,$imagen,$fecha_modificacion,$usuario_creador,$tipo){
+	public function updateEventAdmin($id,$titulo,$contenido,$imagen,$fecha_modificacion,$usuario_creador,$tipo){
 		
 		try {
 			
@@ -104,8 +104,11 @@ class EventAdmin
 			if($tipo == 2)
 			{
 				$sql = "UPDATE noticias SET titulo = '$titulo', contenido = '$contenido', fecha_modificacion = '$fecha_modificacion', id_usuario_creador = $usuario_creador WHERE id = $id"; //actualziar registro sin imagen
-			}else{
-				$sql_estatus = 0; //desactivar
+			}
+			elseif($tipo == 1)
+			{
+				$sql = "UPDATE noticias SET titulo = '$titulo', contenido = '$contenido', nombre_imagen = '$imagen', fecha_modificacion = '$fecha_modificacion', id_usuario_creador = $usuario_creador WHERE id = $id"; //actualziar registro COMPLETO
+
 			}
 			
 			$sth = $c->prepare($sql);
@@ -114,15 +117,15 @@ class EventAdmin
 		
 			$conexion->disconnec();
 
-			return 1;
+			return 5;
 			
 		} catch (Exception $e) {
-			return 3; // error en actualizar
+			return 4; // error en actualizar
 		}
 		
 	}
 	//buscar imagen 
-	public function selectPhoteEvent($id){
+	public function selectPhoteEventAdmin($id){
 		
 		$conexion = new Database();
 
@@ -137,6 +140,28 @@ class EventAdmin
 		$conexion->disconnec();
 
 		return $result;
+	}
+	//eliminar evento
+	public function deleteEventAdmin($id){
+
+		try {
+			$conexion = new Database();
+
+			$c = $conexion->connect();
+
+			$sth = $c->prepare("DELETE FROM noticias WHERE id = $id");
+			
+			$sth->execute();
+			
+			$conexion->disconnec();
+
+			return 1;
+
+		} catch (Exception $e) {
+			return 3;
+		}
+		
+		
 	}
 	
 }

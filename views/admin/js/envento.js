@@ -47,6 +47,11 @@ $(function(){
     $("#enviar_actualizar_evento").on("click",function(){
         actualizar_evento(id_registro);
     })
+    //eliminar registro
+    $("#eliminar_evento").on("click",function(){
+        eliminar_evento(id_registro_elimanar);
+    })
+    
 
 
 });
@@ -55,7 +60,7 @@ function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
 	var contenido = $("#contenido").val().trim();
-	
+    
 	var imagen = document.getElementById('imagen');
     var file = imagen.files[0];
 
@@ -231,7 +236,7 @@ function listar_evento(page){
                 tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')"></td>';
                 tabla += '<td>';
                 tabla += '<button type="button" onclick="pre_actualizar('+data.id+',\''+data.titulo+'\',\''+data.contenido+'\',\''+data.nombre_imagen+'\')" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
-                tabla += '<button type="button" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
+                tabla += '<button type="button" onclick="pre_eliminar('+data.id+',\''+data.titulo+'\',\''+data.fecha_creacion+'\')" data-toggle="modal" data-target="#myModal" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
                 tabla += '</td>';
                 tabla += '</tr>';
                 $("#registros").append(tabla);
@@ -252,7 +257,7 @@ function listar_evento(page){
                 pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</i></button>&nbsp;';
             }
             
-            pag += '<button type="button" class="btn btn-boton" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
+            pag += '<button type="button" class="btn" style="color: #fff;background-color: #132c31;border-color: #199EB8;" onclick="listar_evento('+ paginator.getPage() +');">'+ paginator.getPage() +'</button>&nbsp;';
         
             if(paginator.hasNext())
             {
@@ -319,12 +324,11 @@ function cambiar_estatus(id,status){
                 alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
             break;
         }
-        hideLoader();
-
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
         alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
     });
+    hideLoader();
     
 }
 
@@ -389,11 +393,99 @@ function actualizar_evento(id){
     };
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
+        var result = data;
+        
+        switch (result) {
+            case 0:
+                alerta_mensaje("danger", "Ha ocurrido un error con la imagen", $("#crear_error_alert")).show();
+            break;
 
+            case 1:
+                alerta_mensaje("danger", "La imagen no es del Tipo de archivo que se solicita", $("#crear_error_alert")).show();
+            break;
+
+            case 2:
+                alerta_mensaje("danger", "La imagen ya existe en el servidor", $("#crear_error_alert")).show();
+            break;
+
+            case 3:
+                alerta_mensaje("danger", "La imagen no se puede subir al servidor", $("#crear_error_alert")).show();
+            break;
+            
+            case 4:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
+            break;
+
+            case 5:
+                alerta_mensaje("success", "Evento actualizado con exito", $("#lista_error_alert")).show();
+                limpiar();
+            break;
+
+            default:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
+            break;
+        }
+        listar_evento();
+        limpiar();
+        $("#actualizar_evento").addClass("oculto");
+        $("#lista_eventos").removeClass("oculto");
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
         alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
     });
     hideLoader();
 
+}
+/** levantar la modal para anunciar una condicion de eliminar **/
+function pre_eliminar(id,titulo,fecha){
+    console.log(id+titulo+fecha);
+
+    $("#titulo_evento").html(titulo);
+    $("#fecha_evento").html(fecha);
+
+    id_registro_elimanar = id;
+
+}
+/** Eliminar registro, evento de la base de datos **/
+function eliminar_evento(id) {
+    console.log(id);
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "POST",
+        "dataType": "json",
+        "url": url_admin,
+        "data": {
+            "id_registro_eliminar" : id,
+        },
+        "beforeSend" : function() {
+            showLoader();        
+        },
+        "cache": false,
+    };
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
+        var result = data;
+
+        switch (result) {
+            case 1:
+                alerta_mensaje("success", "Evento eliminado", $("#lista_error_alert")).show();
+                listar_evento();
+                $("#myModal").modal('hide');
+            break;
+
+            case 3:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+            break;
+
+            default:
+                alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+            break;
+        }
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+    });
+    hideLoader();
 }

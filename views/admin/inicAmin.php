@@ -130,6 +130,34 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 
     	</div>
         <!-- Cuerpo -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¿Deseas eliminar este Evento?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--<form method="post" id="login">-->
+                        <div class="modal-body">
+                            <p>titulo: <strong id="titulo_evento"></strong></p>
+                            <p>fecha: <strong id="fecha_evento"></strong></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="eliminar_evento">
+                                    Eliminar
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Cancelar
+                            </button>
+                        </div>
+                    <!--</form>-->
+                </div>
+            </div>
+        </div>
+        <!-- fin Modal -->
     </div>
     <?php include 'footer.php';?>
 </html>
