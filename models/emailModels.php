@@ -33,8 +33,8 @@ class Email
 		   	//$mail->setLanguag('es','../libreria/PHPMailer/language/phpmailer.lang-es.php');
 
 		    //Recipients
-		    $mail->setFrom('jarondon07@gmail.com', 'MaschinenWerk 2000 Solicitud');
-		    $mail->addAddress('liber2693@gmail.com', 'Liber Rosas');     // Añadir un destinatario
+		    $mail->setFrom($emisor_email, $emisor_email);
+		    $mail->addAddress('liber2693@gmail.com', 'MaschinenWerk 2000 Solicitud');     // Añadir un destinatario
 		    //$mail->addAddress('jarondon07@yahoo.com');               // Name is optional
 		    //$mail->addReplyTo('info@example.com', 'Information');
 		    //$mail->addCC('cc@example.com');
