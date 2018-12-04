@@ -746,7 +746,7 @@
 				</div>
 				<div class="col-lg-5 col-md-8">
 			  		<div class="form">
-						<div id="respuesta"></div>
+						<div id="respuesta" class="text-center"></div>
 						<!--<form action="" method="post" role="form" class="contactForm">-->
 						<div class="form-group">
 							<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email"/>

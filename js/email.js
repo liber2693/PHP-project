@@ -76,7 +76,7 @@ function envio_correo(){
         "async": true,
         "crossDomain": true,
         "type": "GET",
-        "dataType": "json",
+        "dataType": "JSON",
         "url": url_pagina+'emailControllers.php',
         "cache": false,
         "data": {
@@ -86,13 +86,16 @@ function envio_correo(){
             "modelo": modelo,
             "serial": serial,
             "contenido": contenido,
-        }
+        },
+        "beforeSend" : function() {
+            Home.enviar.attr("disabled",true);
+            Home.enviar.html("Enviando...");
+        },
     }
 
-    Home.enviar.attr("disabled",true);
-    Home.enviar.html("Enviando...");
-
     $.ajax(settings).done(function(response){
+
+        console.log(response);
         
         Home.enviar.attr("disabled",false);
         Home.enviar.html("Enviar Mensaje");
