@@ -121,14 +121,34 @@ function parrafo(text,operacion){
     /** @type {[1]} [le quita los saltos de linea y le agrega <br />] **/
     if (operacion == 1) 
     {
-        var string = text.split("[\n].s").join("<br />");
+        var string = text.replace(/\n/g, "<br/>");
     }
 
     /** @type {[2]} [le quita los <br /> le agrega los saltos de linea] **/
     if (operacion == 2) 
     {
-        var string = text.split("<br />").join("\n");
+        var string = text.replace("<br/>", /\n/g);
     }
 console.log(string);
-    //return string;
+
+    return string;
+    //
+ 
 }
+
+var textFormat = function(text){
+  text = text.replace(/\r?\n/g, "<br/>");
+  return text;
+}
+
+var questionFormat = function(question){
+  myText = myText.replace(question, "<strong>" + question + "</strong>");
+  console.log(myText);
+  return myText;
+}
+
+var myText = document.getElementById("jr-origin").innerHTML;
+var myTextTarget = document.getElementById("jr-target");
+var newArray = myText.match(/¿[a-zA-Z0-9 áéíóúñÁÉÍÓÚÑ]*\?/g)
+newArray.forEach(questionFormat)
+myTextTarget.innerHTML = textFormat(myText);

@@ -61,7 +61,7 @@ function crear_evento(){
 	var titulo = $("#titulo").val().trim();
 	var texto = $("#contenido").val().trim();
     var contenido = parrafo(texto,1);
-    return false;
+    
 	var imagen = document.getElementById('imagen');
     var file = imagen.files[0];
 
