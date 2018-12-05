@@ -132,7 +132,7 @@ function noti_evento(imagen,titulo,fecha,contenido){
 	                		noti += '<h4 class="sec-head">'+titulo+'</h4>';
 	              		noti += '</a>';
 	              		noti += '<p>'+fecha+'</p>';
-	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+contenido+'</p>';
+	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un terremoto de 4,7 grados en la escala abierta de Richter ha sacudido este miércoles el noroeste de Venezuela. Según ha informado el Centro Sismológico Euromediterráneo (EMSC, según sus sigla en inglés), el seísmo ha tenido lugar en el estado de Yaracuy, a 73 kilómetros al noroeste de Valencia y a 21 kilómetros al noreste de San Felipe, a dos kilómetros de profundidad.</p>';
 	              	noti += '</div>';
 	          	noti += '</div>';
 	        noti += '</div>';

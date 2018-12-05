@@ -34,7 +34,7 @@ class Email
 
 		    //Recipients
 		    $mail->setFrom($emisor_email, $emisor_email);
-		    $mail->addAddress('liber2693@gmail.com', 'MaschinenWerk 2000 Solicitud');     // Añadir un destinatario
+		    $mail->addAddress('jarondon07@yahoo.com', 'MaschinenWerk 2000 Solicitud');     // Añadir un destinatario
 		    //$mail->addAddress('jarondon07@yahoo.com');               // Name is optional
 		    //$mail->addReplyTo('info@example.com', 'Information');
 		    //$mail->addCC('cc@example.com');
@@ -81,7 +81,7 @@ class Email
 									<!-- encabezado -->
 									<tr>
 										<td class="encabezado">
-											<img  src="../img/images/logo_correo.png" alt="MaschinenWerk 2000,C.A">
+											<img  src="https://drive.google.com/file/d/1j9mdD_vOJoSS3OJuKZbHSv1KLWLwK5h9/view?usp=sharing" alt="MaschinenWerk 2000,C.A">
 										</td>
 									</tr>';
 

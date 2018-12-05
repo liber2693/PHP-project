@@ -17,7 +17,7 @@ Home.modelo = $("#modelo");
 Home.contenido = $("#contenido");
 Home.serial = $("#serial");
 
-Home.enviar = $("#enviar");
+Home.enviar = $("#enviar_correo");
 
 Home.validation1 = $("#validation1");
 Home.validation2 = $("#validation2");
@@ -105,6 +105,7 @@ function envio_correo(){
         if(result == 1){
             Home.respuesta.html("mensaje enviado");
             Home.respuesta.css({color: "#0070ba"});
+            limpiar_campos();
         }
         else{
             Home.respuesta.html("mensaje no envio");
@@ -118,4 +119,8 @@ function envio_correo(){
         Home.enviar.attr("disabled",false);
         Home.enviar.html("Enviar Mensaje");
     });
+}
+
+function limpiar_campos(){
+    $(".limpiar_email").val("");
 }

@@ -98,7 +98,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                             <label id="error_label_contenido">
                                                 Cuerpo del Evento
                                             </label>
-                                            <textarea id="contenido_Actualizar" name="contenido_Actualizar" class="form-control crear_evento" rows="7" placeholder="Redacte aquí su evento..."></textarea>
+                                            <textarea id="contenido_Actualizar" name="contenido_Actualizar" class="form-control crear_evento" rows="15" placeholder="Redacte aquí su evento..."></textarea>
                                         </div>
                                         <div class="form-group text-center" id="error_div_imagen">
                                             <label id="error_label_imagen">

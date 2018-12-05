@@ -749,30 +749,30 @@
 						<div id="respuesta" class="text-center"></div>
 						<!--<form action="" method="post" role="form" class="contactForm">-->
 						<div class="form-group">
-							<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email"/>
+							<input type="email" class="form-control limpiar_email" name="email" id="email" placeholder="Tu Email"/>
 							<div class="validation" id="validation1"></div>
 					  	</div>
 					  	<div class="form-group">
-							<input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto"/>
+							<input type="text" class="form-control limpiar_email" name="asunto" id="asunto" placeholder="Asunto"/>
 							<div class="validation" id="validation2"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" name="marca" id="marca" placeholder="Marca"/>
+							<input type="text" class="form-control limpiar_email" name="marca" id="marca" placeholder="Marca"/>
 							<div class="validation" id="validation3"></div>	
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" name="modelo" id="modelo" placeholder="Modelo"/>
+							<input type="text" class="form-control limpiar_email" name="modelo" id="modelo" placeholder="Modelo"/>
 							<div class="validation" id="validation4"></div>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" name="serial" id="serial" placeholder="Serial (Opcional)" />
+							<input type="text" class="form-control limpiar_email" name="serial" id="serial" placeholder="Serial (Opcional)" />
 						</div>
 				  		<div class="form-group">
-							<textarea class="form-control" name="contenido" id="contenido" rows="3" placeholder="Mensaje"></textarea>
+							<textarea class="form-control limpiar_email" name="contenido" id="contenido" rows="3" placeholder="Mensaje"></textarea>
 							<div class="validation" id="validation5"></div>
 				  		</div>
 				  		<div class="text-center">
-							<button type="submit" id="enviar">Envíar</button>
+							<button type="submit" id="enviar_correo">Envíar</button>
 				  		</div>
 					<!--</form>-->
 			 		</div>
@@ -781,7 +781,7 @@
 		</div>
  	</section>
 
- 
+
   <footer class="site-footer">
 	<div class="bottom">
 	  <div class="container">

@@ -59,8 +59,9 @@ $(function(){
 function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
-	var contenido = $("#contenido").val().trim();
-    
+	var texto = $("#contenido").val().trim();
+    var contenido = parrafo(texto,1);
+    return false;
 	var imagen = document.getElementById('imagen');
     var file = imagen.files[0];
 
@@ -339,7 +340,7 @@ function pre_actualizar(id,titulo,contenido,imagen){
     $("#actualizar_evento").removeClass("oculto");
 
     $("#titulo_Actualizar").val(titulo);
-    $("#contenido_Actualizar").val(contenido);
+    $("#contenido_Actualizar").val(parrafo(contenido,2));
     $("#imagen_previa").attr('src', '../../img/eventos/'+imagen);
 
     id_registro = id;

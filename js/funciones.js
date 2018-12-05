@@ -116,3 +116,19 @@ function cambia_fondo(fila,status){
     }
 }
 
+function parrafo(text,operacion){
+
+    /** @type {[1]} [le quita los saltos de linea y le agrega <br />] **/
+    if (operacion == 1) 
+    {
+        var string = text.split("[\n].s").join("<br />");
+    }
+
+    /** @type {[2]} [le quita los <br /> le agrega los saltos de linea] **/
+    if (operacion == 2) 
+    {
+        var string = text.split("<br />").join("\n");
+    }
+console.log(string);
+    //return string;
+}
