@@ -56,11 +56,11 @@ function listar_eventos(page){
 			        div_lista += '<div class="media wow fadeInUp" data-wow-delay="0.6s">';
 			          	div_lista += '<div class="media-object pull-left">';
 				            div_lista += '<img src="'+url_imagen+data.nombre_imagen+'" class="img-responsive" alt="Food Menu">';
-				            div_lista += '<span class="menu-price" onclick="noti_evento(\''+url_imagen+data.nombre_imagen+'\',\''+data.titulo+'\',\''+data.fecha_creacion+'\',\''+parrafo(data.contenido)+'\')">Ver mas +</span>';
+				            div_lista += '<span class="menu-price" onclick="noti_evento('+data.id+')">Ver mas +</span>';
 			          	div_lista += '</div>';
 			          	div_lista += '<div class="media-body">';
 				            div_lista += '<h3 class="media-heading">'+data.titulo+'</h3>';
-				            div_lista += '<p>'+data.fecha_creacion+'</p>';
+				            div_lista += '<p>'+fn_date_format(data.fecha_creacion,true)+'</p>';
 				        div_lista += '</div>';
 			        div_lista += '</div>';
 				div_lista += '</div>';
@@ -101,48 +101,73 @@ function listar_eventos(page){
 
 }
 /** funcion para ver el detalle del evento**/
-function noti_evento(imagen,titulo,fecha,contenido){
+function noti_evento(id){
 
-	console.log("evento completo");
+	console.log(id);
 
 	$("#eventos_lista").find("div").remove();
     $("#paginador_event").find("i").remove();
 	$("#noticia").find("div").remove();
 
-	var noti = "";
+	var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "GET",
+        "dataType": "json",
+        "url": url_pagina+'eventoControllers.php',
+        "cache": false,
+        "data": {
+            "id_evento": id,
+        },
+    }
 
-	noti += '<div id="about" class="about-area area-padding">';
-	noti += '<div class="container">';
-		noti += '<div class="row">';
-    		/*<!-- single-well start-->*/
-			noti += '<div class="col-md-6 col-sm-6 col-xs-12">';
-	          	noti += '<div class="well-left">';
-					noti += '<div class="single-well">';
-	              		noti += '<a>';
-							noti += '<img src="'+imagen+'" alt="webpage_bell">';
-						noti += '</a>';
-	            	noti += '</div>';
-	          	noti += '</div>';
-	        noti += '</div>';
-    		/*<!-- single-well end-->*/
-	        noti += '<div class="col-md-6 col-sm-6 col-xs-12">';
-				noti += '<div class="well-middle">';
-	            	noti += '<div class="single-well">';
-						noti += '<a>';
-	                		noti += '<h4 class="sec-head">'+titulo+'</h4>';
-	              		noti += '</a>';
-	              		noti += '<p>'+fecha+'</p>';
-	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+contenido+'</p>';
-	              	noti += '</div>';
-	          	noti += '</div>';
-	        noti += '</div>';
-	        /*<!-- End col-->*/
-  		noti += '</div>';
-  		noti += '<button type="button" id="volver" onclick="volver()" class="btn btn-boton"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button>';
-	noti += '</div>';
-	noti += '</div>';
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
 
-	$("#noticia").append(noti);
+    	var noti = "";
+
+		noti += '<div id="about" class="about-area area-padding">';
+		noti += '<div class="container">';
+			noti += '<div class="row">';
+	    		/*<!-- single-well start-->*/
+				noti += '<div class="col-md-12 col-sm-12 col-xs-12">';
+		          	noti += '<div class="well-left">';
+						noti += '<div class="single-well">';
+		              		noti += '<p>';
+								noti += '<span class="capital"><img src="'+url_imagen+data.nombre_imagen+'" alt="webpage_bell"><span>';
+								noti += '<h4 class="sec-head">'+data.titulo+'</h4>';
+								noti += '<a>'+fn_date_format(data.fecha_creacion,true)+'</a>';
+								noti += '<a class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+data.contenido+'</a>';
+							noti += '</p>';
+		            	noti += '</div>';
+		          	noti += '</div>';
+		        noti += '</div>';
+	    		/*<!-- single-well end-->*/
+		        /*noti += '<div class="col-md-6 col-sm-6 col-xs-12">';
+					noti += '<div class="well-middle">';
+		            	noti += '<div class="single-well">';
+							noti += '<a>';
+		                		noti += '<h4 class="sec-head">'+data.titulo+'</h4>';
+		              		noti += '</a>';
+		              		noti += '<p>'+fn_date_format(data.fecha_creacion,true)+'</p>';
+		              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+data.contenido+'</p>';
+		              	noti += '</div>';
+		          	noti += '</div>';
+		        noti += '</div>';*/
+		        /*<!-- End col-->*/
+	  		noti += '</div>';
+	  		noti += '<button type="button" id="volver" onclick="volver()" class="btn btn-boton"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button>';
+		noti += '</div>';
+		noti += '</div>';
+
+		$("#noticia").append(noti);
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("ERROR");
+    });
+	
+    
 
 }
 

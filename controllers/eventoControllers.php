@@ -25,4 +25,18 @@ if(isset($_GET['page']))
 	echo json_encode($data);
 	exit();
 }	
+
+//buscar un evento
+if(isset($_GET['id_evento']))
+{
+	$id_evento = $_GET['id_evento'];
+	
+	//buscar registro por el id
+	$data = $db->selectEvent($id_evento);
+
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	exit();
+	
+}
 ?>

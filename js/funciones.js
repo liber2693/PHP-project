@@ -116,51 +116,82 @@ function cambia_fondo(fila,status){
     }
 }
 
+//formatear fecha (2018-05-11 19:25:52) => (11-may-2018 07:25p.m.)
+function fn_date_format(date, ocultarHora){
+
+    if(!date) return "";
+
+    //meses en español
+    var months = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+
+    //separar fecha y hora
+    var splitDate = date.split(" ");
+    var fecha = splitDate[0];
+    var hora = splitDate[1];
+
+    //convertir fecha
+    var splitFecha = fecha.split("-");
+    splitFecha.reverse();
+    splitFecha[1] = months[parseInt(splitFecha[1]) - 1];
+
+    //convertir hora
+    var ampm = "a.m.";
+    var splitHora = hora.split(":");
+
+    splitHora[0] = parseInt(splitHora[0]);
+
+    //eliminar segundos
+    splitHora.pop();
+
+    //am o pm
+    if(splitHora[0] > 11)
+    {
+        ampm = "p.m.";
+        splitHora[0] = splitHora[0] - 12;
+    }
+
+    //convertir a 12 horas
+    if(splitHora[0] == 0)
+    {
+        splitHora[0] = "12";
+    }
+
+    //añadir "0" si es menor a 10
+    if(parseInt(splitHora[0]) < 10)
+    {
+        splitHora[0] = "0" + splitHora[0];
+
+    }
+
+    //unir y retornar
+    if(ocultarHora)
+    {
+        return splitFecha.join("-");
+    }
+    return splitFecha.join("-") + " " + splitHora.join(":") + "" +ampm;
+}
+
 function parrafo(text,operacion){
 
     /** @type {[1]} [le quita los saltos de linea y le agrega <br />] **/
-    /*if (operacion == 1) 
+    if (operacion == 1) 
     {
-        var string = text.replace(/\n/g, "<br/>");
-    }*/
+        text = text.replace(/\r?\n/g, "<br/>");
+    }
 
     /** @type {[2]} [le quita los <br /> le agrega los saltos de linea] **/
-    /*if (operacion == 2) 
+    if (operacion == 2) 
     {
-        var string = text.replace("<br/>", /\n/g);
+        text = text.split("<br/>").join("\n");
     }
-console.log(string);
-
-    return string;*/
-    //
-    //
-    text = text.replace(/\n/g, "<br/>");
-    console.log(text)
+    
     return text;
- 
+    
 }
 
-function parrafo1(text,operacion){
+function comillas(str){
 
-    text = text.split("<br/>").join("\n");
-    console.log(text)
-    return text;
- 
+    str = str.split("'").join("''");
+
+    return "'"+str+"'";
 }
-
-/*var textFormat = function(text){
-  text = text.replace(/\r?\n/g, "<br/>");
-  return text;
-}*/
-
-/*var questionFormat = function(question){
-  myText = myText.replace(question, "<strong>" + question + "</strong>");
-  console.log(myText);
-  return myText;
-}
-
-var myText = document.getElementById("jr-origin").innerHTML;
-var myTextTarget = document.getElementById("jr-target");
-var newArray = myText.match(/¿[a-zA-Z0-9 áéíóúñÁÉÍÓÚÑ]*\?/g)
-newArray.forEach(questionFormat)
-myTextTarget.innerHTML = textFormat(myText);*/

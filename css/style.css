@@ -1055,3 +1055,7 @@ img {
     background-color: #07ccf3;
     border-color: #07ccf3;
 }
+
+span.capital {
+  float: left;
+}

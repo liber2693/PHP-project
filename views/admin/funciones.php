@@ -83,7 +83,10 @@ function tipo_archivo($tipo){
   
 }
 
-   //$nombre = post("nombre");
+/*function comillas_simples($comillas)
+{
+  print_r($comillas);die();
+}*/
 
 
 ?>

@@ -60,9 +60,9 @@ function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
 	var texto = $("#contenido").val().trim();
-    var contenido = texto;
-    
-	var imagen = document.getElementById('imagen');
+    var contenido = parrafo(texto,1);
+
+    var imagen = document.getElementById('imagen');
     var file = imagen.files[0];
 
     var data = new FormData();
@@ -233,10 +233,10 @@ function listar_evento(page){
                 tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
                 tabla += '<td>'+data.id+'</td>';
                 tabla += '<td>'+data.titulo+'</td>';
-                tabla += '<td>'+data.fecha_creacion+'</td>';
+                tabla += '<td>'+fn_date_format(data.fecha_creacion)+'</td>';
                 tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')"></td>';
                 tabla += '<td>';
-                tabla += '<button type="button" onclick="pre_actualizar('+data.id+',\''+data.titulo+'\',\''+parrafo(data.contenido)+'\',\''+data.nombre_imagen+'\')" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+                tabla += '<button  onclick="pre_actualizar('+data.id+')" type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
                 tabla += '<button type="button" onclick="pre_eliminar('+data.id+',\''+data.titulo+'\',\''+data.fecha_creacion+'\')" data-toggle="modal" data-target="#myModal" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
                 tabla += '</td>';
                 tabla += '</tr>';
@@ -334,16 +334,40 @@ function cambiar_estatus(id,status){
 }
 
 /** preparar un evento para actualizar **/
-function pre_actualizar(id,titulo,contenido,imagen){
+function pre_actualizar(id){
 
-    $("#lista_eventos").addClass("oculto");
-    $("#actualizar_evento").removeClass("oculto");
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "type": "GET",
+        "dataType": "json",
+        "url": url_admin,
+        "cache": false,
+        "data": {
+            "id_evento": id,
+        },
+        "beforeSend" : function() {
+            showLoader();        
+        },
+    }
 
-    $("#titulo_Actualizar").val(titulo);
-    $("#contenido_Actualizar").val(parrafo1(contenido));
-    $("#imagen_previa").attr('src', '../../img/eventos/'+imagen);
+    $.ajax(settings)
+    .done(function(data, textStatus, jqXHR) {
 
-    id_registro = id;
+        $("#lista_eventos").addClass("oculto");
+        $("#actualizar_evento").removeClass("oculto");
+
+        $("#titulo_Actualizar").val(data.titulo);
+        $("#contenido_Actualizar").val(parrafo(data.contenido,2));
+        $("#imagen_previa").attr('src', '../../img/eventos/'+data.nombre_imagen);
+
+        id_registro = data.id;
+
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#lista_error_alert")).show();
+    });
+    hideLoader();
 
 }
 

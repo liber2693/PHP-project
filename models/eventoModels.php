@@ -31,5 +31,24 @@ class Event
 		return $result;
 
 	}	
+
+	//buscar un evento
+	public function selectEvent($id){
+
+		$conexion = new Database();
+
+		$c = $conexion->connect();
+		
+		$sth = $c->prepare("SELECT * FROM noticias WHERE id = $id");
+
+		$sth->execute();
+		
+		$result = $sth->fetch(PDO::FETCH_ASSOC);
+		
+		$conexion->disconnec();
+		
+		return $result;
+
+	}
 }
 ?>

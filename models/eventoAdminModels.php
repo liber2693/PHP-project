@@ -21,7 +21,7 @@ class EventAdmin
 			$sth = $c->prepare("INSERT INTO noticias(titulo, contenido, nombre_imagen, fecha_creacion,
 							estatus, id_usuario_creador)
 							VALUES ('$titulo','$descripcion','$imagen','$fecha_creacion',$status,$usuario_creador)");
-		
+			
 			$sth->execute();
 		
 			$conexion->disconnec();
@@ -54,6 +54,25 @@ class EventAdmin
 		$sth->execute();
 		
 		$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+		
+		$conexion->disconnec();
+		
+		return $result;
+
+	}
+
+	//buscar un evento
+	public function selectEventAdmin($id){
+
+		$conexion = new Database();
+
+		$c = $conexion->connect();
+		
+		$sth = $c->prepare("SELECT * FROM noticias WHERE id = $id");
+
+		$sth->execute();
+		
+		$result = $sth->fetch(PDO::FETCH_ASSOC);
 		
 		$conexion->disconnec();
 		

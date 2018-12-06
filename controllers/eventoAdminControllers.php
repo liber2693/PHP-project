@@ -44,10 +44,9 @@ if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_FILES['image
 				$resultado = move_uploaded_file($temporalImagen, $completo);
 				if ($resultado)
 				{
-					
 					//parte del codigo donde se va a poner la funcion para hacer el registro del evento
 					$titulo = $_POST['titulo'];
-					$contenido = $_POST['contenido'];
+					$contenido = addslashes($_POST['contenido']);
 					$fecha_creacion = $fecha;
 					$estatus = 0;
 					
@@ -99,6 +98,8 @@ if(isset($_GET['page']))
 
 	$data = array_slice($lista, $currentPage * 10, 10);
 
+	//print_r($data);die();
+
 	$data = [ 
 		"lista" => $data,
 	 	"total" => $total 
@@ -129,12 +130,27 @@ if(isset($_POST['id']) && isset($_POST['estatus'])){
 	exit();
 
 }
+
+//buscar un evento
+if(isset($_GET['id_evento']))
+{
+	$id_evento = $_GET['id_evento'];
+	
+	//buscar registro por el id
+	$data = $db->selectEventAdmin($id_evento);
+
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	exit();
+	
+}
+
 // actualziar evento
 if(isset($_POST['id_registro']) && isset($_POST['titulo_Actualizar']) && isset($_POST['contenido_Actualizar']))
 {	
 	$id_registro = $_POST['id_registro'];
 	$titulo = $_POST['titulo_Actualizar'];
-	$contenido = $_POST['contenido_Actualizar'];
+	$contenido = addslashes($_POST['contenido_Actualizar']);
 	$fecha_modificacion = $fecha;
 
 	//si llega una nueva imagen
