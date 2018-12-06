@@ -56,7 +56,7 @@ function listar_eventos(page){
 			        div_lista += '<div class="media wow fadeInUp" data-wow-delay="0.6s">';
 			          	div_lista += '<div class="media-object pull-left">';
 				            div_lista += '<img src="'+url_imagen+data.nombre_imagen+'" class="img-responsive" alt="Food Menu">';
-				            div_lista += '<span class="menu-price" onclick="noti_evento(\''+url_imagen+data.nombre_imagen+'\',\''+data.titulo+'\',\''+data.fecha_creacion+'\',\''+data.contenido+'\')">Ver mas +</span>';
+				            div_lista += '<span class="menu-price" onclick="noti_evento(\''+url_imagen+data.nombre_imagen+'\',\''+data.titulo+'\',\''+data.fecha_creacion+'\',\''+parrafo(data.contenido)+'\')">Ver mas +</span>';
 			          	div_lista += '</div>';
 			          	div_lista += '<div class="media-body">';
 				            div_lista += '<h3 class="media-heading">'+data.titulo+'</h3>';
@@ -132,7 +132,7 @@ function noti_evento(imagen,titulo,fecha,contenido){
 	                		noti += '<h4 class="sec-head">'+titulo+'</h4>';
 	              		noti += '</a>';
 	              		noti += '<p>'+fecha+'</p>';
-	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un terremoto de 4,7 grados en la escala abierta de Richter ha sacudido este miércoles el noroeste de Venezuela. Según ha informado el Centro Sismológico Euromediterráneo (EMSC, según sus sigla en inglés), el seísmo ha tenido lugar en el estado de Yaracuy, a 73 kilómetros al noroeste de Valencia y a 21 kilómetros al noreste de San Felipe, a dos kilómetros de profundidad.</p>';
+	              		noti += '<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+contenido+'</p>';
 	              	noti += '</div>';
 	          	noti += '</div>';
 	        noti += '</div>';

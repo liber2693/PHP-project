@@ -60,7 +60,7 @@ function crear_evento(){
 
 	var titulo = $("#titulo").val().trim();
 	var texto = $("#contenido").val().trim();
-    var contenido = parrafo(texto,1);
+    var contenido = texto;
     
 	var imagen = document.getElementById('imagen');
     var file = imagen.files[0];
@@ -236,7 +236,7 @@ function listar_evento(page){
                 tabla += '<td>'+data.fecha_creacion+'</td>';
                 tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')"></td>';
                 tabla += '<td>';
-                tabla += '<button type="button" onclick="pre_actualizar('+data.id+',\''+data.titulo+'\',\''+data.contenido+'\',\''+data.nombre_imagen+'\')" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
+                tabla += '<button type="button" onclick="pre_actualizar('+data.id+',\''+data.titulo+'\',\''+parrafo(data.contenido)+'\',\''+data.nombre_imagen+'\')" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
                 tabla += '<button type="button" onclick="pre_eliminar('+data.id+',\''+data.titulo+'\',\''+data.fecha_creacion+'\')" data-toggle="modal" data-target="#myModal" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
                 tabla += '</td>';
                 tabla += '</tr>';
@@ -340,7 +340,7 @@ function pre_actualizar(id,titulo,contenido,imagen){
     $("#actualizar_evento").removeClass("oculto");
 
     $("#titulo_Actualizar").val(titulo);
-    $("#contenido_Actualizar").val(parrafo(contenido,2));
+    $("#contenido_Actualizar").val(parrafo1(contenido));
     $("#imagen_previa").attr('src', '../../img/eventos/'+imagen);
 
     id_registro = id;
