@@ -214,53 +214,48 @@
 									<img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42">
 								</a>
 							</div>
-						  <div class="item">
-							<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
-						  </div>
-						  <div class="item">
-							<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
-						  </div>
-						  <div class="item">
-							<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
-						  </div>
-						  <div class="item">
-							<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
-						  </div>
-						  <div class="item">
-							<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
-						  </div>
+							<div class="item">
+								<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
+							</div>
+							<div class="item">
+								<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
+							</div>
+							<div class="item">
+								<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
+							</div>
+							<div class="item">
+								<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
+							</div>
+							<div class="item">
+								<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="row stats-row">
+					<div class="stats-col text-center col-md-3 col-sm-6">
+						<div class="circle">
+							<span class="stats-no" data-toggle="counter-up">1</span><b> Clientes Satisfechos</b>
+						</div>
+					</div>
+					<div class="stats-col text-center col-md-3 col-sm-6">
+						<div class="circle">
+							<span class="stats-no" data-toggle="counter-up">200</span><b> Maquinaria</b>
+						</div>
+					</div>
+					<div class="stats-col text-center col-md-3 col-sm-6">
+				  	<div class="circle">
+						<span class="stats-no" data-toggle="counter-up">1,500</span><b> Horas de Soporte</b>
+				  	</div>
 				</div>
+				<div class="stats-col text-center col-md-3 col-sm-6">
+		  			<div class="circle">
+						<span class="stats-no" data-toggle="counter-up">20</span><b> Trabajadores</b>
+		  			</div>
 				</div>
-
-
-	  <div class="row stats-row">
-		<div class="stats-col text-center col-md-3 col-sm-6">
-		  <div class="circle">
-			<span class="stats-no" data-toggle="counter-up">1000</span><b> Clientes Satisfechos</b>
-		  </div>
+	  		</div>
 		</div>
-
-		<div class="stats-col text-center col-md-3 col-sm-6">
-		  <div class="circle">
-			<span class="stats-no" data-toggle="counter-up">200</span><b> Maquinaria</b>
-		  </div>
-		</div>
-
-		<div class="stats-col text-center col-md-3 col-sm-6">
-		  <div class="circle">
-			<span class="stats-no" data-toggle="counter-up">1,500</span><b> Horas de Soporte</b>
-		  </div>
-		</div>
-
-		<div class="stats-col text-center col-md-3 col-sm-6">
-		  <div class="circle">
-			<span class="stats-no" data-toggle="counter-up">20</span><b> Trabajadores</b>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </section>
+  	</section>
   <!-- /nosotros -->
 
   <!-- Parallax -->
@@ -676,24 +671,17 @@
 
 
   <!-- /Team -->
-
-  <!-- @component: footer -->
-  <section class="features" id="ubicacion">
-	<div class="container">
-	  <div class="row">
-		<div class="col-md-12 text-center">
-		  <h2 class="section-title">Ubicación</h2>
+<!-- @component: footer -->
+	<section class="features" id="ubicacion">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2 class="section-title">Ubicación</h2>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 		</div>
-		<center>
-		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</center>
-	  </div>
-	  <div class="row justify-content-center">
-	  </div>
-	</div>
-  </section>
-
-
+	</section>
 <!-- @component: footer -->
   	<section id="contact">
 		<div class="container">

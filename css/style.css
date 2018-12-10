@@ -525,7 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .features h2 {
   color: #199EB8;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 
 .feature-col {
@@ -1070,3 +1070,9 @@ span.capital {
   height: 50%;
   width: 75%;
 }
+
+/** ubicacion **/
+#ubicacion{
+  background-color: #ecf6ff;
+}
+/** ubicacion **/
