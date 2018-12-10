@@ -137,7 +137,7 @@
 	  <nav id="nav-menu-container">
 		<ul class="nav-menu">
 		  <li><a href="#nosotros">Nosotros</a></li>
-		  <li><a href="#features">Noticias</a></li>
+		  <li><a href="#menu">Noticias</a></li>
 		  <li><a href="#portfolio">Productos</a></li>
 		  <li><a href="#catalogo">Catálogo</a></li>
 		  <!--<li><a href="#team">Team</a></li>-->
@@ -178,80 +178,60 @@
   </header>
   <!-- #header -->
 
+<!-- nosotros -->
+	<section class="features" id="nosotros">
+		<div class="container">
+			<h2 class="text-center">Nosotros</h2>
+				<p>¿Qué es MaschinenWerk 2000,C.A?</p>
+				<p class="parrafo">
+					Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
+				</p>
+				<p class="parrafo">
+					Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos.
+				</p>
+				<p class="parrafo">
+					Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.
+	  			</p>
+				<p class="parrafo">
+					Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases, envolturas o máquinas HFFS.
+				</p>
+				<p class="parrafo">
+					Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
+				</p>
+				<p class="parrafo">
+					Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el control de su línea de envasado desde el final del procesamiento a través de paletizado.
+				</p>
+				<p class="parrafo">
+					Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de 	nuestros clientes.
+				</p>  
 
-
-
-
-  <!-- nosotros -->
-  <section class="features" id="nosotros">
-	<div class="container">
-	  <h2 class="text-center">Nosotros</h2>
-
-
-	  <p>
-		¿Qué es MaschinenWerk 2000,C.A?
-	  </p>
-	  <p align="justify">
-		Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de
-		Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros
-		Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como
-		Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
-	  </p>
-	  <p align="justify">
-		Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa
-		Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación
-		de peso en línea con sus respectivos sistemas de rechazos.
-	  </p>
-	  <p align="justify">
-		Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies
-		ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o
-		consumibles garantizados.
-	  </p>
-	  <p align="justify">
-		Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place
-		sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases,
-		envolturas o máquinas HFFS.
-	  </p>
-	  <p align="justify">
-		· Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los
-		productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
-	  </p>
-	  <p align="justify">
-		· Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el
-		control de su línea de envasado desde el final del procesamiento a través de paletizado.
-	  </p>
-	  <p align="justify">
-		Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de
-		Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de
-		nuestros clientes.
-	  </p>
-	  <br><br>
-
-<div class="features">
-  <center><h2>Empresas Representadas</h2></center>
-  <div class="container">
-	<div class="owl-carousel owl-theme">
-	  <div class="item">
-		<a href="https://blueprintautomation.com/en/" target="_blank"><img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	  <div class="item">
-		<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	  <div class="item">
-		<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	  <div class="item">
-		<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	  <div class="item">
-		<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	  <div class="item">
-		<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
-	  </div>
-	</div>
-  </div>
-</div>
+				<div class="features text-center">
+					<h2>Empresas Representadas</h2>
+					<div class="container">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<a href="https://blueprintautomation.com/en/" target="_blank">
+									<img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42">
+								</a>
+							</div>
+						  <div class="item">
+							<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
+						  </div>
+						  <div class="item">
+							<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
+						  </div>
+						  <div class="item">
+							<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
+						  </div>
+						  <div class="item">
+							<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
+						  </div>
+						  <div class="item">
+							<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
+						  </div>
+				</div>
+				</div>
+				</div>
 
 
 	  <div class="row stats-row">
@@ -292,33 +272,46 @@
 </div>
   <!-- /Parallax -->
 
-<section id="menu" class="parallax-section">
-  	<div class="container">
-    	<div class="row">
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-				<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-				    <h2>Noticias o Eventos</h2>
+	<section  id="menu" class="parallax-section">
+	  	<div class="container">
+	    	<div class="row">
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+					<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+					    <h2>Noticias o Eventos</h2>
+					</div>
+				</div>
+			    <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
+			    	<input type="text" id="text_evento" class="form-control" placeholder="buscar evento">
+	                <button type="button" id="buscar_evento" class="btn btn-boton"><i class="fa fa-search"></i></button>
+			    </div>
+			</div>
+			<div class="row" id="eventos_lista">
+				<!-- lista de eventos -->
+			</div>
+			<div class="container">
+		  		<div class="text-center" id="paginador_event">
+		  			<!-- paginado de la lista -->
+		  		</div>
+		  	</div>
+			
+			<div id="noticia">
+			  	<!-- evento detalle -->
+			</div>
+		</div>
+	</section>
+	
+	<!-- franja -->
+	<section class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-sm-12 text-lg-center text-center">
+					<img src="img/images/logo1.png" alt="" title="" width="180" height="60"></img>					
 				</div>
 			</div>
-		    <div class="pull-right form-group input-group col-lg-6 col-sm-6 col-md-6">
-		    	<input type="text" id="text_evento" class="form-control" placeholder="buscar evento">
-                <button type="button" id="buscar_evento" class="btn btn-boton"><i class="fa fa-search"></i></button>
-		    </div>
 		</div>
-		<div class="row" id="eventos_lista">
-			<!-- lista de eventos -->
-		</div>
-		<div class="container">
-	  		<div class="text-center" id="paginador_event">
-	  			<!-- paginado de la lista -->
-	  		</div>
-	  	</div>
-		
-		<div id="noticia">
-		  	<!-- evento detalle -->
-		</div>
-	</div>
-</section>
+	</section>
+	<!-- franja -->
+
 
 
 

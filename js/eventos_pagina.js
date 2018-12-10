@@ -134,7 +134,7 @@ function noti_evento(id){
 		          	noti += '<div class="well-left">';
 						noti += '<div class="single-well">';
 		              		noti += '<p>';
-								noti += '<span class="capital"><img src="'+url_imagen+data.nombre_imagen+'" alt="webpage_bell"><span>';
+								noti += '<span class="capital"><img src="'+url_imagen+data.nombre_imagen+'" alt="webpage_bell" class="evento"><span>';
 								noti += '<h4 class="sec-head">'+data.titulo+'</h4>';
 								noti += '<a>'+fn_date_format(data.fecha_creacion,true)+'</a>';
 								noti += '<a class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+data.contenido+'</a>';

@@ -525,6 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .features h2 {
   color: #199EB8;
+  margin-top: 40px;
 }
 
 .feature-col {
@@ -562,6 +563,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #999;
+}
+.features .parrafo{
+  text-indent: 2em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* ==================================================
@@ -1058,4 +1064,9 @@ img {
 
 span.capital {
   float: left;
+  text-align: center;
+}
+.evento{
+  height: 50%;
+  width: 75%;
 }
