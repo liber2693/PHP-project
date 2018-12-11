@@ -1075,4 +1075,27 @@ span.capital {
 #ubicacion{
   background-color: #ecf6ff;
 }
+#ubicacion .aling{
+  text-align: center !important;
+}
+#ubicacion .mapa{
+  width: 500px;
+  height: 450px;
+  margin: 0 auto; 
+  display: block; 
+}
+@media (max-width: 1200px) {
+  #ubicacion .mapa {
+    width: 100%;
+    margin: 0 auto; 
+    display: block; 
+  }
+}
+@media (max-width: 992px) {
+  #ubicacion .mapa {
+    width: 100%;
+    margin: 0 auto; 
+    display: block;
+  }
+}
 /** ubicacion **/

@@ -674,11 +674,18 @@
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
 		<div class="container">
+			
+			<div class="col-md-12 text-center">
+				<h2 class="section-title">Ubicación</h2>
+			</div>
+			
 			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2 class="section-title">Ubicación</h2>
+				<div class="feature-col col-md-6 col-xl-6 text-center aling">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.266121138444!2d-66.85714878523876!3d10.479675092523276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1544537014581" frameborder="0" allowfullscreen class="mapa"></iframe>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="feature-col col-md-6 col-xl-6 text-center">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" frameborder="0" allowfullscreen class="mapa"></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -886,6 +893,14 @@
 
   <!-- javascripts -->
   <?php include('views/pie.php');?>
+
+  <script type="text/javascript">
+  	$.fn.nivoSlider.defaults = {
+        
+        prevText: 'Anterior',
+        nextText: 'Proximo',
+    };
+  </script>
 
 
   </body>
