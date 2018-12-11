@@ -206,7 +206,7 @@ preview-1
   background: url(../lib/nivo-slider/img/loading.gif) no-repeat 50% 50%;
 }
 
-.preview-1 .nivoSlider img {
+.preview-1 .nivoSlider .img img {
   position: absolute;
   top: 0px;
   left: 0px;

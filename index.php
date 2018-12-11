@@ -1,12 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Pagina Web</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <?php include('views/cabecera.php');?>
+	<meta charset="utf-8">
+	<title>Pagina Web</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<?php include('views/cabecera.php');?>
+
+  	<!-- limpiar cache -->
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<!-- limpiar cache -->
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png">
@@ -24,6 +30,10 @@
   <!-- JOSE 25-10-2018 11:13 pm -->
   <!-- archivo de otro template -->
   <link  href="css/animate.min.css" rel="stylesheet" type="text/css">
+  <!-- 11-12-2018 05:17 pm.-->
+  <link href="css/style_aparte.css" rel="stylesheet" type="text/css">
+
+	
 
 </head>
 
@@ -44,19 +54,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content">
+                            <div class="slider-content text-center">
                                 <!-- layer 1 -->
-                                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <img class="title1" src="img/images/logos.jpg">
+                                <div class="layer-1-1 hidden-xs wow slideInDown " data-wow-duration="2s" data-wow-delay=".2s">
+                                    <img class="logo" src="img/images/logos.jpg">
                                 </div>
                                 <!-- layer 2 -->
-                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                                <!--<div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                                     <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
-                                </div>
+                                </div>-->
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                                    <a class="ready-btn right-btn page-scroll" href="#services">Comencemos</a>
                                 </div>
                             </div>
                         </div>

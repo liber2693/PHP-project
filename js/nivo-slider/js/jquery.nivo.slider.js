@@ -334,7 +334,7 @@
             }
             
             // Process caption
-            processCaption(settings);            
+           // processCaption(settings);            
             
             // Remove any slices from last transition
             $('.nivo-slice', slider).remove();
