@@ -30,153 +30,120 @@
 <body>
   <!-- Page Content
 	================================================== -->
-  <!-- Hero -->
-  <!--<section class="hero">-->
+<!-- Hero -->
+	<!-- Start Slider Area -->
+    <div id="home" class="slider-area">
+        <div class="bend niceties preview-2">
+            <div id="ensign-nivoslider" class="slides">
+                <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+                <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+                <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+            </div>
+            <!-- direction 1 -->
+            <div id="slider-direction-1" class="slider-direction slider-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-content">
+                                <!-- layer 1 -->
+                                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <img class="title1" src="img/images/logos.jpg">
+                                </div>
+                                <!-- layer 2 -->
+                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                                    <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
+                                </div>
+                                <!-- layer 3 -->
+                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- direction 2 -->
+            <div id="slider-direction-2" class="slider-direction slider-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-content text-center">
+                                <!-- layer 1 -->
+                                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <h2 class="title1">The Best Business Information </h2>
+                                </div>
+                                <!-- layer 2 -->
+                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                                    <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
+                                </div>
+                                <!-- layer 3 -->
+                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- direction 3 -->
+            <div id="slider-direction-3" class="slider-direction slider-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-content">
+                                <!-- layer 1 -->
+                                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <h2 class="title1">The Best business Information </h2>
+                                </div>
+                                <!-- layer 2 -->
+                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                                    <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
+                                </div>
+                                <!-- layer 3 -->
+                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Slider Area -->
+<!-- /Hero -->
 
-
-	<!-- <div class="container text-center">
-	  <div class="row">
-		<div class="col-md-12">
-		  <a class="hero-brand" href="index.php" title="Home"><img alt="Bell Logo" src="img/images/logos.jpg"></a>
-		</div>
-	  </div>-->
-
-	  <!--<div class="col-md-12">
-		  <h1>
-			A theme with personality
-		  </h1> -->
-
-		<!--<p class="tagline">
-		  This is a powerful theme with some great features that you can use in your future projects.
-		</p> -->
-		<!--<a class="btn btn-full" href="#nosotros">Empezar</a>
-	  </div>
-	</div>-->
-
-	<div id="home" class="slider-area">
-	<div class="bend niceties preview-2">
-	  <div id="ensign-nivoslider" class="slides">
-		<img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
-		<img src="img/slider/slider3.jpg" alt="" title="#slider-direction-2" />
-		<img src="img/slider/slider4.jpg" alt="" title="#slider-direction-3" />
-		<img src="img/slider/slider2.jpg" alt="" title="#slider-direction-4" />
-	  </div>
-
-	  <!-- direction 1 -->
-	  <div id="slider-direction-1" class="slider-direction slider-one">
+<!-- Header -->
+  	<header id="header">
 		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-			  <div class="slider-content text-center">
-				<!-- layer 1 -->
-				<div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-					<a class="hero-brand" href="index.php" title="Home">
-					<img src="img/images/logos.jpg" width="25%" height="15%" style="margin-top: 15%; margin-left: 36%;"></a>
-
-				  <!--<h2 class="title1">The Best Business Information </h2> -->
-				</div>
-				<!-- layer 2 -->
-				<div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-				  <!--<h1 class="title2">We're In The Business Of Helping You Start Your Business</h1> -->
-				</div>
-				<!-- layer 3 -->
-				<div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-				  <br><br><br><br>
-				  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
-				  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <!-- direction 2 -->
-	  <div id="slider-direction-2" class="slider-direction slider-two">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-			  <div class="slider-content text-center">
-				<!-- layer 1 -->
-				<div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-					<a class="hero-brand" href="index.php" title="Home">
-					<img src="img/images/logos.jpg" width="25%" height="15%" style="margin-top: 15%; margin-left: 36%;"></a>
-
-				<!-- <h2 class="title1">The Best business Information </h2> -->
-				</div>
-				<!-- layer 2 -->
-				<div class="layer-1-2 wow slideInUp " data-wow-duration="2s" data-wow-delay=".1s">
-			   <!--<h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1> -->
-				</div>
-				<!-- layer 3 -->
-				<div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-				  <br><br><br><br>
-				  <a class="ready-btn right-btn page-scroll" href="#nosotros">Comenzar</a>
-				  <!--<a class="ready-btn page-scroll" href="#about">Learn More</a> -->
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-	</div>
-  </div>
-  <!-- /Hero -->
-
-
-  <!-- Header -->
-  <header id="header">
-	<div class="container">
-
-	  <div id="logo" class="pull-left">
-		<a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="130" height="80"></img></a>
-		<!-- Uncomment below if you prefer to use a text image -->
-		<!--<h1><a href="#hero">Bell</a></h1>-->
-	  </div>
-
-	  <nav id="nav-menu-container">
-		<ul class="nav-menu">
-		  <li><a href="#nosotros">Nosotros</a></li>
-		  <li><a href="#menu">Noticias</a></li>
-		  <li><a href="#portfolio">Productos</a></li>
-		  <li><a href="#catalogo">Catálogo</a></li>
-		  <!--<li><a href="#team">Team</a></li>-->
-		  <!-- Menu Despegable-->
-		<!--  <li class="menu-has-children"><a href="">Drop Down</a>
-			<ul>
-			  <li><a href="#">Drop Down 1</a></li>
-			  <li class="menu-has-children"><a href="#">Drop Down 2</a>
-				<ul>
-				  <li><a href="#">Deep Drop Down 1</a></li>
-				  <li><a href="#">Deep Drop Down 2</a></li>
-				  <li><a href="#">Deep Drop Down 3</a></li>
-				  <li><a href="#">Deep Drop Down 4</a></li>
-				  <li><a href="#">Deep Drop Down 5</a></li>
+			<div id="logo" class="pull-left">
+				<a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="130" height="80"></img></a>
+				<!-- Uncomment below if you prefer to use a text image -->
+				<!--<h1><a href="#hero">Bell</a></h1>-->
+		  	</div>
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#menu">Noticias</a></li>
+					<li><a href="#portfolio">Productos</a></li>
+					<li><a href="#catalogo">Catálogo</a></li>
+					<li><a href="#ubicacion">Ubicación</a></li>
+					<li><a href="#contact">Contáctanos</a></li>
 				</ul>
-			  </li>
-			  <li><a href="#">Drop Down 3</a></li>
-			  <li><a href="#">Drop Down 4</a></li>
-			  <li><a href="#">Drop Down 5</a></li>
-			</ul>
-		  </li> -->
-		  <li><a href="#ubicacion">Ubicación</a></li>
-		  <li><a href="#contact">Contáctanos</a></li>
-		  <!-- Button to Open the Modal -->
-		  
-		</ul>
-	  </nav>
-	  <!-- #nav-menu-container -->
-
-	  <nav class="nav social-nav pull-right d-none d-lg-inline">
-		<a href="#"><i class="fa fa-twitter"></i></a> 
-		<a href="#"><i class="fa fa-facebook"></i></a> 
-		<a href="#"><i class="fa fa-linkedin"></i></a> 
-		<a href="#"><i class="fa fa-envelope"></i></a>
-		<a href="#"><img src="img/images/ig.jpg" width="13%" height="13%"></a>
-	  </nav>
-	</div>
-  </header>
-  <!-- #header -->
+		  	</nav>
+			<nav class="nav social-nav pull-right d-none d-lg-inline">
+				<a href="#"><i class="fa fa-twitter"></i></a> 
+				<a href="#"><i class="fa fa-facebook"></i></a> 
+				<a href="#"><i class="fa fa-linkedin"></i></a> 
+				<a href="#"><i class="fa fa-envelope"></i></a>
+				<a href="#"><img src="img/images/ig.jpg" width="13%" height="13%"></a>
+		  	</nav>
+		</div>
+  	</header>
+<!-- #header -->
 
 <!-- nosotros -->
 	<section class="features" id="nosotros">
@@ -894,14 +861,6 @@
   <!-- javascripts -->
   <?php include('views/pie.php');?>
 
-  <script type="text/javascript">
-  	$.fn.nivoSlider.defaults = {
-        
-        prevText: 'Anterior',
-        nextText: 'Proximo',
-    };
-  </script>
-
-
+ 
   </body>
 </html>
