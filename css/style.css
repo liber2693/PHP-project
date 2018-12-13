@@ -568,6 +568,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-indent: 2em;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 30px;
 }
 
 /* ==================================================
@@ -1015,7 +1016,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #f9f9f9;
 }
 .area-padding {
-  padding: 70px 0px 80px;
+  padding: 30px 0px 80px;
 }
 .area-padding-2 {
   padding: 70px 0px 50px;
@@ -1065,6 +1066,7 @@ img {
 span.capital {
   float: left;
   text-align: center;
+  margin-bottom: 15px;
 }
 .evento{
   height: 50%;

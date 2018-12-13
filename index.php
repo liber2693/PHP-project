@@ -54,17 +54,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content text-center">
-                                <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInDown " data-wow-duration="2s" data-wow-delay=".2s">
                                     <img class="logo" src="img/images/logos.jpg">
                                 </div>
+                            <div class="slider-content text-center">
+                                <!-- layer 1 -->
                                 <!-- layer 2 -->
                                 <!--<div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                                     <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
                                 </div>-->
                                 <!-- layer 3 -->
-                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s" style="margin-top: 200px;">
                                     <a class="ready-btn right-btn page-scroll" href="#services">Comencemos</a>
                                 </div>
                             </div>
@@ -72,54 +72,7 @@
                     </div>
                 </div>
             </div>
-            <!-- direction 2 -->
-            <div id="slider-direction-2" class="slider-direction slider-two">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content text-center">
-                                <!-- layer 1 -->
-                                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h2 class="title1">The Best Business Information </h2>
-                                </div>
-                                <!-- layer 2 -->
-                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
-                                </div>
-                                <!-- layer 3 -->
-                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- direction 3 -->
-            <div id="slider-direction-3" class="slider-direction slider-two">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content">
-                                <!-- layer 1 -->
-                                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h2 class="title1">The Best business Information </h2>
-                                </div>
-                                <!-- layer 2 -->
-                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
-                                </div>
-                                <!-- layer 3 -->
-                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 <!-- End Slider Area -->
@@ -158,28 +111,38 @@
 	<section class="features" id="nosotros">
 		<div class="container">
 			<h2 class="text-center">Nosotros</h2>
-				<p>¿Qué es MaschinenWerk 2000,C.A?</p>
-				<p class="parrafo">
-					Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
-				</p>
-				<p class="parrafo">
-					Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos.
-				</p>
-				<p class="parrafo">
-					Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.
-	  			</p>
-				<p class="parrafo">
-					Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases, envolturas o máquinas HFFS.
-				</p>
-				<p class="parrafo">
-					Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
-				</p>
-				<p class="parrafo">
-					Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el control de su línea de envasado desde el final del procesamiento a través de paletizado.
-				</p>
-				<p class="parrafo">
-					Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de 	nuestros clientes.
-				</p>  
+				<strong>¿Qué es MaschinenWerk 2000,C.A?</strong>
+				<div class="row">
+					<div class="feature-col col-md-6 col-xl-6">
+						<p class="parrafo">
+							Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
+						</p>
+						<p class="parrafo">
+							Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos.
+						</p>
+						<p class="parrafo">
+							Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.
+			  			</p>
+					</div>
+					<div class="feature-col col-md-6 col-xl-6">
+						<p class="parrafo">
+							Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases, envolturas o máquinas HFFS.
+						</p>
+						<p class="parrafo">
+							Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
+						</p>
+						<p class="parrafo">
+							Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el control de su línea de envasado desde el final del procesamiento a través de paletizado.
+						</p>
+						<p class="parrafo">
+							Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de 	nuestros clientes.
+						</p>  
+					</div>
+				</div>
+				
+				
+				
+				
 
 				<div class="features text-center">
 					<h2>Empresas Representadas</h2>
@@ -256,7 +219,7 @@
 	                <button type="button" id="buscar_evento" class="btn btn-boton"><i class="fa fa-search"></i></button>
 			    </div>
 			</div>
-			<div class="row" id="eventos_lista">
+			<div class="row" id="eventos_lista" style="margin-top: 30px;">
 				<!-- lista de eventos -->
 			</div>
 			<div class="container">
