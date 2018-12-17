@@ -525,7 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .features h2 {
   color: #199EB8;
-  /*margin-top: 40px;*/
+  margin-top: 20px;
 }
 
 .feature-col {
@@ -553,6 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 70px;
   border-radius: 50%;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .feature-col h3 {

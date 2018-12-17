@@ -90,7 +90,7 @@
 				<ul class="nav-menu">
 					<li><a href="#nosotros">Nosotros</a></li>
 					<li><a href="#menu">Noticias</a></li>
-					<li><a href="#portfolio">Productos</a></li>
+					<li><a href="brands.php#portfolio">Productos</a></li>
 					<li><a href="#catalogo">Catálogo</a></li>
 					<li><a href="#ubicacion">Ubicación</a></li>
 					<li><a href="#contact">Contáctanos</a></li>
@@ -111,91 +111,104 @@
 	<section class="features" id="nosotros">
 		<div class="container">
 			<h2 class="text-center">Nosotros</h2>
-				<strong>¿Qué es MaschinenWerk 2000,C.A?</strong>
-				<div class="row">
-					<div class="feature-col col-md-6 col-xl-6">
-						<p class="parrafo">
-							Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
-						</p>
-						<p class="parrafo">
-							Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos.
-						</p>
-						<p class="parrafo">
-							Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.
-			  			</p>
-					</div>
-					<div class="feature-col col-md-6 col-xl-6">
-						<p class="parrafo">
-							Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases, envolturas o máquinas HFFS.
-						</p>
-						<p class="parrafo">
-							Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
-						</p>
-						<p class="parrafo">
-							Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el control de su línea de envasado desde el final del procesamiento a través de paletizado.
-						</p>
-						<p class="parrafo">
-							Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de 	nuestros clientes.
-						</p>  
-					</div>
+			<strong>¿Qué es MaschinenWerk 2000,C.A?</strong>
+			<div class="row">
+				<div class="feature-col col-md-6 col-xl-6">
+					<p class="parrafo">
+						Nos dedicamos a brindar apoyo integral a nuestros clientes en todas sus necesidades de Sistemas de Inspección, Verificación de Peso, Tecnología de Códigos de Barras, Marcaje de Productos con Suministros Asociados y Sistemas de Automatización para las Industrias de Alimentos, Farmacéuticas y Textiles, así como Desempolvadores, Blísteadoras, Tableteadoras para el Sector Farmacéutico.
+					</p>
+					<p class="parrafo">
+						Para el Sistema de Inspección y Control de Calidad en línea contamos con nuestra representada exclusiva Inglesa Loma Systems, con aplicaciones para detección de metales o partículas contaminantes, de igual manera verificación de peso en línea con sus respectivos sistemas de rechazos.
+					</p>
+					<p class="parrafo">
+						Para el caso de codificación e impresión a tinta continua, nuestra representada exclusiva Linx Printing technologies ofrece equipos de alta calidad, robustos y confiables para todo tipo de aplicaciones industriales e insumos o consumibles garantizados.
+		  			</p>
 				</div>
-				
-				
-				
-				
-
-				<div class="features text-center">
-					<h2>Empresas Representadas</h2>
-					<div class="container">
-						<div class="owl-carousel owl-theme">
-							<div class="item">
-								<a href="https://blueprintautomation.com/en/" target="_blank">
-									<img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42">
-								</a>
-							</div>
-							<div class="item">
-								<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
-							</div>
-							<div class="item">
-								<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
-							</div>
-							<div class="item">
-								<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
-							</div>
-							<div class="item">
-								<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
-							</div>
-							<div class="item">
-								<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
-							</div>
-						</div>
-					</div>
+				<div class="feature-col col-md-6 col-xl-6">
+					<p class="parrafo">
+						Ofrecemos líneas completas de automatización robótica guiado por visión (BPA): aplicaciones como picking & place sofisticado para artículos individuales envasados ​​y no envasados ​​para apilar o cargar en sus respectivos envases, envolturas o máquinas HFFS.
+					</p>
+					<p class="parrafo">
+						Soluciones para envases flexibles y otros-difícil de manipular: sistemas delta o cartesianos para adaptarnos a los productos de nuestros clientes y aumentar la producción sin tiempos de paradas indeseados.
+					</p>
+					<p class="parrafo">
+						Sistemas llave en mano para aplicaciones de Embalaje: soluciones de automatización completas de embalaje que toman el control de su línea de envasado desde el final del procesamiento a través de paletizado.
+					</p>
+					<p class="parrafo">
+						Entregamos asesoría en los procesos productivos con nuestra tecnología, poniendo a disposición nuestra Área de Ingeniería, experiencia y creatividad, en el desarrollo y puesta en marcha de cada uno de los proyectos de 	nuestros clientes.
+					</p>  
 				</div>
-				<div class="row stats-row">
-					<div class="stats-col text-center col-md-3 col-sm-6">
-						<div class="circle">
-							<span class="stats-no" data-toggle="counter-up">1</span><b> Clientes Satisfechos</b>
-						</div>
-					</div>
-					<div class="stats-col text-center col-md-3 col-sm-6">
-						<div class="circle">
-							<span class="stats-no" data-toggle="counter-up">200</span><b> Maquinaria</b>
-						</div>
-					</div>
-					<div class="stats-col text-center col-md-3 col-sm-6">
-				  	<div class="circle">
-						<span class="stats-no" data-toggle="counter-up">1,500</span><b> Horas de Soporte</b>
-				  	</div>
-				</div>
-				<div class="stats-col text-center col-md-3 col-sm-6">
-		  			<div class="circle">
-						<span class="stats-no" data-toggle="counter-up">20</span><b> Trabajadores</b>
-		  			</div>
-				</div>
-	  		</div>
+			</div>
 		</div>
+	</section>
+<!-- nosotros -->
+
+<!-- empresas -->
+	<section class="features" id="empresas">		
+		<div class="text-center">
+			<h2>Empresas Representadas</h2>
+			<div class="container">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<a href="https://blueprintautomation.com/en/" target="_blank">
+							<img src="img/images/empresas(1).png" class="img-fluid" height="42" width="42">
+						</a>
+					</div>
+					<div class="item">
+						<a href="http://www.kraemerag.ch/es/" target="_blank"><img src="img/images/empresas(2).png" class="img-fluid" height="42" width="42"></a>
+					</div>
+					<div class="item">
+						<a href="http://www.solpak.com.co/sitespk/" target="_blank"><img src="img/images/empresas(3).png" class="img-fluid" height="42" width="42"></a>
+					</div>
+					<div class="item">
+						<a href="https://www.loma.com/en" target="_blank"><img src="img/images/empresas(4).png" class="img-fluid" height="42" width="42"></a>
+					</div>
+					<div class="item">
+						<a href="https://www.linxglobal.com/en/" target="_blank"><img src="img/images/empresas(5).png" class="img-fluid" height="42" width="42"></a>
+					</div>
+					<div class="item">
+						<a href="https://www.ptipacktech.com/" target="_blank"><img src="img/images/empresas(6).png" class="img-fluid" height="42" width="42"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- empresas -->
+
+<!-- indicadores -->
+	<section class="about" id="indicadores">
+	    <div class="container text-center">
+	     	<h2> Indicadores</h2>
+		
+	      <div class="row stats-row">
+	        <div class="stats-col text-center col-md-3 col-sm-6">
+	          <div class="circle">
+	            <span class="stats-no" data-toggle="counter-up">1</span> Clientes Satisfechos
+	          </div>
+	        </div>
+
+	        <div class="stats-col text-center col-md-3 col-sm-6">
+	          <div class="circle">
+	            <span class="stats-no" data-toggle="counter-up">200</span> Maquinaria
+	          </div>
+	        </div>
+
+	        <div class="stats-col text-center col-md-3 col-sm-6">
+	          <div class="circle">
+	            <span class="stats-no" data-toggle="counter-up">1,500</span> Horas de Soporte
+	          </div>
+	        </div>
+
+	        <div class="stats-col text-center col-md-3 col-sm-6">
+	          <div class="circle">
+	            <span class="stats-no" data-toggle="counter-up">20</span> Trabajadores
+	          </div>
+	        </div>
+	      </div>
+	    </div>
   	</section>
-  <!-- /nosotros -->
+<!-- /indicadores -->
+
 
   <!-- Parallax -->
   <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
@@ -246,16 +259,11 @@
 	</section>
 	<!-- franja -->
 
-
-
-
-
-  <!-- Features -->
-  <section class="features" id="features">
-	<div class="container">
-	  <h2 class="text-center">Noticias</h2>
-
-	  <div class="row">
+<!-- Servicios -->
+	<section class="features" id="features">
+		<div class="container">
+	  		<h2 class="text-center">Servicos</h2>
+			<div class="row">
 		<div class="feature-col col-lg-4 col-xs-12">
 		  <div class="card card-block text-center">
 			<div>
@@ -390,7 +398,7 @@
   <section class="portfolio" id="catalogo">
 	<div class="container text-center">
 	  <h2>Catálogo</h2>
-	  <p align="center">Haga Click en el Archivo que desee Visualizar.</p>
+	  <p align="center">Haga click en el archivo que desee visualizar.</p>
 	</div>
 
 	<div class="portfolio-grid">
@@ -548,10 +556,10 @@
   <!-- /Portfolio -->
 
 
-  <!-- Team -->
+<!-- Team -->
   <section class="team" id="team">
 	<div class="container">
-	  <h2 class="text-center">Conoce Nuestros Productos</h2><br>
+	  <h2 class="text-center"><a href="brands.php#portfolio">Conoce Nuestros Productos</a></h2>
 
 	  <div class="row">
 		<div class="col-sm-3 col-xs-6">
@@ -607,9 +615,7 @@
 		  </div>
 	</div>
   </section>
-
-
-  <!-- /Team -->
+<!-- /Team -->
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
 		<div class="container">
@@ -818,21 +824,19 @@
 	<!-- fin Modal -->
 
 
- <!-- JOSE 25-10-2018 11:13 pm -->
-  <!-- JavaScript Libraries -->
-  <script src="js/jquery/jquery.min.js"></script>
-  <script src="js/wow/wow.min.js"></script>
-  <script src="js/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+ 	<!-- JOSE 25-10-2018 11:13 pm -->
+	<!-- JavaScript Libraries -->
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/wow/wow.min.js"></script>
+	<script src="js/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
 
-  <!-- archivo de las funciones principales del stylo -->
-  <script src="js/main.js"></script>
-  <!-- JOSE 25-10-2018 11:13 pm -->
+	<!-- archivo de las funciones principales del stylo -->
+	<script src="js/main.js"></script>
+	<!-- JOSE 25-10-2018 11:13 pm -->
+	<script src="js/eventos_pagina.js" type="text/javascript"></script>
+	<!-- javascripts -->
+	<?php include('views/pie.php');?>
 
-
-
-  <!-- javascripts -->
-  <?php include('views/pie.php');?>
-
- 
+	 
   </body>
 </html>
