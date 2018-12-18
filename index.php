@@ -90,7 +90,7 @@
 				<ul class="nav-menu">
 					<li><a href="#nosotros">Nosotros</a></li>
 					<li><a href="#menu">Noticias</a></li>
-					<li><a href="brands.php#portfolio">Productos</a></li>
+					<li><a href="brands.php#productos">Productos</a></li>
 					<li><a href="#catalogo">Catálogo</a></li>
 					<li><a href="#ubicacion">Ubicación</a></li>
 					<li><a href="#contact">Contáctanos</a></li>
@@ -559,7 +559,7 @@
 <!-- Team -->
   <section class="team" id="team">
 	<div class="container">
-	  <h2 class="text-center"><a href="brands.php#portfolio">Conoce Nuestros Productos</a></h2>
+	  <h2 class="text-center"><a href="brands.php#productos">Conoce Nuestros Productos</a></h2>
 
 	  <div class="row">
 		<div class="col-sm-3 col-xs-6">

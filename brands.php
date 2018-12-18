@@ -88,7 +88,7 @@
 				<ul class="nav-menu">
 					<li><a href="index.php#nosotros">Nosotros</a></li>
 					<li><a href="index.php#menu">Noticias</a></li>
-					<li><a href="#portfolio">Productos</a></li>
+					<li><a href="#productos">Productos</a></li>
 					<li><a href="#catalogo">Catálogo</a></li>
 					<li><a href="#ubicacion">Ubicación</a></li>
 					<li><a href="#contact">Contáctanos</a></li>
@@ -106,25 +106,88 @@
 <!-- #header -->
 
 <!-- Productos -->
-	<section class="portfolio" id="portfolio">
+	<section class="productos" id="productos">
 		<div class="text-center">
 	  		<h2>Productos</h2>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="feature-col col-lg-3 col-xs-3">
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
-					<div>4</div>
-					<div>5</div>
-					<div>6</div>
-					<div>7</div>
-					<div>8</div>
+					<div tabindex="1" id="option1">
+						<b>Kramer</b>
+					</div>
+					<div tabindex="2" id="option2">
+						<b>Solpak</b>
+					</div>
+					<div tabindex="3" id="option3">
+						<b>Loma</b>
+					</div>
+					<div tabindex="4" id="option4">
+						<b>Bpa</b>
+					</div>
+					<div tabindex="5" id="option5">
+						<b>Pti</b>
+					</div>
+					<div tabindex="6" id="option6">
+						<b>Linx</b>
+					</div>
 				</div>
-				
-				<div class="col-lg-9 col-xs-9">
-					si esta muy ladilla
+				<div class="col-lg-9 col-xs-9 detalle">
+					<label>Empresa: Kramer</label>
+					<div id="demo" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item text-center active">
+								<h5>modelo: maquina 1</h5>
+								<img src="img/images/kramer/1.png" data-toggle="modal" data-target="#myModal_img" alt="Los Angeles">
+							</div>
+							<div class="carousel-item text-center">
+								<h5>modelo: maquina 2</h5>
+								<img src="img/images/kramer/2.png" alt="Chicago">
+							</div>
+							<div class="carousel-item text-center">
+								<h5>modelo: maquina 3</h5>
+								<img src="img/images/kramer/3.png" alt="New York">
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-borderless">
+							<thead>
+								<tr>
+									<th>Modelo</th>
+									<th>Archivo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+								</tr>
+								<tr>
+									<td>Mary</td>
+									<td>Moe</td>
+								</tr>
+								<tr>
+									<td>July</td>
+									<td>Dooley</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -224,6 +287,27 @@
 						<button type="submit" class="btn btn-primary" id="enviar">
 								Login IN
 						</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="myModal_img" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+					<div class="modal-body text-center">
+						<img src="img/images/33095538_1009676579180957_1234431269396283392_n.jpg" width="100%" height="100%">
+					</div>
+					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">
 							Cerrar
 						</button>
