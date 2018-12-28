@@ -72,6 +72,15 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+/** imagen pdf */
+.iconpdf{
+	height: 15%;
+}
+#tabla_archivos > tbody > tr > td a{
+	color: #000000 !important;
+}
+#tabla_archivos > tbody > tr td{
+	vertical-align: middle;
+}
 
-    
 

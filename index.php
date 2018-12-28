@@ -554,68 +554,6 @@
 	</div>
   </section>
   <!-- /Portfolio -->
-
-
-<!-- Team -->
-  <section class="team" id="team">
-	<div class="container">
-	  <h2 class="text-center"><a href="brands.php#productos">Conoce Nuestros Productos</a></h2>
-
-	  <div class="row">
-		<div class="col-sm-3 col-xs-6">
-		  <div class="card card-block">
-			<a href="#"><img alt="" class="team-img" src="img/images/loma/1.png" width="70%" height="70%">
-			  <div class="card-title-wrap">
-				<span class="card-title"><center>Test 1</center></span> <!--<span class="card-text">1</span> -->
-			  </div>
-			  <div class="team-over">
-				<h4 class="hidden-md-down">Imagen 1</h4>
-			  </div>
-			</a>
-		  </div>
-		</div>
-
-		<div class="col-sm-3 col-xs-6">
-			<div class="card card-block">
-			  <a href="#"><img alt="" class="team-img" src="img/images/loma/2.png" width="70%" height="70%">
-				<div class="card-title-wrap">
-				  <span class="card-title"><center>Test 2</center></span> <!--<span class="card-text">1</span> -->
-				</div>
-				<div class="team-over">
-				  <h4 class="hidden-md-down">Imagen 2</h4>
-				</div>
-			  </a>
-			</div>
-		  </div>
-
-	  <div class="col-sm-3 col-xs-6">
-			<div class="card card-block">
-			  <a href="#"><img alt="" class="team-img" src="img/images/loma/3.png" width="70%" height="70%">
-				<div class="card-title-wrap">
-				  <span class="card-title"><center>Test 3</center></span> <!--<span class="card-text">1</span> -->
-				</div>
-				<div class="team-over">
-				  <h4 class="hidden-md-down">Imagen 3</h4>
-				</div>
-			  </a>
-			</div>
-		  </div>
-
-	  <div class="col-sm-3 col-xs-6">
-			<div class="card card-block">
-			  <a href="#"><img alt="" class="team-img" src="img/images/loma/4.png" width="70%" height="70%">
-				<div class="card-title-wrap">
-				  <span class="card-title"><center>Test 4</center></span> <!--<span class="card-text">1</span> -->
-				</div>
-				<div class="team-over">
-				  <h4 class="hidden-md-down">Imagen 4</h4>
-				</div>
-			  </a>
-			</div>
-		  </div>
-	</div>
-  </section>
-<!-- /Team -->
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
 		<div class="container">
@@ -750,7 +688,7 @@
 			  </li>
 
 			  <li class="list-inline-item">
-				<a href="#portfolio">Productos</a>
+				<a href="brands.php#productos">Productos</a>
 			  </li>
 
 			  <li class="list-inline-item">
@@ -806,7 +744,7 @@
 							<label for="recipient-name" class="col-form-label" placeholder="contraseña">
 								Contraseña:
 							</label>
-							<input type="text" class="form-control" id="password">
+							<input type="password" class="form-control" id="password">
 						</div>
 					</div>
 					<div class="modal-footer">

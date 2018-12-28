@@ -112,7 +112,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="feature-col col-lg-3 col-xs-3">
+				<div class="feature-col col-lg-3 col-xs-3" id="menu_empresa">
 					<div tabindex="1" id="option1">
 						<b>Kramer</b>
 					</div>
@@ -132,29 +132,16 @@
 						<b>Linx</b>
 					</div>
 				</div>
-				<div class="col-lg-9 col-xs-9 detalle">
-					<label>Empresa: Kramer</label>
+				<div class="col-lg-9 col-xs-9 detalle" id="detalles">
+					<label>Nombre Empresa: <strong id="titulo_empresa"></strong></label>
 					<div id="demo" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ul class="carousel-indicators">
-							<li data-target="#demo" data-slide-to="0" class="active"></li>
-							<li data-target="#demo" data-slide-to="1"></li>
-							<li data-target="#demo" data-slide-to="2"></li>
+							
 						</ul>
 						<!-- The slideshow -->
 						<div class="carousel-inner">
-							<div class="carousel-item text-center active">
-								<h5>modelo: maquina 1</h5>
-								<img src="img/images/kramer/1.png" data-toggle="modal" data-target="#myModal_img" alt="Los Angeles">
-							</div>
-							<div class="carousel-item text-center">
-								<h5>modelo: maquina 2</h5>
-								<img src="img/images/kramer/2.png" alt="Chicago">
-							</div>
-							<div class="carousel-item text-center">
-								<h5>modelo: maquina 3</h5>
-								<img src="img/images/kramer/3.png" alt="New York">
-							</div>
+							
 						</div>
 						<!-- Left and right controls -->
 						<a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -165,7 +152,7 @@
 						</a>
 					</div>
 					<div class="table-responsive">
-						<table class="table table-borderless">
+						<table class="table table-borderless text-center" id="tabla_archivos">
 							<thead>
 								<tr>
 									<th>Modelo</th>
@@ -173,18 +160,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>John</td>
-									<td>Doe</td>
-								</tr>
-								<tr>
-									<td>Mary</td>
-									<td>Moe</td>
-								</tr>
-								<tr>
-									<td>July</td>
-									<td>Dooley</td>
-								</tr>
+								
 							</tbody>
 						</table>
 					</div>
@@ -305,7 +281,7 @@
 					</button>
 				</div>
 					<div class="modal-body text-center">
-						<img src="img/images/33095538_1009676579180957_1234431269396283392_n.jpg" width="100%" height="100%">
+						<img  id="imagen" width="100%" height="100%">
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -327,8 +303,8 @@
 
 	<!-- archivo de las funciones principales del stylo -->
 	<script src="js/main.js"></script>
-	<!-- JOSE 25-10-2018 11:13 pm -->
-
+	<!-- JOSE 28-12-2018 10:02 am -->
+	<script src="js/detalle_brands.js"></script>
 
 
   <!-- javascripts -->

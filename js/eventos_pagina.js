@@ -16,7 +16,6 @@ $(function(){
 	$("#buscar_evento").on("click", function(e) {
 		listar_eventos();
 	});
-
 });
 
 function listar_eventos(page){
@@ -24,9 +23,7 @@ function listar_eventos(page){
 	page = page || 1;
 
 	var text = $("#text_evento").val().trim();
-	console.log(page);
-
-		
+	//console.log(page);
 
 	var settings = {
         "async": true,
@@ -43,6 +40,7 @@ function listar_eventos(page){
 
     $("#eventos_lista").find("div").remove();
     $("#paginador_event").find("i").remove();
+    $("#noticia").find("div").remove();
 
     $.ajax(settings)
     .done(function(data, textStatus, jqXHR) {
@@ -69,7 +67,7 @@ function listar_eventos(page){
 
 
     	})
-    	console.log(data.total)
+    	//console.log(data.total)
 
     	if(paginator.getPages() > 1)
         {
@@ -103,7 +101,7 @@ function listar_eventos(page){
 /** funcion para ver el detalle del evento**/
 function noti_evento(id){
 
-	console.log(id);
+	//console.log(id);
 
 	$("#eventos_lista").find("div").remove();
     $("#paginador_event").find("i").remove();
