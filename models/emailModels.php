@@ -15,6 +15,7 @@ class Email
 	//listar eventos activos
 	public function sendEmail($emisor_email,$asunto,$marca,$modelo,$serial,$contenido){
 		
+
 		$serial_ipm = ($serial != null) ? $serial : "No especificado" ;
 
 		$mail = new PHPMailer(true);                              // Pasar `true` habilita excepciones
@@ -34,7 +35,7 @@ class Email
 
 		    //Recipients
 		    $mail->setFrom($emisor_email, $emisor_email);
-		    $mail->addAddress('jarondon07@yahoo.com', 'MaschinenWerk 2000 Solicitud');     // Añadir un destinatario
+		    $mail->addAddress('liber2693@gmail.com', 'MaschinenWerk 2000 Solicitud');     // Añadir un destinatario
 		    //$mail->addAddress('jarondon07@yahoo.com');               // Name is optional
 		    //$mail->addReplyTo('info@example.com', 'Information');
 		    //$mail->addCC('cc@example.com');

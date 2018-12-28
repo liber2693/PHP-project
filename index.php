@@ -385,13 +385,14 @@
   <!-- /Call to Action -->
 
 
-  <!-- Portfolio -->
-  <section class="portfolio" id="portfolio">
-	<div class="container text-center">
-	  <h2>Productos</h2>
-	  <p align="center">SECCIÓN EN CONSTRUCCIÓN</p>
-	</div>
-  </section>
+<!-- productos index -->
+  	<section class="portfolio" id="portfolio">
+		<div class="container text-center">
+			<h2>Productos</h2>
+			<p align="center">SECCIÓN EN CONSTRUCCIÓN</p>
+		</div>
+	</section>
+<!-- productos index -->
 
 
   <!-- Portfolio -->
@@ -553,7 +554,7 @@
 
 	</div>
   </section>
-  <!-- /Portfolio -->
+<!-- /Portfolio -->
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
 		<div class="container">
