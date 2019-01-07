@@ -45,9 +45,9 @@
     <div id="home" class="slider-area">
         <div class="bend niceties preview-2">
             <div id="ensign-nivoslider" class="slides">
-                <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
-                <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-                <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+                <img src="img/slider/slider1.jpg" alt="MaschinenWerk 2000,C.A" title="#slider-direction-1" />
+                <img src="img/slider/slider2.jpg" alt="MaschinenWerk 2000,C.A" title="#slider-direction-2" />
+                <img src="img/slider/slider3.jpg" alt="MaschinenWerk 2000,C.A" title="#slider-direction-3" />
             </div>
             <!-- direction 1 -->
             <div id="slider-direction-1" class="slider-direction slider-one">
@@ -82,7 +82,7 @@
   	<header id="header">
 		<div class="container">
 			<div id="logo" class="pull-left">
-				<a href="index.php"><img src="img/images/logos.jpg" alt="" title="" width="130" height="80"></img></a>
+				<a href="index.php"><img src="img/images/logos.jpg" alt="MaschinenWerk 2000,C.A" title="" width="130" height="80"></img></a>
 				<!-- Uncomment below if you prefer to use a text image -->
 				<!--<h1><a href="#hero">Bell</a></h1>-->
 		  	</div>
@@ -215,7 +215,7 @@
 	<!-- <h2>Welcome to a perfect theme</h2> -->
 
 	 <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png"> -->
-	 <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
+	 <img alt="MaschinenWerk 2000,C.A" class="gadgets-img hidden-md-down" src="img/gadgets.png">
 </div>
   <!-- /Parallax -->
 
@@ -252,7 +252,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-9 col-sm-12 text-lg-center text-center">
-					<img src="img/images/logo1.png" alt="" title="" width="180" height="60"></img>					
+					<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>					
 				</div>
 			</div>
 		</div>
@@ -368,8 +368,8 @@
 	<div class="container">
 	  <div class="row">
 		<div class="col-lg-9 col-sm-12 text-lg-center text-center">
-			<img src="img/images/logo1.png" alt="" title="" width="180" height="60"></img> &nbsp;&nbsp;
-			<img src="img/images/logo2.png" alt="" title="" width="180" height="60"></img>
+			<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img> &nbsp;&nbsp;
+			<img src="img/images/logo2.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>
 		  <!--<p>
 			Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
 		  </p>-->
@@ -389,14 +389,18 @@
   	<section class="portfolio" id="portfolio">
 		<div class="container text-center">
 			<h2>Productos</h2>
-			<p align="center">SECCIÓN EN CONSTRUCCIÓN</p>
+			<div id="espacio_producto">
+		   		<a href="brands.php#productos">
+		   			<img src="img/productos.png" class="imagen_producto" id="imagen_producto" alt="MaschinenWerk 2000,C.A">
+		   		</a>
+		   	</div>
 		</div>
 	</section>
 <!-- productos index -->
 
 
   <!-- Portfolio -->
-  <section class="portfolio" id="catalogo">
+  <!--<section class="portfolio" id="catalogo">
 	<div class="container text-center">
 	  <h2>Catálogo</h2>
 	  <p align="center">Haga click en el archivo que desee visualizar.</p>
@@ -553,7 +557,7 @@
 	  </div>
 
 	</div>
-  </section>
+  </section>-->
 <!-- /Portfolio -->
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
@@ -726,6 +730,8 @@
 	<script src="js/main.js"></script>
 	<!-- JOSE 25-10-2018 11:13 pm -->
 	<script src="js/eventos_pagina.js" type="text/javascript"></script>
+	<!--JOSE 07-01-2019 -->
+	<script src="js/imagen_move.js" type="text/javascript"></script>
 	<!-- javascripts -->
 	<?php include('views/pie.php');?>
 
