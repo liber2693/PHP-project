@@ -90,8 +90,8 @@
 					<li><a href="index.php#menu">Noticias</a></li>
 					<li><a href="#productos">Productos</a></li>
 					<li><a href="#catalogo">Catálogo</a></li>
-					<li><a href="#ubicacion">Ubicación</a></li>
-					<li><a href="#contact">Contáctanos</a></li>
+					<li><a href="index.php#ubicacion">Ubicación</a></li>
+					<li><a href="index.php#contact">Contáctanos</a></li>
 				</ul>
 		  	</nav>
 			<nav class="nav social-nav pull-right d-none d-lg-inline">
