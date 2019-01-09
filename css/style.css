@@ -604,7 +604,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   ================================================== */
 .portfolio {
   background-color: #edf6ff;
-  padding-bottom: 0;
+  
 }
 
 .portfolio h2 {
@@ -1010,6 +1010,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 6px 20px;
   top: 50%;
   left: 3%;
+}
+#menu h2{
+  color: #199EB8;
 }
 
 /** template ebussine  25-11-2018 **/

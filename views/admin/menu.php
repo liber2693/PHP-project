@@ -1,5 +1,5 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-		<a class="navbar-brand" href="#"><img src="../../img/favicon.png"></a>
+		<a class="navbar-brand" href="inicAmin.php"><img src="../../img/favicon.png"></a>
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class=""><i class="fas fa-align-justify" style="color: #fff;"></i></span>
 	 	</button>
@@ -10,9 +10,9 @@
 		        	<a class="nav-link" href="inicAmin.php">Inicio <span class="sr-only">(current)</span></a>
 		      	</li>
 				<li class="nav-item">
-					<a class="nav-link" href="createAdmin.php">Crear</a>
+					<a class="nav-link" href="createAdmin.php">Crear Anuncio</a>
 				</li>
-				<li class="nav-item dropdown">
+				<!--<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Dropdown
 					</a>
@@ -25,7 +25,7 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link disabled" href="#">Disabled</a>
-				</li>
+				</li>-->
 		    </ul>
 			<i id="login_out" onclick="<?php echo "cerrar_seccion(".$id.",'".$acceso."')";?>" class="fa fa-user"></i>
 	  	</div>

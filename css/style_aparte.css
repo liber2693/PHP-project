@@ -82,5 +82,17 @@
 #tabla_archivos > tbody > tr td{
 	vertical-align: middle;
 }
-
-
+/** imagen producto principal **/
+.portfolio #espacio_producto{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+}
+.portfolio .imagen_producto {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: all 10ms ease-in-out;
+}

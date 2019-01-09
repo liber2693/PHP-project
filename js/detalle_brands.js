@@ -78,7 +78,7 @@ function detalle_empresa(option){
 				else
 				{
 					d.archivo.forEach(function(d2,i2,a2){
-						console.log(d2)
+						//console.log(d2)
 
 						var fila = '';
 
