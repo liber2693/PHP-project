@@ -173,7 +173,29 @@
 			</div>
 		</div>
 	</section>
-<!-- empresas -->
+<!-- empresas --><br>
+
+<!-- Call to Action -->
+<section class="cta">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-9 col-sm-12 text-lg-center text-center">
+			<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img> &nbsp;&nbsp;
+			<img src="img/images/logo2.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>
+		  <!--<p>
+			Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
+		  </p>-->
+		</div>
+		<!--
+		<div class="col-lg-3 col-sm-12 text-lg-right text-center">
+		  <a class="btn btn-ghost" href="#">Buy This Theme</a>
+		</div>
+	  -->
+	  </div>
+	</div>
+  </section>
+  <!-- /Call to Action -->
+	<br>
 
 <!-- indicadores -->
 	<section class="about" id="indicadores">
@@ -209,16 +231,16 @@
   	</section>
 <!-- /indicadores -->
 
-
+<!--
   <!-- Parallax -->
-  <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-	<!-- <h2>Welcome to a perfect theme</h2> -->
+  <!--<div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+	--><!-- <h2>Welcome to a perfect theme</h2> -->
 
 	 <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png"> -->
-	 <img alt="MaschinenWerk 2000,C.A" class="gadgets-img hidden-md-down" src="img/gadgets.png">
-</div>
+	 <!--<img alt="MaschinenWerk 2000,C.A" class="gadgets-img hidden-md-down" src="img/gadgets.png">
+</div>-->
   <!-- /Parallax -->
-
+<br>
 	<section  id="menu" class="parallax-section">
 	  	<div class="container">
 	    	<div class="row">
@@ -249,17 +271,27 @@
 	
 	<!-- franja -->
 	<section class="cta">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 col-sm-12 text-lg-center text-center">
-					<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>					
-				</div>
-			</div>
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-9 col-sm-12 text-lg-center text-center">
+			<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img> &nbsp;&nbsp;
+			<img src="img/images/logo2.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>
+		  <!--<p>
+			Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
+		  </p>-->
 		</div>
-	</section>
+		<!--
+		<div class="col-lg-3 col-sm-12 text-lg-right text-center">
+		  <a class="btn btn-ghost" href="#">Buy This Theme</a>
+		</div>
+	  -->
+	  </div>
+	</div>
+  </section>
 	<!-- franja -->
 
 <!-- Servicios -->
+<!--
 	<section class="features" id="features">
 		<div class="container">
 	  		<h2 class="text-center">Servicos</h2>
@@ -360,29 +392,11 @@
 	  </div>
 	</div>
   </section>
+	-->
   <!-- /Features -->
 
 
-  <!-- Call to Action -->
-  <section class="cta">
-	<div class="container">
-	  <div class="row">
-		<div class="col-lg-9 col-sm-12 text-lg-center text-center">
-			<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img> &nbsp;&nbsp;
-			<img src="img/images/logo2.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>
-		  <!--<p>
-			Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-		  </p>-->
-		</div>
-		<!--
-		<div class="col-lg-3 col-sm-12 text-lg-right text-center">
-		  <a class="btn btn-ghost" href="#">Buy This Theme</a>
-		</div>
-	  -->
-	  </div>
-	</div>
-  </section>
-  <!-- /Call to Action -->
+  
 
 
 <!-- productos index -->
@@ -558,6 +572,27 @@
 
 	</div>
   </section>-->
+
+	<!-- Call to Action -->
+  <section class="cta">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-9 col-sm-12 text-lg-center text-center">
+			<img src="img/images/logo1.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img> &nbsp;&nbsp;
+			<img src="img/images/logo2.png" alt="MaschinenWerk 2000,C.A" title="" width="180" height="60"></img>
+		  <!--<p>
+			Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
+		  </p>-->
+		</div>
+		<!--
+		<div class="col-lg-3 col-sm-12 text-lg-right text-center">
+		  <a class="btn btn-ghost" href="#">Buy This Theme</a>
+		</div>
+	  -->
+	  </div>
+	</div>
+  </section>
+  <!-- /Call to Action -->
 <!-- /Portfolio -->
 <!-- @component: footer -->
 	<section class="features" id="ubicacion">
@@ -668,14 +703,14 @@
 			  &copy; MaschinenWerk 2000,C.A | Todos los derechos reservados
 			</p>
 			<div class="credits">
-			  Desarrollado por: <a href="">liberWEB</a>
+			  Desarrollado por: <a href="">Liber</a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">&nbsp;&nbsp;
-				<img src="img/images/ig.jpg" width="5%" height="5%"></a>
+				<img src="img/images/ig.jpg" width="7%" height="2%"></a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">
-				<img src="img/images/facebook.jpg" width="5%" height="5%"></a>
-			  <a href="https://www.instagram.com/liber.26/" target="_blank">
-				<img src="img/images/linkedin.png" width="5%" height="5%"></a>
-
+				<img src="img/images/facebook.jpg" width="7%" height="2%"></a>
+			  <!--<a href="https://www.instagram.com/liber.26/" target="_blank">
+				<img src="img/images/linkedin.png" width="6%" height="6%"></a>
+					-->
 			  <!--<a href=""><img src="img/images/twitter.jpg" width="5%" height="5%"></a>-->
 
 			</div>
