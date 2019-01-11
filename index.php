@@ -705,9 +705,9 @@
 			<div class="credits">
 			  Desarrollado por: <a href="">Liber</a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">&nbsp;&nbsp;
-				<img src="img/images/ig.jpg" width="7%" height="2%"></a>
+				<img src="img/images/ig.jpg" width="5%" height="5%"></a>
 			  <a href="https://www.instagram.com/liber.26/" target="_blank">
-				<img src="img/images/facebook.jpg" width="7%" height="2%"></a>
+				<img src="img/images/facebook.jpg" width="5%" height="5%"></a>
 			  <!--<a href="https://www.instagram.com/liber.26/" target="_blank">
 				<img src="img/images/linkedin.png" width="6%" height="6%"></a>
 					-->

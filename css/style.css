@@ -1027,7 +1027,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 img {
   max-width: 100%;
-  height: 50px;
+  height: auto;
 }
 
 .single-well>a {
