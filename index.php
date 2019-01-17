@@ -610,7 +610,7 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.266121138444!2d-66.85714878523876!3d10.479675092523276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1544537014581" frameborder="0" allowfullscreen class="mapa"></iframe>
 				</div>
 				<div class="feature-col col-md-6 col-xl-6 text-center">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2661211384434!2d-66.85714878520187!3d10.47967509252331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a585888ddd08f%3A0xf36232890a56ac20!2sKeope%2C+Avenida+Veracruz%2C+Caracas+1080%2C+Distrito+Capital!5e0!3m2!1ses-419!2sve!4v1540905971046" frameborder="0" allowfullscreen class="mapa"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1132.5957495379362!2d-61.450716454281505!3d10.640631085634693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c360765b4f58301%3A0xccb5241f30398afe!2sEl+Socorro+Rd%2C+San+Juan%2C+Trinidad+y+Tobago!5e0!3m2!1ses-419!2sve!4v1547759502071" frameborder="0" allowfullscreen class="mapa"></iframe>
 				</div>
 			</div>
 		</div>
@@ -641,20 +641,24 @@
 						<div>
 							<i class="fa fa-map-marker"></i>
 							<p>Sede Trinidad: 
-								<br>Av Veracruz, Edificio Keope<br>
-								Piso 1 Oficina 15B, 
-								Municipio Baruta,<br>
-								Las Mercedes, Caracas<br>
-								Venezuela.
+								<br>Machine World Solutions LTD<br>
+								#17 LP54/44 
+								Third Pacho Lane,<br>
+								El Socorro San Juan,<br>
+								Trinidad Y Tobago.
 							</p>
 						</div>
 						<div>
 							<i class="fa fa-envelope"></i>
-							<p>Ventas@maschinen-werk.com</p>
+							<p>Ventas@maschinen-werk.com</p><br>
 						</div>
 						<div>
 							<i class="fa fa-phone"></i>
-							<p>Tel: +58  212 9911957</p>
+							<p>
+								Tel: +58  212 9911957<br>
+								Tel: +1 868 684 0561<br>
+								Tel: +1 868 764 4357
+							</p>
 						</div>
 					</div>
 				</div>
@@ -684,7 +688,7 @@
 				  		<div class="form-group">
 							<textarea class="form-control limpiar_email" name="contenido" id="contenido" rows="3" placeholder="Mensaje"></textarea>
 							<div class="validation" id="validation5"></div>
-				  		</div>
+				  		</div><br>
 				  		<div class="text-center">
 							<button type="submit" id="enviar_correo">Envíar</button>
 				  		</div>
