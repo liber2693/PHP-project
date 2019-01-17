@@ -262,7 +262,10 @@
 		  			<!-- paginado de la lista -->
 		  		</div>
 		  	</div>
+		  	
 			
+		  	
+
 			<div id="noticia">
 			  	<!-- evento detalle -->
 			</div>

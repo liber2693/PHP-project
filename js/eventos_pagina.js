@@ -39,7 +39,7 @@ function listar_eventos(page){
     }
 
     $("#eventos_lista").find("div").remove();
-    $("#paginador_event").find("i").remove();
+    $("#paginador_event").find("ul").remove();
     $("#noticia").find("div").remove();
 
     $.ajax(settings)
@@ -72,22 +72,19 @@ function listar_eventos(page){
     	if(paginator.getPages() > 1)
         {
             var pag = '';
-
-         
-            if(paginator.hasPrev())
-            {
-                pag += '<i class="fa fa-chevron-left" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">&nbsp;</i>';
-                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getPrevious()+');">&nbsp;</i>';
-            }
-           
-            pag += ' <i class="fa fa-circle" aria-hidden="true" onclick="listar_eventos('+ paginator.getPage() +');">&nbsp;</i>';
-        
-            if(paginator.hasNext())
-            {
-                pag += '<i class="fa fa-circle-o" aria-hidden="true" onclick="listar_eventos('+paginator.getNext()+');">&nbsp;</i>';
-                pag += '<i class="fa fa-chevron-right" aria-hidden="true" onclick="listar_eventos('+ paginator.getNext() +');"></i>';
-            }
-            
+            pag += '<ul>';
+            	if(paginator.hasPrev())
+            	{
+					pag += '<li><button class="boton_pag" onclick="listar_eventos('+paginator.getPrevious()+');"><i class="fa fa-chevron-left" aria-hidden="true"></i></button></li>';
+					pag += '<li><button class="boton_pag" onclick="listar_eventos('+paginator.getPrevious()+');">'+paginator.getPrevious()+'</button></li>';
+				}
+				pag += '<li><button class="boton_pag" onclick="listar_eventos('+ paginator.getPage() +');">'+ paginator.getPage() +'</button></li>';
+				if(paginator.hasNext())
+            	{
+					pag += '<li><button class="boton_pag" onclick="listar_eventos('+ paginator.getNext() +');">'+ paginator.getNext() +'</button></li>';
+					pag += '<li><button class="boton_pag" onclick="listar_eventos('+ paginator.getNext() +');"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></li>';
+				}
+			pag += '</ul>';
 
             $("#paginador_event").append(pag);   
         }
@@ -104,7 +101,7 @@ function noti_evento(id){
 	//console.log(id);
 
 	$("#eventos_lista").find("div").remove();
-    $("#paginador_event").find("i").remove();
+    $("#paginador_event").find("ul").remove();
 	$("#noticia").find("div").remove();
 
 	var settings = {

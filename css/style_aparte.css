@@ -96,3 +96,35 @@
     position: relative;
     transition: all 10ms ease-in-out;
 }
+/****/
+/*boton de paginador*/
+/****/
+#menu ul{
+    margin-left: 0px;
+    padding: 0px;
+} 
+#menu ul > li{
+    list-style: none;
+    display: inline-block;
+    margin-right:7px;
+}
+#menu ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    background: #1e5799; /* Old browsers */
+    border-radius: 20px;
+}
+#menu .boton_pag{
+    background: #199EB8;
+    border: 0;
+    padding: 7px 15px;
+    color: #fff;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
