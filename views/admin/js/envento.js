@@ -19,7 +19,7 @@ $(function(){
 
    
     //bloque para la pantalla de lista    
-    if(URLactual === '/webpage/views/admin/inicAmin.php')
+    if(URLactual === '/webpage_bell/views/admin/inicAmin.php')
     {
         listar_evento();
 
