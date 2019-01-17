@@ -21,9 +21,10 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
 	<!--</header>-->
 	   <!-- Cuerpo -->
     	<main role="main" class="container">
-          	<h1 class="mt-5">Bienvenido:</h1>
-          	<p class="lead">Nombre del usuario: <?php echo $nombre_user;?></p>
-          	<p>Acceso: <?php echo $acceso;?> <i class="fab fa-500px"></i></p>
+          	<!--<h1 class="mt-5">Bienvenido:</h1> -->
+              <br><br>
+          	<p class="lead">Nombre del usuario: <?php echo ucfirst($nombre_user);?></p>
+          	<p class="lead">Acceso: <?php echo $acceso;?></p>
         </main>
 
         <div id="page-wrapper"> 

@@ -1,6 +1,6 @@
 	<footer class="footer bg-dark">
         <div class="container">
-        	<span class="text-muted">Producciones Liber2693@.</span>
+        	<span class="text-muted">MaschinenWerk 2000 C.A.</span>
         </div>
     </footer>
 </body>
