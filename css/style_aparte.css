@@ -128,3 +128,10 @@
     font-weight: bold;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
+/**********/
+.carousel-control-prev-icon {
+  background-image: url("../img/espalda.png") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("../img/flecha-derecha.png") !important;
+}
