@@ -227,14 +227,25 @@ function listar_evento(page){
         else
         {
             data.lista.forEach(function(data, indice, array) {
-                //console.log(data)
+                //console.log(data.estatus)
 
                 var tabla = '';
                 tabla += '<tr onmousemove="cambia_fondo(this,1)" onmouseout="cambia_fondo(this,0)">';
                 tabla += '<td>'+data.id+'</td>';
                 tabla += '<td>'+data.titulo+'</td>';
                 tabla += '<td>'+fn_date_format(data.fecha_creacion)+'</td>';
-                tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')"></td>';
+                //tabla += '<td><input type="checkbox" '+(data.estatus == 1 ? 'checked' : '')+' ></td>';
+
+                tabla += '<td>';
+                tabla += '<div class="form-group onoffswitch">';
+                tabla += '<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch'+data.id+'" '+(data.estatus == 1 ? 'checked' : '')+' onclick="cambiar_estatus('+data.id+','+data.estatus+')" value="1">';
+                tabla += '<label class="onoffswitch-label" for="myonoffswitch'+data.id+'">';
+                tabla += '<span class="onoffswitch-inner"></span>';
+                tabla += '<span class="onoffswitch-switch"></span>';
+                tabla += '</label>';
+                tabla += '</div>';
+                tabla += '</td>';
+
                 tabla += '<td>';
                 tabla += '<button  onclick="pre_actualizar('+data.id+')" type="button" class="btn btn-success" title="Actualizar Evento"><i class="fas fa-sync-alt"></i></button>&nbsp;';
                 tabla += '<button type="button" onclick="pre_eliminar('+data.id+',\''+data.titulo+'\',\''+data.fecha_creacion+'\')" data-toggle="modal" data-target="#myModal" class="btn btn-danger" title="Eliminar Evento"><i class="fas fa-trash-alt"></i></button>';
