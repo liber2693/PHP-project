@@ -52,26 +52,30 @@
         "titulo_empresa": "Solpak",
         "maquina": [{
             "modelo": "modelo 2.1",
-            "img": "img2.1.png"  
+            "img": "img/images/solpak/imagen_1.jpg"  
             },
             {
             "modelo": "modelo 2.2",
-            "img": "img2.2.png"  
+            "img": "img/images/solpak/imagen_2.jpg"  
             },
             {
             "modelo": "modelo 2.3",
-            "img": "img2.3.png"  
+            "img": "img/images/solpak/imagen_3.jpg"  
+            },
+            {
+            "modelo": "modelo 2.4",
+            "img": "img/images/solpak/imagen_4.jpg"  
             }
         ],
         "archivo": [{
                 "modelo": "modelo 2.1",
-                "nombre_archivo": "archivo 1.1",
-                "ruta": "img/catalogos/loma.pdf"  
+                "nombre_archivo": "archivo 2.1",
+                "ruta": "img/images/solpak/x5_space_saver.pdf"  
             },
             {
                 "modelo": "modelo 2.2",
-                "nombre_archivo": "archivo 2.1",
-                "ruta": "img/catalogos/x5_xray_inspection_system.pdf"  
+                "nombre_archivo": "archivo 2.2",
+                "ruta": "img/images/solpak/x5_xray_inspection_system.pdff"  
             }
         ]
     },

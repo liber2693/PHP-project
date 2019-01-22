@@ -7,7 +7,7 @@ $(function(){
 		
 		//tomar el valor del atributo
 		var id = e.currentTarget.attributes.tabindex.nodeValue;
-		
+		console.log(id)
 		detalle_empresa(id)
 
 	});
