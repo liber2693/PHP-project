@@ -56,10 +56,10 @@ function detalle_empresa(option){
 					var carusel = '';
 					if(i == 1)
 					{
-						carusel += '<div class="carousel-item text-center active">';
+						carusel += '<div class="carousel-item text-center active" style="height: 500px;">';
 					}
 					else{
-						carusel += '<div class="carousel-item text-center">';	
+						carusel += '<div class="carousel-item text-center" style="height: 500px;">';	
 					}
 					carusel += '<h5>modelo: '+d1.modelo+'</h5>';
 					carusel += '<img src="'+d1.img+'" data-toggle="modal" onclick="modal(\''+d1.img+'\')" data-target="#myModal_img" alt="MaschinenWerk 2000,C.A">';
