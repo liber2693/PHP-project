@@ -57,7 +57,7 @@ if(!empty($id) && !empty($acceso) && $acceso == 'LiberWEB')
                                             <br>
                                             <input type="file" class="oculto" name="imagen" id="imagen"  accept="image/png, image/jpeg, image/jpg">
 
-											<img src="../../img/team-1.jpg" alt="Weppage_bell" id="imagen_previa" style="width:auto;margin:auto;">
+											<img src="../../img/subir_imagen.png" alt="Weppage_bell" id="imagen_previa" style="width:200px;margin:auto;">
 					                        <br><br>
 					                        <label  for="imagen" class="btn btn-primary btn-lg btn-block" id="estilo">
 					                            Cargar Imagen <span id="filename"></span>

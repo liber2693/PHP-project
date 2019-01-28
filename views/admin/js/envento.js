@@ -58,7 +58,9 @@ $(function(){
 
 function crear_evento(){
 
-	var titulo = $("#titulo").val().trim();
+    //bloquear boton
+    $("#enviar_evento").prop('disabled',true);
+    var titulo = $("#titulo").val().trim();
 	var texto = $("#contenido").val().trim();
     var contenido = parrafo(texto,1);
 
@@ -77,12 +79,14 @@ function crear_evento(){
     	$("#error_div_titulo").addClass("has-error");
     	$("#error_label_titulo_1").addClass("control-label");
     	alerta_mensaje("danger", "Ingresar titulo", $("#crear_error_alert")).show();
+        $("#enviar_evento").prop('disabled',false);
     	return false;
     }
     if (contenido <= 0){
     	$("#error_div_contenido").addClass("has-error");
     	$("#error_label_contenido").addClass("control-label");
     	alerta_mensaje("danger", "Ingresar contenido", $("#crear_error_alert")).show();
+        $("#enviar_evento").prop('disabled',false);
     	return false;
     }
     var vali_imagen = $("#imagen").val();
@@ -90,6 +94,7 @@ function crear_evento(){
         $("#error_div_imagen").addClass("has-error");
         $("#error_label_imagen").addClass("control-label");
         alerta_mensaje("danger", "Seleccionar una imagen", $("#crear_error_alert")).show();
+        $("#enviar_evento").prop('disabled',false);
         return false;
     }
     var settings = {
@@ -140,9 +145,11 @@ function crear_evento(){
                 alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
             break;
         }
+        $("#enviar_evento").prop('disabled',false);
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
     	alerta_mensaje("danger", "Ha ocurrido un ERROR", $("#crear_error_alert")).show();
+        $("#enviar_evento").prop('disabled',false);
     });
     hideLoader();
 }
@@ -178,7 +185,7 @@ function imagen_previa(){
 /** limpiar campos **/
 function limpiar(){
     $(".crear_evento").val("");
-    $("#imagen_previa").attr("src","../../img/team-1.jpg");
+    $("#imagen_previa").attr("src","../../img/subir_imagen.png");
     $("#imagen").val("");
     $("#filename").empty();
 }
